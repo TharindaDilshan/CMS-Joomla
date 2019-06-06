@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.0" client="site" method="upgrade">
+  <name>OS Gallery Search Pro</name>
+    <authorUrl>http://www.ordasoft.com</authorUrl>
+    <creationDate>May 2019</creationDate>
+    <author>Andrey Kvasnevskiy, Vladislav Prikhodko</author>
+    <authorEmail>support@ordasoft.com</authorEmail>
+    <copyright> @copyright Andrey Kvasnevskiy-OrdaSoft(akbet@mail.ru); All rights reserved. </copyright>
+    <version>5.0.2 Free</version>
+    <license>GNU General Public License version 2 or later</license>
+    <description>Search Pro module for OS Gallery component.</description>
+    <files>
+      <filename module="mod_osgallery_search">mod_osgallery_search.php</filename>
+        <filename module="index">index.html</filename>
+        <filename>mod_osgallery_search.xml</filename>
+        <folder>tmpl</folder>
+        <folder>elements</folder>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic" addfieldpath="/modules/mod_osgallery_search/elements/">
+                <field name="gallery_list" type="gallerylist" default="0" class="inputbox" label="Galleries for search"
+                extension="com_osgallery" multiple="true" size="5" description="Select the galleries to be searched"/>
+                
+                <field name="setting_from_gallery" type="settingFromGallery" default="0" class="inputbox" label="Setting from the gallery"
+                extension="com_osgallery" required="true" description="Select the gallery from which the settings will be taken. Layout settings are not applied."/>
+                
+                <field name="search_title" type="list" extension="com_osgallery" default="1" label="Search by title" description="Search by title">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>
+
+                <field name="search_description" type="list" extension="com_osgallery" default="1" label="Search by description" description="Search by description">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>
+                
+                <field name="item_id" type="text" extension="com_osgallery" default="0" label="ItemId" description="ItemId that will be used to display the module.">
+                    
+                </field>
+            </fieldset>
+            
+            
+            <fieldset name="advanced">
+                
+            </fieldset>
+        </fields>
+    </config>
+</extension>

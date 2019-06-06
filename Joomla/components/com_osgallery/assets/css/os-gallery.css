@@ -1,0 +1,3610 @@
+/*
+* @package OS Gallery
+* @copyright 2016 OrdaSoft
+* @author 2016 Andrey Kvasnevskiy(akbet@mail.ru),Roman Akoev (akoevroman@gmail.com)
+* @license This component is released under License from included LICENSE.txt file
+* @description Ordasoft Image Gallery
+*/
+/*=================---------------------Gallery--------------------======================*/
+[class^=os-gallery-album-tabs-main],
+[class^=os-gallery-all-in-one-main],
+[class^=os-gallery-tabs-main] .os-cat-tab-images {
+  overflow: hidden;
+    
+}
+[class^=os-gallery-tabs-main] .os-cat-tab-images {
+  width:100%;
+
+}
+[class^=os-gallery-album-tabs-main] img,
+[class^=os-gallery-all-in-one-main] img,
+[class^=os-gallery-tabs-main] img {
+  width:100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/*=================---------------------Gallery category tab--------------------======================*/
+[class^=os-gallery-tabs-main] .osgalery-cat-tabs {
+  /*// border-bottom: 1px solid #eee;*/
+  padding: 0 0 0 10px;
+}
+[class^=os-gallery-tabs-main] .osgalery-cat-tabs li.active a {
+  border: 1px solid #eee;
+  border-bottom-color: transparent;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -o-border-radius: 0;
+}
+[class^=os-gallery-tabs-main] .osgalery-cat-tabs li a:hover {
+  background: #eee;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -o-border-radius: 0;
+}
+/*// [class^=os-gallery-all-in-one-main] .all-in-one-block .os-gallery-caption {
+//     height: 30px;
+// }
+// [class^=os-gallery-all-in-one-main] .all-in-one-block .os-gallery-caption .os-gallery-img-category {
+//     margin: 20px 0 5px 0;
+//     text-align: center;
+// }*/
+
+/*-------------------------------------------------------------------------------os-cat-tab-images------------------------------------------------------*/
+
+[class^=os-gallery-tabs-main] .os-cat-tab-images .img-block {
+  float: left;
+  position: relative;
+  overflow: hidden;
+/*    -webkit-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.75);
+box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.75);*/
+}
+[class^=os-gallery-all-in-one-main] .os-cat-tab-images .img-block {
+  position: relative;
+}
+[class^=os-gallery-all-in-one-main] .os-cat-tab-images .img-block,
+[class^=os-gallery-album-tabs-main] .os-cat-tab-images .img-block {
+  position: relative;
+  display: inline-block;
+  float: left;
+  overflow: hidden;
+  -webkit-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.75);
+  box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.75);
+}
+/*//[class^=os-gallery-album-tabs-main] .os-cat-tab-images .img-block:last-child*/
+[class^=os-gallery-all-in-one-main] .os-cat-tab-images .img-block:last-child {
+  clear: both;
+}
+[class^=os-gallery-album-tabs-main] .back-to-albums {
+  background: #354052;
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 15px;
+  padding: 10px;
+  margin: 10px 0;
+  cursor: pointer;
+  display: inline-block;
+}
+[class^=os-gallery-tabs-main] .os-cat-tab-images .img-block .os-gallery-caption {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+[class^=os-gallery-tabs-main] .os-cat-tab-images .img-block  a {
+  display: block;
+  width: 100%;
+}
+/*****------------------------------------------------- none ----------------------------------------------------*****/
+
+[class^=os-gallery-all-in-one-main] .img-block.none-effect,
+[class^=os-gallery-album-tabs-main] .img-block.none-effect,
+[class^=os-gallery-tabs-main] .img-block.none-effect {
+    /*background: #2f3238;*/
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 0 #ccc;
+  box-shadow: 0 0 0 #ccc;
+}
+[class^=os-gallery-all-in-one-main] .img-block.none-effect .os-gallery-caption,
+[class^=os-gallery-album-tabs-main] .img-block.none-effect .os-gallery-caption,
+[class^=os-gallery-tabs-main] .img-block.none-effect .os-gallery-caption {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left:0;
+  text-align: center;
+}
+[class^=os-gallery-all-in-one-main] .img-block.none-effect .os-gallery-caption h3.os-gallery-img-title,
+[class^=os-gallery-album-tabs-main] .img-block.none-effect .os-gallery-caption h3.os-gallery-img-title,
+[class^=os-gallery-tabs-main] .img-block.none-effect .os-gallery-caption h3.os-gallery-img-title {
+  position: relative;
+  padding: 0.5em 0;
+  color: #fff;
+  text-align: center;
+  font-size: 100%;
+  line-height: 100%;
+  font-weight: bold;
+  margin: 0;
+  text-shadow: 1px 2px 4px #505050;
+  -webkit-text-shadow: 1px 2px 4px #505050;
+  -moz-text-shadow: 1px 2px 4px #505050;
+}
+[class^=os-gallery-all-in-one-main]  .img-block.none-effect .os-gallery-caption p,
+[class^=os-gallery-album-tabs-main]  .img-block.none-effect .os-gallery-caption p,
+[class^=os-gallery-tabs-main] .img-block.none-effect .os-gallery-caption p {
+  display: inline-block;
+  /*margin: 1% 5px 1% 11%;*/
+  margin: 0 10px;
+  padding: 0.4em 1em;
+  background: rgba(255,255,255,0.9);
+  color: #2f3238;
+  text-transform: none;
+  font-weight: bold;
+  font-size: 70%;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-360px,0,0);
+  transform: translate3d(-360px,0,0);
+  opacity: 0;
+}
+[class^=os-gallery-all-in-one-main]  .img-block.none-effect .os-gallery-caption p:first-child,
+[class^=os-gallery-album-tabs-main]  .img-block.none-effect .os-gallery-caption p:first-child,
+[class^=os-gallery-tabs-main] .img-block.none-effect .os-gallery-caption p:first-child {
+  -webkit-transition-delay: 0.15s;
+  transition-delay: 0.15s;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+}
+[class^=os-gallery-all-in-one-main] .img-block.none-effect .os-gallery-caption p:nth-of-type(2),
+[class^=os-gallery-album-tabs-main] .img-block.none-effect .os-gallery-caption p:nth-of-type(2),
+[class^=os-gallery-tabs-main] .img-block.none-effect .os-gallery-caption p:nth-of-type(2) {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+[class^=os-gallery-all-in-one-main] .img-block.none-effect .os-gallery-caption p:nth-of-type(3),
+[class^=os-gallery-album-tabs-main] .img-block.none-effect .os-gallery-caption p:nth-of-type(3),
+[class^=os-gallery-tabs-main] .img-block.none-effect .os-gallery-caption p:nth-of-type(3) {
+  -webkit-transition-delay: 0.05s;
+  transition-delay: 0.05s;
+}
+[class^=os-gallery-all-in-one-main] .img-block.none-effect:hover .os-gallery-caption p:first-child,
+[class^=os-gallery-album-tabs-main] .img-block.none-effect:hover .os-gallery-caption p:first-child,
+[class^=os-gallery-tabs-main] .img-block.none-effect:hover .os-gallery-caption p:first-child {
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+  opacity: 1;
+}
+[class^=os-gallery-all-in-one-main] .img-block.none-effect:hover .os-gallery-caption p:nth-of-type(2),
+[class^=os-gallery-album-tabs-main]  .img-block.none-effect:hover .os-gallery-caption p:nth-of-type(2),
+[class^=os-gallery-tabs-main] .img-block.none-effect:hover .os-gallery-caption p:nth-of-type(2) {
+  -webkit-transition-delay: 0.05s;
+  transition-delay: 0.05s;
+  opacity: 1;
+}
+[class^=os-gallery-all-in-one-main] .img-block.none-effect:hover .os-gallery-caption p:nth-of-type(3),
+[class^=os-gallery-album-tabs-main] .img-block.none-effect:hover .os-gallery-caption p:nth-of-type(3),
+[class^=os-gallery-tabs-main] .img-block.none-effect:hover .os-gallery-caption p:nth-of-type(3) {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+  opacity: 1;
+}
+[class^=os-gallery-all-in-one-main] .img-block.none-effect:hover .os-gallery-caption p,
+[class^=os-gallery-album-tabs-main] .img-block.none-effect:hover .os-gallery-caption p,
+[class^=os-gallery-tabs-main] .img-block.none-effect:hover .os-gallery-caption p {
+  opacity: 1;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+/*------------------- top/bottom--------------------------*/
+
+.none-effect.text-top a,
+.none-effect.text-bottom a {
+  text-decoration: none;
+}
+.none-effect .os-gallery-caption-top,
+.none-effect .os-gallery-caption-bottom {
+  color: #333;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+} 
+.none-effect .os-gallery-caption-top h3,
+.none-effect .os-gallery-caption-bottom h3,
+.none-effect .os-gallery-caption-top p,
+.none-effect .os-gallery-caption-bottom p {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.none-effect .os-gallery-caption-top h3,
+.none-effect .os-gallery-caption-bottom h3 {
+  margin-bottom: 0;
+}
+.none-effect .os-gallery-caption-top p,
+.none-effect .os-gallery-caption-bottom p {
+  padding-top: 5%;
+}
+[class^=os-gallery] .os-cat-tab-images .img-block {
+  -webkit-box-shadow: 0 0 1px #666 !important;
+  box-shadow: 0 0 1px #666 !important;
+}
+
+/*****------------------------------------------------- dimas ----------------------------------------------------*****/
+
+[class^=os-gallery-all-in-one-main] .img-block.dimas-effect,
+[class^=os-gallery-album-tabs-main] .img-block.dimas-effect,
+[class^=os-gallery-tabs-main] .img-block.dimas-effect {
+    /*background: #2f3238;*/
+  overflow: hidden;
+}
+[class^=os-gallery-all-in-one-main] .img-block.dimas-effect img,
+[class^=os-gallery-album-tabs-main] .img-block.dimas-effect img,
+[class^=os-gallery-tabs-main] .img-block.dimas-effect img {
+  -webkit-transition: opacity 1s, -webkit-transform 1s;
+  transition: opacity 1s, transform 1s;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+[class^=os-gallery-all-in-one-main] .img-block.dimas-effect .os-gallery-caption,
+[class^=os-gallery-album-tabs-main] .img-block.dimas-effect .os-gallery-caption,
+[class^=os-gallery-tabs-main] .img-block.dimas-effect .os-gallery-caption {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left:0;
+  text-align: center;
+}
+[class^=os-gallery-all-in-one-main] .img-block.dimas-effect .os-gallery-caption h3.os-gallery-img-title,
+[class^=os-gallery-album-tabs-main] .img-block.dimas-effect .os-gallery-caption h3.os-gallery-img-title,
+[class^=os-gallery-tabs-main] .img-block.dimas-effect .os-gallery-caption h3.os-gallery-img-title {
+  position: relative;
+  padding: 0.5em 0;
+  color: #2f3238;
+  z-index: 999;
+  text-align: center;
+  font-size: 100%;
+  line-height: 100%;
+  font-weight: bold;
+  margin: 0;
+  text-shadow: none;
+}
+[class^=os-gallery-all-in-one-main]  .img-block.dimas-effect .os-gallery-caption p,
+[class^=os-gallery-album-tabs-main]  .img-block.dimas-effect .os-gallery-caption p,
+[class^=os-gallery-tabs-main] .img-block.dimas-effect .os-gallery-caption p {
+  display: inline-block;
+  /*margin: 1% 5px 1% 11%;*/
+  margin: 0 10px;
+  padding: 0.4em 1em;
+  background: rgba(255,255,255,0.9);
+  color: #2f3238;
+  text-transform: none;
+  font-weight: bold;
+  font-size: 70%;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-360px,0,0);
+  transform: translate3d(-360px,0,0);
+  opacity: 0;
+  left: 0;
+}
+[class^=os-gallery-all-in-one-main]  .img-block.dimas-effect .os-gallery-caption p:first-child,
+[class^=os-gallery-album-tabs-main]  .img-block.dimas-effect .os-gallery-caption p:first-child,
+[class^=os-gallery-tabs-main] .img-block.dimas-effect .os-gallery-caption p:first-child {
+  -webkit-transition-delay: 0.15s;
+  transition-delay: 0.15s;
+  position: absolute;
+  top: 50px;
+}
+[class^=os-gallery-all-in-one-main] .img-block.dimas-effect .os-gallery-caption p:nth-of-type(2),
+[class^=os-gallery-album-tabs-main] .img-block.dimas-effect .os-gallery-caption p:nth-of-type(2),
+[class^=os-gallery-tabs-main] .img-block.dimas-effect .os-gallery-caption p:nth-of-type(2) {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+[class^=os-gallery-all-in-one-main] .img-block.dimas-effect .os-gallery-caption p:nth-of-type(3),
+[class^=os-gallery-album-tabs-main] .img-block.dimas-effect .os-gallery-caption p:nth-of-type(3),
+[class^=os-gallery-tabs-main] .img-block.dimas-effect .os-gallery-caption p:nth-of-type(3) {
+  -webkit-transition-delay: 0.05s;
+  transition-delay: 0.05s;
+}
+[class^=os-gallery-all-in-one-main] .img-block.dimas-effect:hover .os-gallery-caption p:first-child,
+[class^=os-gallery-album-tabs-main] .img-block.dimas-effect:hover .os-gallery-caption p:first-child,
+[class^=os-gallery-tabs-main] .img-block.dimas-effect:hover .os-gallery-caption p:first-child {
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+  opacity: 1;
+}
+[class^=os-gallery-all-in-one-main] .img-block.dimas-effect:hover .os-gallery-caption p:nth-of-type(2),
+[class^=os-gallery-album-tabs-main]  .img-block.dimas-effect:hover .os-gallery-caption p:nth-of-type(2),
+[class^=os-gallery-tabs-main] .img-block.dimas-effect:hover .os-gallery-caption p:nth-of-type(2) {
+  -webkit-transition-delay: 0.05s;
+  transition-delay: 0.05s;
+  opacity: 1;
+}
+[class^=os-gallery-all-in-one-main] .img-block.dimas-effect:hover .os-gallery-caption p:nth-of-type(3),
+[class^=os-gallery-album-tabs-main] .img-block.dimas-effect:hover .os-gallery-caption p:nth-of-type(3),
+[class^=os-gallery-tabs-main] .img-block.dimas-effect:hover .os-gallery-caption p:nth-of-type(3) {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+  opacity: 1;
+}
+[class^=os-gallery-all-in-one-main] .img-block.dimas-effect:hover img,
+[class^=os-gallery-album-tabs-main]  .img-block.dimas-effect:hover img,
+[class^=os-gallery-tabs-main] .img-block.dimas-effect:hover img {
+  opacity: 0.4;
+  -webkit-transform: scale3d(1.1,1.1,1);
+  transform: scale3d(1.1,1.1,1);
+}
+[class^=os-gallery-all-in-one-main] .img-block.dimas-effect:hover .os-gallery-caption p,
+[class^=os-gallery-album-tabs-main] .img-block.dimas-effect:hover .os-gallery-caption p,
+[class^=os-gallery-tabs-main] .img-block.dimas-effect:hover .os-gallery-caption p {
+  opacity: 1;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+
+
+/***** dimas text top/bottom *****/
+
+.os-cat-tab-images .img-block a:hover {
+  text-decoration: none !important;
+}
+
+[class^=os-gallery-all-in-one-main] .img-block.text-top.dimas-effect img,
+[class^=os-gallery-album-tabs-main] .img-block.text-top.dimas-effect img,
+[class^=os-gallery-tabs-main] .img-block.text-top.dimas-effect img,
+[class^=os-gallery-all-in-one-main] .img-block.text-bottom.dimas-effect img,
+[class^=os-gallery-album-tabs-main] .img-block.text-bottom.dimas-effect img,
+[class^=os-gallery-tabs-main] .img-block.text-bottom.dimas-effect img,
+.img-block.text-bottom.dimas-effect img,
+.img-block.text-top.dimas-effect img {
+  border: 1px solid #ccc;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+} 
+
+[class^=os-gallery-all-in-one-main] .img-block.text-top.dimas-effect a:hover,
+[class^=os-gallery-album-tabs-main] .img-block.text-top.dimas-effect a:hover,
+[class^=os-gallery-tabs-main] .img-block.text-top.dimas-effect a:hover,
+[class^=os-gallery-all-in-one-main] .img-block.text-bottom.dimas-effect a:hover,
+[class^=os-gallery-album-tabs-main] .img-block.text-bottom.dimas-effect a:hover,
+[class^=os-gallery-tabs-main] .img-block.text-bottom.dimas-effect a:hover,
+.img-block.text-bottom.dimas-effect a:hover,
+.img-block.text-top.dimas-effect a:hover {
+  text-decoration: none !important;
+}
+
+.img-block.dimas-effect .os-gallery-caption-top p,
+.img-block.dimas-effect .os-gallery-caption-top h3,
+.img-block.dimas-effect .os-gallery-caption-bottom h3,
+.img-block.dimas-effect .os-gallery-caption-bottom p   {
+  -webkit-transition: opacity 1s, -webkit-transform 1s;
+  transition: opacity 1s, transform 1s;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  color: #2f3238;
+}
+.img-block.dimas-effect:hover .os-gallery-caption-top p,
+.img-block.dimas-effect:hover .os-gallery-caption-top h3,
+.img-block.dimas-effect:hover .os-gallery-caption-bottom h3,
+.img-block.dimas-effect:hover .os-gallery-caption-bottom p  {
+  opacity: 0.4;
+}
+
+.dimas-effect.text-top a,
+.dimas-effect.text-bottom a {
+  text-decoration: none;
+}
+.dimas-effect .os-gallery-caption-top,
+.dimas-effect .os-gallery-caption-bottom {
+  color: #333;
+  text-decoration: none;
+  border: 1px solid #ccc;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+} 
+.dimas-effect .os-gallery-caption-bottom {
+  border-top-color: transparent;
+}
+.dimas-effect .os-gallery-caption-top {
+  border-bottom-color: transparent;
+}
+.dimas-effect .os-gallery-caption-top h3,
+.dimas-effect .os-gallery-caption-bottom h3,
+.dimas-effect .os-gallery-caption-top p,
+.dimas-effect .os-gallery-caption-bottom p {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.dimas-effect .os-gallery-caption-top h3,
+.dimas-effect .os-gallery-caption-bottom h3 {
+  margin-bottom: 0;
+}
+.dimas-effect .os-gallery-caption-top p,
+.dimas-effect .os-gallery-caption-bottom p {
+  padding-top: 5%;
+}
+
+.album-block .img-block.text-top.dimas-effect .os-gallery-caption,
+.album-block .img-block.text-bottom.dimas-effect .os-gallery-caption {
+  position: static;
+  text-align: left; 
+}
+.album-block .img-block.text-top.dimas-effect:hover,
+.album-block .img-block.text-bottom.dimas-effect:hover {
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.album-block .img-block.text-top.dimas-effect .os-gallery-caption h3,
+.album-block .img-block.text-bottom.dimas-effect .os-gallery-caption h3,
+.album-block .img-block.text-top.dimas-effect .os-gallery-caption p,
+.album-block .img-block.text-bottom.dimas-effect .os-gallery-caption p {
+  -webkit-transition: opacity 1s, -webkit-transform 1s;
+  transition: opacity 1s, transform 1s;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  color: #2f3238;
+  opacity: 1 !important;
+  margin: 0;
+  text-align: left;
+  padding: 5%;
+} 
+.album-block .img-block.text-top.dimas-effect .os-gallery-caption h3,
+.album-block .img-block.text-bottom.dimas-effect .os-gallery-caption h3 {
+}
+.album-block .img-block.text-top.dimas-effect .os-gallery-caption p,
+.album-block .img-block.text-bottom.dimas-effect .os-gallery-caption p {
+    -webkit-transform: translate3d(-0,0,0) !important;
+    transform: translate3d(-0,0,0) !important;
+}
+.album-block .img-block.text-top.dimas-effect:hover .os-gallery-caption h3,
+.album-block .img-block.text-bottom.dimas-effect:hover .os-gallery-caption h3,
+.album-block .img-block.text-top.dimas-effect:hover .os-gallery-caption p,
+.album-block .img-block.text-bottom.dimas-effect:hover .os-gallery-caption p {
+    opacity: 0.4 !important;
+    -webkit-transform: scale(1) !important;
+    -ms-transform: scale(1) !important;
+    -o-transform: scale(1) !important;
+    transform: scale(1) !important;
+}
+
+
+
+
+/*****------------------------------------------------------------- anet ------------------------------------------------------*****/
+
+[class^=os-gallery-all-in-one-main] .img-block.anet-effect img,
+[class^=os-gallery-album-tabs-main]  .img-block.anet-effect img,
+[class^=os-gallery-tabs-main] .img-block.anet-effect img,
+[class^=os-gallery-all-in-one-main] .img-block.anet-effect .os-gallery-caption h3.os-gallery-img-title,
+[class^=os-gallery-album-tabs-main]  .img-block.anet-effect .os-gallery-caption h3.os-gallery-img-title,
+[class^=os-gallery-tabs-main] .img-block.anet-effect .os-gallery-caption h3.os-gallery-img-title {
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+}
+[class^=os-gallery-all-in-one-main] .img-block.anet-effect,
+[class^=os-gallery-album-tabs-main] .img-block.anet-effect,
+[class^=os-gallery-tabs-main] .img-block.anet-effect {
+  background: #fff;
+}
+[class^=os-gallery-all-in-one-main] .img-block.anet-effect .os-gallery-caption,
+[class^=os-gallery-album-tabs-main] .img-block.anet-effect .os-gallery-caption,
+[class^=os-gallery-tabs-main] .img-block.anet-effect .os-gallery-caption {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+[class^=os-gallery-all-in-one-main] .img-block.anet-effect img,
+[class^=os-gallery-album-tabs-main] .img-block.anet-effect img,
+[class^=os-gallery-tabs-main] .img-block.anet-effect img {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+[class^=os-gallery-all-in-one-main] .img-block.anet-effect h3.os-gallery-img-title,
+[class^=os-gallery-album-tabs-main] .img-block.anet-effect h3.os-gallery-img-title,
+[class^=os-gallery-tabs-main] .img-block.anet-effect h3.os-gallery-img-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 30px;
+    font-size: 100%;
+    line-height: 100%;
+    font-weight: bold;
+    text-shadow: 1px 2px 4px #505050;
+    -webkit-text-shadow: 1px 2px 4px #505050;
+    -moz-text-shadow: 1px 2px 4px #505050;
+    -webkit-transition: all .8s;
+    -o-transition: all .8s;
+    transition: all .8s;
+}
+
+[class^=os-gallery-all-in-one-main] .img-block.anet-effect .os-gallery-caption p,
+[class^=os-gallery-album-tabs-main]  .img-block.anet-effect .os-gallery-caption p,
+[class^=os-gallery-tabs-main] .img-block.anet-effect .os-gallery-caption p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 30px;
+    font-size: 80%;
+    line-height: 80%;
+    color: #3b4a63;
+/*    text-shadow: 1px 2px 4px #505050;
+    -webkit-text-shadow: 1px 2px 4px #505050;
+    -moz-text-shadow: 1px 2px 4px #505050;*/
+    font-weight: bold;
+    margin: 0 0 10px 0;
+    -webkit-transition: all .8s;
+    -o-transition: all .8s;
+    transition: all .8s;
+}
+
+[class^=os-gallery-all-in-one-main]  .img-block.anet-effect .os-gallery-caption p,
+[class^=os-gallery-album-tabs-main]  .img-block.anet-effect .os-gallery-caption p,
+[class^=os-gallery-tabs-main] .img-block.anet-effect .os-gallery-caption p {
+    text-transform: none;
+    font-size: 70%;
+    line-height: 100%;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(0,50px,0);
+    transform: translate3d(0,50px,0);
+}
+
+[class^=os-gallery-all-in-one-main] .img-block.anet-effect:hover img,
+[class^=os-gallery-album-tabs-main] .img-block.anet-effect:hover img,
+[class^=os-gallery-tabs-main] .img-block.anet-effect:hover img {
+    -webkit-transform: translate3d(0,-80px,0);
+    transform: translate3d(0,-80px,0);
+}
+
+[class^=os-gallery-all-in-one-main] .img-block.anet-effect:hover .os-gallery-caption h3.os-gallery-img-title,
+[class^=os-gallery-album-tabs-main] .img-block.anet-effect:hover .os-gallery-caption h3.os-gallery-img-title,
+[class^=os-gallery-tabs-main] .img-block.anet-effect:hover .os-gallery-caption h3.os-gallery-img-title {
+    -webkit-transform: translate3d(0,-100px,0);
+    transform: translate3d(0,-100px,0);
+}
+[class^=os-gallery-all-in-one-main] .img-block.anet-effect .os-gallery-caption h3.os-gallery-img-title,
+[class^=os-gallery-album-tabs-main] .img-block.anet-effect .os-gallery-caption h3.os-gallery-img-title,
+[class^=os-gallery-tabs-main] .img-block.anet-effect .os-gallery-caption h3.os-gallery-img-title {
+    color: #fff;
+}
+
+[class^=os-gallery-all-in-one-main] .img-block.anet-effect:hover .os-gallery-caption p.os-gallery-img-category,
+[class^=os-gallery-album-tabs-main]  .img-block.anet-effect:hover .os-gallery-caption p.os-gallery-img-category,
+[class^=os-gallery-tabs-main] .img-block.anet-effect:hover .os-gallery-caption p.os-gallery-img-category {
+    opacity: 1;
+    -webkit-transform: translate3d(0,-5px,0);
+    transform: translate3d(0,-5px,0);
+}
+[class^=os-gallery-all-in-one-main] .img-block.anet-effect:hover .os-gallery-caption p.os-gallery-img-desc,
+[class^=os-gallery-album-tabs-main]  .img-block.anet-effect:hover .os-gallery-caption p.os-gallery-img-desc,
+[class^=os-gallery-tabs-main] .img-block.anet-effect:hover .os-gallery-caption p.os-gallery-img-desc {
+    opacity: 1;
+    -webkit-transform: translate3d(0,20px,0);
+    transform: translate3d(0,20px,0);
+}
+
+/*****---------- tob/bottom text --------------******/
+
+[class^=os-gallery-all-in-one-main] .img-block.text-top.anet-effect img,
+[class^=os-gallery-album-tabs-main] .img-block.text-top.anet-effect img,
+[class^=os-gallery-tabs-main] .img-block.text-top.anet-effect img,
+[class^=os-gallery-all-in-one-main] .img-block.text-bottom.anet-effect img,
+[class^=os-gallery-album-tabs-main] .img-block.text-bottom.anet-effect img,
+[class^=os-gallery-tabs-main] .img-block.text-bottom.anet-effect img {
+  border: 1px solid #ccc;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+[class^=os-gallery-all-in-one-main] .img-block.text-top.anet-effect h3.os-gallery-img-title,
+[class^=os-gallery-album-tabs-main] .img-block.text-top.anet-effect h3.os-gallery-img-title,
+[class^=os-gallery-tabs-main] .img-block.text-top.anet-effect h3.os-gallery-img-title,
+[class^=os-gallery-all-in-one-main] .img-block.text-bottom.anet-effect h3.os-gallery-img-title,
+[class^=os-gallery-album-tabs-main] .img-block.text-bottom.anet-effect h3.os-gallery-img-title,
+[class^=os-gallery-tabs-main] .img-block.text-bottom.anet-effect h3.os-gallery-img-title {
+  position: static;
+  padding: 10px;
+  text-shadow: none;
+  color: #394a63;
+  margin: 0;
+}
+
+
+[class^=os-gallery-all-in-one-main] .img-block.text-top.anet-effect p,
+[class^=os-gallery-album-tabs-main] .img-block.text-top.anet-effect p,
+[class^=os-gallery-tabs-main] .img-block.text-top.anet-effect p,
+[class^=os-gallery-all-in-one-main] .img-block.text-bottom.anet-effect p,
+[class^=os-gallery-album-tabs-main] .img-block.text-bottom.anet-effect p,
+[class^=os-gallery-tabs-main] .img-block.text-bottom.anet-effect p {
+  padding: 10px;
+  color: #394a63;
+}
+
+[class^=os-gallery-all-in-one-main] .img-block.text-top.anet-effect:hover .os-gallery-caption h3.os-gallery-img-title,
+[class^=os-gallery-album-tabs-main] .img-block.text-top.anet-effect:hover .os-gallery-caption h3.os-gallery-img-title,
+[class^=os-gallery-tabs-main] .img-block.text-top.anet-effect:hover .os-gallery-caption h3.os-gallery-img-title, 
+[class^=os-gallery-all-in-one-main] .img-block.text-bottom.anet-effect:hover .os-gallery-caption h3.os-gallery-img-title,
+[class^=os-gallery-album-tabs-main] .img-block.text-bottom.anet-effect:hover .os-gallery-caption h3.os-gallery-img-title,
+[class^=os-gallery-tabs-main] .img-block.text-bottom.anet-effect:hover .os-gallery-caption h3.os-gallery-img-title {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+[class^=os-gallery-all-in-one-main] .img-block.text-top.anet-effect:hover a,
+[class^=os-gallery-album-tabs-main] .img-block.text-top.anet-effect:hover a,
+[class^=os-gallery-tabs-main] .img-block.text-top.anet-effect:hover a, 
+[class^=os-gallery-all-in-one-main] .img-block.text-bottom.anet-effect:hover a,
+[class^=os-gallery-album-tabs-main] .img-block.text-bottom.anet-effect:hover a,
+[class^=os-gallery-tabs-main] .img-block.text-bottom.anet-effect:hover a {
+  text-decoration: none;
+}
+
+[class^=os-gallery-all-in-one-main] .img-block.text-top.anet-effect:hover img,
+[class^=os-gallery-album-tabs-main] .img-block.text-top.anet-effect:hover img,
+[class^=os-gallery-tabs-main] .img-block.text-top.anet-effect:hover img, 
+[class^=os-gallery-all-in-one-main] .img-block.text-bottom.anet-effect:hover img,
+[class^=os-gallery-album-tabs-main] .img-block.text-bottom.anet-effect:hover img,
+[class^=os-gallery-tabs-main] .img-block.text-bottom.anet-effect:hover img {
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+
+[class^=os-gallery-all-in-one-main] .img-block.anet-effect.text-top:before,
+[class^=os-gallery-album-tabs-main]  .img-block.anet-effect.text-top:before,
+[class^=os-gallery-tabs-main] .img-block.anet-effect.text-top:before,
+[class^=os-gallery-all-in-one-main] .img-block.anet-effect.text-bottom:before,
+[class^=os-gallery-album-tabs-main]  .img-block.anet-effect.text-bottom:before,
+[class^=os-gallery-tabs-main] .img-block.anet-effect.text-bottom:before,
+[class^=os-gallery-all-in-one-main] .img-block.anet-effect.text-top:after,
+[class^=os-gallery-album-tabs-main]  .img-block.anet-effect.text-top:after,
+[class^=os-gallery-tabs-main] .img-block.anet-effect.text-top:after,
+[class^=os-gallery-all-in-one-main] .img-block.anet-effect.text-bottom:after,
+[class^=os-gallery-album-tabs-main]  .img-block.anet-effect.text-bottom:after,
+[class^=os-gallery-tabs-main] .img-block.anet-effect.text-bottom:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  pointer-events: none;
+  background-color: rgba(57, 74, 99, 0.7);
+  -ms-transform: scale(0) rotate(180deg);
+  -webkit-transform: scale(0) rotate(180deg);
+  transform: scale(0) rotate(180deg);
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+  -ms-transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+[class^=os-gallery-all-in-one-main] .img-block.anet-effect.text-top:after,
+[class^=os-gallery-album-tabs-main]  .img-block.anet-effect.text-top:after,
+[class^=os-gallery-tabs-main] .img-block.anet-effect.text-top:after,
+[class^=os-gallery-all-in-one-main] .img-block.anet-effect.text-bottom:after,
+[class^=os-gallery-album-tabs-main]  .img-block.anet-effect.text-bottom:after,
+[class^=os-gallery-tabs-main] .img-block.anet-effect.text-bottom:after {
+  z-index: 2;
+  background-color: rgba(57, 74, 99, 0.3);
+  -webkit-transition: all 0.5s 0.2s;
+  transition: all 0.5s 0.2s;
+}
+[class^=os-gallery-all-in-one-main] .img-block.anet-effect.text-top:hover:before,
+[class^=os-gallery-album-tabs-main]  .img-block.anet-effect.text-top:hover:before,
+[class^=os-gallery-tabs-main] .img-block.anet-effect.text-top:hover:before,
+[class^=os-gallery-all-in-one-main] .img-block.anet-effect.text-bottom:hover:before,
+[class^=os-gallery-album-tabs-main]  .img-block.anet-effect.text-bottom:hover:before,
+[class^=os-gallery-tabs-main] .img-block.anet-effect.text-bottom:hover:before,
+[class^=os-gallery-all-in-one-main] .img-block.anet-effect.text-top:hover:after,
+[class^=os-gallery-album-tabs-main]  .img-block.anet-effect.text-top:hover:after,
+[class^=os-gallery-tabs-main] .img-block.anet-effect.text-top:hover:after,
+[class^=os-gallery-all-in-one-main] .img-block.anet-effect.text-bottom:hover:after,
+[class^=os-gallery-album-tabs-main]  .img-block.anet-effect.text-bottom:hover:after,
+[class^=os-gallery-tabs-main] .img-block.anet-effect.text-bottom:hover:after {
+  -ms-transform: scale(1.1) rotate(0deg);
+  -webkit-transform: scale(1.1) rotate(0deg);
+  transform: scale(1.1) rotate(0deg);
+}
+
+[class^=os-gallery-all-in-one-main] .img-block.anet-effect.text-top .os-gallery-caption-top,
+[class^=os-gallery-album-tabs-main]  .img-block.anet-effect.text-top .os-gallery-caption-top,
+[class^=os-gallery-tabs-main] .img-block.anet-effect.text-top .os-gallery-caption-top,
+[class^=os-gallery-all-in-one-main] .img-block.anet-effect.text-bottom .os-gallery-caption-bottom,
+[class^=os-gallery-album-tabs-main]  .img-block.anet-effect.text-bottom .os-gallery-caption-bottom,
+[class^=os-gallery-tabs-main] .img-block.anet-effect.text-bottom .os-gallery-caption-bottom {
+  border: 1px solid #ccc;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+[class^=os-gallery-all-in-one-main] .img-block.anet-effect.text-top:hover .os-gallery-caption-top h3,
+[class^=os-gallery-album-tabs-main]  .img-block.anet-effect.text-top:hover .os-gallery-caption-top h3,
+[class^=os-gallery-tabs-main] .img-block.anet-effect.text-top:hover .os-gallery-caption-top h3,
+[class^=os-gallery-all-in-one-main] .img-block.anet-effect.text-bottom:hover .os-gallery-caption-bottom h3,
+[class^=os-gallery-album-tabs-main]  .img-block.anet-effect.text-bottom:hover .os-gallery-caption-bottom h3,
+[class^=os-gallery-tabs-main] .img-block.anet-effect.text-bottom:hover .os-gallery-caption-bottom h3,
+[class^=os-gallery-all-in-one-main] .img-block.anet-effect.text-top:hover .os-gallery-caption-top p,
+[class^=os-gallery-album-tabs-main]  .img-block.anet-effect.text-top:hover .os-gallery-caption-top p,
+[class^=os-gallery-tabs-main] .img-block.anet-effect.text-top:hover .os-gallery-caption-top p,
+[class^=os-gallery-all-in-one-main] .img-block.anet-effect.text-bottom:hover .os-gallery-caption-bottom p,
+[class^=os-gallery-album-tabs-main]  .img-block.anet-effect.text-bottom:hover .os-gallery-caption-bottom p,
+[class^=os-gallery-tabs-main] .img-block.anet-effect.text-bottom:hover .os-gallery-caption-bottom p {
+  text-decoration: none;
+  position: relative;
+  z-index: 9;
+  color: #fff;
+}
+.album-block .img-block.anet-effect:first-of-type h3 {
+  color: #fff !important;
+  position: relative !important;
+  z-index: 99;
+} 
+
+/* --------- all in one ---------*/
+.all-in-one-block  .img-block.anet-effect img,
+ {
+  border: 1px solid #ccc;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.all-in-one-block .img-block.anet-effect .os-gallery-caption-bottom,
+.all-in-one-block .img-block.anet-effect .os-gallery-caption-top {
+  position: relative;
+  z-index: 8999;
+  border: none !important;
+}
+.all-in-one-block .img-block.anet-effect h3
+{
+  position: static;
+  padding: 10px;
+  text-shadow: none;
+  color: #394a63 !important;
+  text-shadow: none !important;
+  margin: 0;
+}
+.all-in-one-block .img-block.anet-effect .os-gallery-caption.onImage h3 {
+  color: #fff !important;
+  position: relative !important;
+  z-index: 9999 !important;
+  text-shadow: 1px 2px 4px #505050 !important;
+}
+.all-in-one-block .img-block.anet-effect:hover .os-gallery-caption.onImage h3 {
+    -webkit-transform: translate3d(0,0,0) !important;
+    transform: translate3d(0,0,0) !important;
+}
+.all-in-one-block .img-block.anet-effect p
+ {
+  padding: 10px;
+  color: #394a63 !important;
+  text-shadow: none !important;
+
+}
+.all-in-one-block .img-block.anet-effect  h3,
+.all-in-one-block .img-block.anet-effect  p {
+  position: static !important;
+  padding: 5% !important;
+  margin: 0;
+  z-index: 999;
+}
+.all-in-one-block .img-block.anet-effect:hover h3,
+ {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+.all-in-one-block .img-block.anet-effect:hover a
+{
+  text-decoration: none;
+}
+.all-in-one-block .img-block.anet-effect:hover img 
+ {
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+.all-in-one-block .img-block.anet-effect:before,
+.all-in-one-block .img-block.anet-effect:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  pointer-events: none;
+  background-color: rgba(57, 74, 99, 0.7);
+  -ms-transform: scale(0) rotate(180deg);
+  -webkit-transform: scale(0) rotate(180deg);
+  transform: scale(0) rotate(180deg);
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+  -ms-transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+.all-in-one-block .img-block.anet-effect:after {
+  z-index: 2;
+  background-color: rgba(57, 74, 99, 0.3);
+  -webkit-transition: all 0.5s 0.2s;
+  transition: all 0.5s 0.2s;
+}
+.all-in-one-block .img-block.anet-effect:hover:before,
+.all-in-one-block .img-block.anet-effect:hover:after {
+  -ms-transform: scale(1.1) rotate(0deg);
+  -webkit-transform: scale(1.1) rotate(0deg);
+  transform: scale(1.1) rotate(0deg);
+}
+
+.all-in-one-block .img-block.anet-effect {
+  border: 1px solid #ccc;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.all-in-one-block .img-block.anet-effect:hover h3,
+.all-in-one-block .img-block.anet-effect:hover p {
+  text-decoration: none;
+  position: relative;
+  z-index: 9;
+  color: #fff !important;
+}
+
+/*****--------------------------------------------------- sergio --------------------------------------------------*****/
+
+[class^=os-gallery-all-in-one-main] .img-block.sergio-effect,
+[class^=os-gallery-album-tabs-main]  .img-block.sergio-effect,
+[class^=os-gallery-tabs-main] .img-block.sergio-effect {
+    background: rgba(57, 74, 99, 1);
+    cursor: pointer;
+}
+[class^=os-gallery-all-in-one-main] .img-block.sergio-effect .os-gallery-caption,
+[class^=os-gallery-album-tabs-main] .img-block.sergio-effect .os-gallery-caption,
+[class^=os-gallery-tabs-main] .img-block.sergio-effect .os-gallery-caption {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+}
+[class^=os-gallery-all-in-one-main] .img-block.sergio-effect img,
+[class^=os-gallery-album-tabs-main]  .img-block.sergio-effect img,
+[class^=os-gallery-tabs-main] .img-block.sergio-effect img {
+    opacity: 0.95;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    border: 1px solid #ccc;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+[class^=os-gallery-all-in-one-main] .img-block.sergio-effect:hover img,
+[class^=os-gallery-album-tabs-main]  .img-block.sergio-effect:hover img,
+[class^=os-gallery-tabs-main] .img-block.sergio-effect:hover img {
+    -webkit-transform: scale3d(0.95,0.95,1);
+    transform: scale3d(0.95,0.95,1);
+}
+
+[class^=os-gallery-all-in-one-main] .img-block.sergio-effect .os-gallery-caption,
+[class^=os-gallery-album-tabs-main]  .img-block.sergio-effect .os-gallery-caption,
+[class^=os-gallery-tabs-main] .img-block.sergio-effect .os-gallery-caption {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 25px;
+    left: 0;
+    z-index: 9;
+    text-align: center;
+}
+[class^=os-gallery-all-in-one-main] .img-block.sergio-effect .os-gallery-caption h3.os-gallery-img-title,
+[class^=os-gallery-album-tabs-main]  .img-block.sergio-effect .os-gallery-caption h3.os-gallery-img-title,
+[class^=os-gallery-tabs-main] .img-block.sergio-effect .os-gallery-caption h3.os-gallery-img-title {
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(0,20px,0);
+    transform: translate3d(0,20px,0);
+    color: #fff;
+    font-size: 100%;
+    line-height: 30px;
+    font-weight: bold;
+    text-shadow: 1px 2px 4px #505050;
+    -webkit-text-shadow: 1px 2px 4px #505050;
+    -moz-text-shadow: 1px 2px 4px #505050;
+}
+
+[class^=os-gallery-all-in-one-main] .img-block.sergio-effect .os-gallery-caption p,
+[class^=os-gallery-album-tabs-main] .img-block.sergio-effect .os-gallery-caption p,
+[class^=os-gallery-tabs-main] .img-block.sergio-effect .os-gallery-caption p {
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: perspective(1000px) rotate3d(1,0,0,90deg);
+    transform: perspective(1000px) rotate3d(1,0,0,90deg);
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    color: #fff;
+    text-shadow: 1px 2px 4px #505050;
+}
+
+[class^=os-gallery-all-in-one-main] .img-block.sergio-effect:hover .os-gallery-caption h3,
+[class^=os-gallery-album-tabs-main] .img-block.sergio-effect:hover .os-gallery-caption h3,
+[class^=os-gallery-tabs-main] .img-block.sergio-effect:hover .os-gallery-caption h3 {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+[class^=os-gallery-all-in-one-main] .img-block.sergio-effect:hover .os-gallery-caption p,
+[class^=os-gallery-album-tabs-main]  .img-block.sergio-effect:hover .os-gallery-caption p,
+[class^=os-gallery-tabs-main] .img-block.sergio-effect:hover .os-gallery-caption p {
+    opacity: 1;
+    -webkit-transform: perspective(1000px) rotate3d(1,0,0,0);
+    transform: perspective(1000px) rotate3d(1,0,0,0);
+    color: #fff;
+    font-size: 70%;
+    text-shadow: 1px 2px 4px #505050;
+    -webkit-text-shadow: 1px 2px 4px #505050;
+    -moz-text-shadow: 1px 2px 4px #505050;
+    padding: 0 5%;
+}
+
+/*****---------sergio top/bottom text-----------*****/
+[class^=os-gallery-all-in-one-main] .img-block.sergio-effect.text-top img,
+[class^=os-gallery-album-tabs-main]  .img-block.sergio-effect.text-top img,
+[class^=os-gallery-tabs-main] .img-block.sergio-effect.text-top img,
+[class^=os-gallery-all-in-one-main] .img-block.sergio-effect.text-bottom img,
+[class^=os-gallery-album-tabs-main]  .img-block.sergio-effect.text-bottom img,
+[class^=os-gallery-tabs-main] .img-block.sergio-effect.text-bottom: img {
+  -webkit-transition: .8s;
+  -o-transition: .8s;
+  transition: .8s;
+}
+
+[class^=os-gallery-all-in-one-main] .img-block.sergio-effect.text-top:hover img,
+[class^=os-gallery-album-tabs-main]  .img-block.sergio-effect.text-top:hover img,
+[class^=os-gallery-tabs-main] .img-block.sergio-effect.text-top:hover img,
+[class^=os-gallery-all-in-one-main] .img-block.sergio-effect.text-bottom:hover img,
+[class^=os-gallery-album-tabs-main]  .img-block.sergio-effect.text-bottom:hover img,
+[class^=os-gallery-tabs-main] .img-block.sergio-effect.text-bottom:hover img {
+    -webkit-transform: scale3d(.8,.8,.8);
+    transform: scale3d(.8,.8,.8);
+}
+
+[class^=os-gallery-all-in-one-main] .img-block.text-top.sergio-effect a,
+[class^=os-gallery-album-tabs-main]  .img-block.text-top.sergio-effect a,
+[class^=os-gallery-tabs-main] .img-block.text-top.sergio-effect a,
+[class^=os-gallery-all-in-one-main] .img-block.text-bottom.sergio-effect a,
+[class^=os-gallery-album-tabs-main]  .img-block.text-bottom.sergio-effect a,
+[class^=os-gallery-tabs-main] .img-block.text-bottom.sergio-effect a {
+  color: #2f3238;
+}
+
+[class^=os-gallery-all-in-one-main] .img-block.text-top.sergio-effect:hover a,
+[class^=os-gallery-album-tabs-main]  .img-block.text-top.sergio-effect:hover a,
+[class^=os-gallery-tabs-main] .img-block.text-top.sergio-effect:hover a,
+[class^=os-gallery-all-in-one-main] .img-block.text-bottom.sergio-effect:hover a,
+[class^=os-gallery-album-tabs-main]  .img-block.text-bottom.sergio-effect:hover a,
+[class^=os-gallery-tabs-main] .img-block.text-bottom.sergio-effect:hover a,
+.album-block .img-block.sergio-effect:hover  {
+  text-decoration: none;
+  background: rgba(57, 74, 99, 1);
+}
+.album-block .img-block.text-onImage.sergio-effect:hover {
+  background: #fff;
+}
+[class^=os-gallery-all-in-one-main] .img-block.sergio-effect.text-top .os-gallery-caption-top,
+[class^=os-gallery-album-tabs-main]  .img-block.sergio-effect.text-top .os-gallery-caption-top,
+[class^=os-gallery-tabs-main] .img-block.sergio-effect.text-top .os-gallery-caption-top {
+  border-bottom: none;
+}
+[class^=os-gallery-all-in-one-main] .img-block.sergio-effect.text-top:hover .os-gallery-caption-top,
+[class^=os-gallery-album-tabs-main]  .img-block.sergio-effect.text-top:hover .os-gallery-caption-top,
+[class^=os-gallery-tabs-main] .img-block.sergio-effect.text-top:hover .os-gallery-caption-top {
+  padding-top: 10%;
+}
+[class^=os-gallery-all-in-one-main] .img-block.sergio-effect.text-top:hover .os-gallery-caption-top h3,
+[class^=os-gallery-album-tabs-main]  .img-block.sergio-effect.text-top:hover .os-gallery-caption-top h3,
+[class^=os-gallery-tabs-main] .img-block.sergio-effect.text-top:hover .os-gallery-caption-top h3 {
+/*  padding-bottom: 0;*/
+}
+[class^=os-gallery-all-in-one-main] .img-block.sergio-effect.text-bottom .os-gallery-caption-bottom,
+[class^=os-gallery-album-tabs-main]  .img-block.sergio-effect.text-bottom .os-gallery-caption-bottom,
+[class^=os-gallery-tabs-main] .img-block.sergio-effect.text-bottom .os-gallery-caption-bottom {
+  border-top: none;
+}
+[class^=os-gallery-all-in-one-main] .img-block.sergio-effect.text-bottom:hover .os-gallery-caption-bottom p,
+[class^=os-gallery-album-tabs-main]  .img-block.sergio-effect.text-bottom:hover .os-gallery-caption-bottom p,
+[class^=os-gallery-tabs-main] .img-block.sergio-effect.text-bottom:hover .os-gallery-caption-bottom p,
+[class^=os-gallery-all-in-one-main] .img-block.sergio-effect.text-bottom:hover .os-gallery-caption-bottom h3,
+[class^=os-gallery-album-tabs-main]  .img-block.sergio-effect.text-bottom:hover .os-gallery-caption-bottom h3,
+[class^=os-gallery-tabs-main] .img-block.sergio-effect.text-bottom:hover .os-gallery-caption-bottom h3 {
+  padding-top: 0;
+}
+[class^=os-gallery-all-in-one-main] .img-block.sergio-effect.text-top .os-gallery-caption-top,
+[class^=os-gallery-album-tabs-main]  .img-block.sergio-effect.text-top .os-gallery-caption-top,
+[class^=os-gallery-tabs-main] .img-block.sergio-effect.text-top .os-gallery-caption-top,
+[class^=os-gallery-all-in-one-main] .img-block.sergio-effect.text-bottom .os-gallery-caption-bottom,
+[class^=os-gallery-album-tabs-main]  .img-block.sergio-effect.text-bottom .os-gallery-caption-bottom,
+[class^=os-gallery-tabs-main] .img-block.sergio-effect.text-bottom .os-gallery-caption-bottom {
+  -webkit-transition: padding-top .35s;
+  -o-transition: padding-top .35s;
+  transition: padding-top .35s;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+[class^=os-gallery-all-in-one-main] .img-block.sergio-effect.text-top .os-gallery-caption-top,
+[class^=os-gallery-album-tabs-main]  .img-block.sergio-effect.text-top .os-gallery-caption-top,
+[class^=os-gallery-tabs-main] .img-block.sergio-effect.text-top .os-gallery-caption-top {
+  border-bottom: none;
+}
+[class^=os-gallery-all-in-one-main] .img-block.sergio-effect.text-bottom .os-gallery-caption-bottom,
+[class^=os-gallery-album-tabs-main]  .img-block.sergio-effect.text-bottom .os-gallery-caption-bottom,
+[class^=os-gallery-tabs-main] .img-block.sergio-effect.text-bottom .os-gallery-caption-bottom {
+  border-top: none;
+}
+[class^=os-gallery-all-in-one-main] .img-block.sergio-effect.text-top:hover .os-gallery-caption-top,
+[class^=os-gallery-album-tabs-main]  .img-block.sergio-effect.text-top:hover .os-gallery-caption-top,
+[class^=os-gallery-tabs-main] .img-block.sergio-effect.text-top:hover .os-gallery-caption-top,
+[class^=os-gallery-all-in-one-main] .img-block.sergio-effect.text-bottom:hover .os-gallery-caption-bottom,
+[class^=os-gallery-album-tabs-main]  .img-block.sergio-effect.text-bottom:hover .os-gallery-caption-bottom,
+[class^=os-gallery-tabs-main] .img-block.sergio-effect.text-bottom:hover .os-gallery-caption-bottom {
+  background: rgba(57, 74, 99, 1);
+  border: none;
+  z-index: 999;
+  overflow: visible !important;
+}
+[class^=os-gallery-all-in-one-main] .img-block.sergio-effect.text-top h3,
+[class^=os-gallery-album-tabs-main]  .img-block.sergio-effect.text-top h3,
+[class^=os-gallery-tabs-main] .img-block.sergio-effect.text-top h3,
+[class^=os-gallery-all-in-one-main] .img-block.sergio-effect.text-bottom h3,
+[class^=os-gallery-album-tabs-main]  .img-block.sergio-effect.text-bottom h3,
+[class^=os-gallery-tabs-main] .img-block.sergio-effect.text-bottom h3,
+[class^=os-gallery-all-in-one-main] .img-block.sergio-effect.text-top  p,
+[class^=os-gallery-album-tabs-main]  .img-block.sergio-effect.text-top p,
+[class^=os-gallery-tabs-main] .img-block.sergio-effect.text-top p,
+[class^=os-gallery-all-in-one-main] .img-block.sergio-effect.text-bottom p,
+[class^=os-gallery-album-tabs-main]  .img-block.sergio-effect.text-bottom p,
+[class^=os-gallery-tabs-main] .img-block.sergio-effect.text-bottom p {
+  -webkit-transition: padding-top .35s;
+  -o-transition: padding-top .35s;
+  transition: padding-top .35s;
+  padding: 5%;
+  margin: 0;
+  position: relative;
+  z-index: 9;
+}
+[class^=os-gallery-all-in-one-main] .img-block.sergio-effect.text-top:hover .os-gallery-caption-top h3,
+[class^=os-gallery-album-tabs-main]  .img-block.sergio-effect.text-top:hover .os-gallery-caption-top h3,
+[class^=os-gallery-tabs-main] .img-block.sergio-effect.text-top:hover .os-gallery-caption-top h3,
+[class^=os-gallery-all-in-one-main] .img-block.sergio-effect.text-bottom:hover .os-gallery-caption-bottom h3,
+[class^=os-gallery-album-tabs-main]  .img-block.sergio-effect.text-bottom:hover .os-gallery-caption-bottom h3,
+[class^=os-gallery-tabs-main] .img-block.sergio-effect.text-bottom:hover .os-gallery-caption-bottom h3,
+[class^=os-gallery-all-in-one-main] .img-block.sergio-effect.text-top:hover .os-gallery-caption-top p,
+[class^=os-gallery-album-tabs-main]  .img-block.sergio-effect.text-top:hover .os-gallery-caption-top p,
+[class^=os-gallery-tabs-main] .img-block.sergio-effect.text-top:hover .os-gallery-caption-top p,
+[class^=os-gallery-all-in-one-main] .img-block.sergio-effect.text-bottom:hover .os-gallery-caption-bottom p,
+[class^=os-gallery-album-tabs-main]  .img-block.sergio-effect.text-bottom:hover .os-gallery-caption-bottom p,
+[class^=os-gallery-tabs-main] .img-block.sergio-effect.text-bottom:hover .os-gallery-caption-bottom p {
+  color: #fff;
+  background: rgba(57, 74, 99, 1) !important;
+  /*background-color: transparent !important;*/
+}
+/*----------- album -------------*/
+
+.album-block .img-block.sergio-effect {
+  background: rgba(57, 74, 99, 1) !important;
+}
+.album-block .img-block.sergio-effect:first-of-type:hover img {
+    -webkit-transform: scale3d(0.95,0.95,1);
+    transform: scale3d(0.95,0.95,1);
+} 
+.img-block.sergio-effect.text-top h3,
+.img-block.sergio-effect.text-bottom h3,
+.img-block.sergio-effect.text-top p,
+.img-block.sergio-effect.text-bottom p {
+  color: #fff;
+}
+.img-block.sergio-effect img,
+.img-block.sergio-effect [class^=os-gallery-caption] {
+  border: none !important;
+}
+
+/*---------- all in one ---------*/
+.all-in-one-block .img-block.sergio-effect {
+  background: rgba(57, 74, 99, 1) !important;
+ }
+.all-in-one-block .img-block.sergio-effect:hover img {
+    -webkit-transform: scale3d(0.95,0.95,1);
+    transform: scale3d(0.95,0.95,1);
+} 
+.all-in-one-block .img-block.sergio-effect .os-gallery-caption-bottom h3,
+.all-in-one-block .img-block.sergio-effect .os-gallery-caption-bottom p,
+.all-in-one-block .img-block.sergio-effect .os-gallery-caption-top h3,
+.all-in-one-block .img-block.sergio-effect .os-gallery-caption-top p {
+  color: #fff;
+  margin: 0;
+  padding: 5%;
+}
+.all-in-one-block .img-block.sergio-effect [class^=os-gallery-caption],
+.all-in-one-block .img-block.sergio-effect img {
+  border: none !important;
+}
+
+/*****---------------------------------------------------- ariana -------------------------------------------------------------------*****/
+
+[class^=os-gallery-all-in-one-main] .img-block.ariana-effect,
+[class^=os-gallery-album-tabs-main]  .img-block.ariana-effect,
+[class^=os-gallery-tabs-main] .img-block.ariana-effect {
+    z-index: auto;
+    overflow: visible;
+    background: transparent;
+}
+[class^=os-gallery-all-in-one-main] .img-block.ariana-effect .os-gallery-caption,
+[class^=os-gallery-album-tabs-main] .img-block.ariana-effect .os-gallery-caption,
+[class^=os-gallery-tabs-main] .img-block.ariana-effect .os-gallery-caption {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+}
+[class^=os-gallery-all-in-one-main]  .img-block.ariana-effect:before,
+[class^=os-gallery-album-tabs-main]  .img-block.ariana-effect:before,
+[class^=os-gallery-tabs-main] .img-block.ariana-effect:before,
+[class^=os-gallery-all-in-one-main]  .img-block.ariana-effect .os-gallery-caption h3.os-gallery-img-title:before,
+[class^=os-gallery-album-tabs-main]  .img-block.ariana-effect .os-gallery-caption h3.os-gallery-img-title:before,
+[class^=os-gallery-tabs-main] .img-block.ariana-effect .os-gallery-caption h3.os-gallery-img-title:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    content: '';
+    -webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s;
+}
+
+[class^=os-gallery-all-in-one-main] .img-block.ariana-effect:before,
+[class^=os-gallery-album-tabs-main] .img-block.ariana-effect:before,
+[class^=os-gallery-tabs-main] .img-block.ariana-effect:before {
+    /*// box-shadow: 0 3px 30px rgba(0,0,0,0.8);*/
+    opacity: 0;
+}
+
+[class^=os-gallery-all-in-one-main] .img-block.ariana-effect .os-gallery-caption,
+[class^=os-gallery-album-tabs-main]  .img-block.ariana-effect .os-gallery-caption,
+[class^=os-gallery-tabs-main] .img-block.ariana-effect .os-gallery-caption {
+    z-index: 1;
+}
+
+[class^=os-gallery-all-in-one-main] .img-block.ariana-effect img,
+[class^=os-gallery-album-tabs-main]  .img-block.ariana-effect img,
+[class^=os-gallery-tabs-main] .img-block.ariana-effect img {
+    opacity: 1;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: perspective(1000px) translate3d(0,0,0);
+    transform: perspective(1000px) translate3d(0,0,0);
+}
+[class^=os-gallery-all-in-one-main] .img-block.ariana-effect .os-gallery-caption h3.os-gallery-img-title,
+[class^=os-gallery-album-tabs-main]  .img-block.ariana-effect .os-gallery-caption h3.os-gallery-img-title,
+[class^=os-gallery-tabs-main] .img-block.ariana-effect .os-gallery-caption h3.os-gallery-img-title {
+    font-size: 100%;
+    line-height: 100%;
+}
+[class^=os-gallery-all-in-one-main] .img-block.ariana-effect .os-gallery-caption h3.os-gallery-img-title,
+[class^=os-gallery-album-tabs-main]  .img-block.ariana-effect .os-gallery-caption h3.os-gallery-img-title,
+[class^=os-gallery-tabs-main] .img-block.ariana-effect .os-gallery-caption h3.os-gallery-img-title,
+[class^=os-gallery-all-in-one-main] .img-block.ariana-effect .os-gallery-caption p,
+[class^=os-gallery-album-tabs-main]  .img-block.ariana-effect .os-gallery-caption p,
+[class^=os-gallery-tabs-main] .img-block.ariana-effect .os-gallery-caption p {
+    background: rgba(255, 255, 255, 0.8);
+    color: #2d434e;
+}
+
+[class^=os-gallery-all-in-one-main] .img-block.ariana-effect .os-gallery-caption h3.os-gallery-img-title,
+[class^=os-gallery-album-tabs-main]  .img-block.ariana-effect .os-gallery-caption h3.os-gallery-img-title,
+[class^=os-gallery-tabs-main] .img-block.ariana-effect .os-gallery-caption h3.os-gallery-img-title {
+    position: relative;
+    margin: 15px;
+    padding: 5px;
+}
+
+[class^=os-gallery-all-in-one-main] .img-block.ariana-effect .os-gallery-caption h3.os-gallery-img-title:before,
+[class^=os-gallery-album-tabs-main] .img-block.ariana-effect .os-gallery-caption h3.os-gallery-img-title:before,
+[class^=os-gallery-tabs-main] .img-block.ariana-effect .os-gallery-caption h3.os-gallery-img-title:before {
+    box-shadow: 0 1px 10px rgba(0,0,0,0.5);
+}
+
+[class^=os-gallery-all-in-one-main] .img-block.ariana-effect .os-gallery-caption p,
+[class^=os-gallery-album-tabs-main]  .img-block.ariana-effect .os-gallery-caption p,
+[class^=os-gallery-tabs-main] .img-block.ariana-effect .os-gallery-caption p {
+    margin: 20px 30px 0 30px;
+    padding: 5px;
+    font-weight: 800;
+    opacity: 0;
+    font-size: 60%;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale3d(0.9,0.9,1);
+    transform: scale3d(0.9,0.9,1);
+}
+
+[class^=os-gallery-all-in-one-main] .img-block.ariana-effect:hover:before,
+[class^=os-gallery-album-tabs-main]  .img-block.ariana-effect:hover:before,
+[class^=os-gallery-tabs-main] .img-block.ariana-effect:hover:before {
+    opacity: 1;
+}
+
+[class^=os-gallery-all-in-one-main] .img-block.ariana-effect:hover img,
+[class^=os-gallery-album-tabs-main]  .img-block.ariana-effect:hover img,
+[class^=os-gallery-tabs-main] .img-block.ariana-effect:hover img {
+    -webkit-transform: perspective(1000px) translate3d(0,0,21px);
+    transform: perspective(1000px) translate3d(0,0,21px);
+}
+
+[class^=os-gallery-all-in-one-main] .img-block.ariana-effect:hover .os-gallery-caption h3os-gallery-img-title:before,
+[class^=os-gallery-album-tabs-main]  .img-block.ariana-effect:hover .os-gallery-caption h3os-gallery-img-title:before,
+[class^=os-gallery-tabs-main] .img-block.ariana-effect:hover .os-gallery-caption h3os-gallery-img-title:before {
+    opacity: 0;
+}
+
+[class^=os-gallery-all-in-one-main] .img-block.ariana-effect:hover .os-gallery-caption p,
+[class^=os-gallery-album-tabs-main] .img-block.ariana-effect:hover .os-gallery-caption p,
+[class^=os-gallery-tabs-main] .img-block.ariana-effect:hover .os-gallery-caption p {
+    opacity: 1;
+    -webkit-transform: scale3d(1,1,1);
+    transform: scale3d(1,1,1);
+}
+
+/******----------------- top/bottom--------------*******/
+[class^=os-gallery-all-in-one-main] .img-block.text-top.ariana-effect img,
+[class^=os-gallery-album-tabs-main]  .img-block.text-top.ariana-effect img,
+[class^=os-gallery-tabs-main] .img-block.text-top.ariana-effect img,
+[class^=os-gallery-all-in-one-main] .img-block.text-bottom.ariana-effect img,
+[class^=os-gallery-album-tabs-main]  .img-block.text-bottom.ariana-effect img,
+[class^=os-gallery-tabs-main] .img-block.text-bottom.ariana-effect img {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+[class^=os-gallery-all-in-one-main] .img-block.text-top.ariana-effect:hover img,
+[class^=os-gallery-album-tabs-main]  .img-block.text-top.ariana-effect:hover img,
+[class^=os-gallery-tabs-main] .img-block.text-top.ariana-effect:hover img,
+[class^=os-gallery-all-in-one-main] .img-block.text-bottom.ariana-effect:hover img,
+[class^=os-gallery-album-tabs-main]  .img-block.text-bottom.ariana-effect:hover img,
+[class^=os-gallery-tabs-main] .img-block.text-bottom.ariana-effect:hover img  {
+    -webkit-transform: perspective(1000px) translate3d(0,0,0);
+    transform: perspective(1000px) translate3d(0,0,0);
+}
+
+[class^=os-gallery-all-in-one-main] .img-block.ariana-effect.text-top a,
+[class^=os-gallery-album-tabs-main]  .img-block.ariana-effect.text-top a,
+[class^=os-gallery-tabs-main] .img-block.ariana-effect.text-top a,
+[class^=os-gallery-all-in-one-main] .img-block.ariana-effect.text-bottom a,
+[class^=os-gallery-album-tabs-main]  .img-block.ariana-effect.text-bottom a,
+[class^=os-gallery-tabs-main] .img-block.ariana-effect.text-bottom a {
+  position: relative;
+  z-index: 1; 
+  perspective: 1000;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  -webkit-transition: all .5s linear;
+  -o-transition: all .5s linear;
+  transition: all .5s linear;
+}
+.album-block .img-block.ariana-effect.text-bottom:hover,
+.album-block .img-block.ariana-effect.text-top:hover {
+  -webkit-transition: all .8s linear;
+  -o-transition: all .8s linear;
+  transition: all .8s linear;
+}
+[class^=os-gallery-all-in-one-main] .img-block.ariana-effect.text-top:hover a,
+[class^=os-gallery-album-tabs-main]  .img-block.ariana-effect.text-top:hover a,
+[class^=os-gallery-tabs-main] .img-block.ariana-effect.text-top:hover a,
+[class^=os-gallery-all-in-one-main] .img-block.ariana-effect.text-bottom:hover a,
+[class^=os-gallery-album-tabs-main]  .img-block.ariana-effect.text-bottom:hover a,
+[class^=os-gallery-tabs-main] .img-block.ariana-effect.text-bottom:hover a,
+.album-block .img-block.ariana-effect.text-bottom:hover,
+.album-block .img-block.ariana-effect.text-top:hover  {
+  -webkit-transform: rotateY(360deg);
+  -ms-transform: rotateY(360deg);
+  -o-transform: rotateY(360deg);
+  transform: rotateY(360deg);
+  text-decoration: none;
+}
+
+[class^=os-gallery-all-in-one-main] .img-block.ariana-effect.text-top .os-gallery-caption-top,
+[class^=os-gallery-album-tabs-main]  .img-block.ariana-effect.text-top .os-gallery-caption-top,
+[class^=os-gallery-tabs-main] .img-block.ariana-effect.text-top .os-gallery-caption-top,
+[class^=os-gallery-all-in-one-main] .img-block.ariana-effect.text-bottom .os-gallery-caption-bottom,
+[class^=os-gallery-album-tabs-main]  .img-block.ariana-effect.text-bottom .os-gallery-caption-bottom,
+[class^=os-gallery-tabs-main] .img-block.ariana-effect.text-bottom .os-gallery-caption-bottom {
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+[class^=os-gallery-all-in-one-main] .img-block.ariana-effect.text-top:hover .os-gallery-caption-top,
+[class^=os-gallery-album-tabs-main]  .img-block.ariana-effect.text-top:hover .os-gallery-caption-top,
+[class^=os-gallery-tabs-main] .img-block.ariana-effect.text-top:hover .os-gallery-caption-top,
+[class^=os-gallery-all-in-one-main] .img-block.ariana-effect.text-bottom:hover .os-gallery-caption-bottom,
+[class^=os-gallery-album-tabs-main]  .img-block.ariana-effect.text-bottom:hover .os-gallery-caption-bottom,
+[class^=os-gallery-tabs-main] .img-block.ariana-effect.text-bottom:hover .os-gallery-caption-bottom {
+  background: rgba(57, 74, 99, 1);
+}
+[class^=os-gallery-all-in-one-main] .img-block.ariana-effect.text-top .os-gallery-caption-top h3,
+[class^=os-gallery-album-tabs-main]  .img-block.ariana-effect.text-top .os-gallery-caption-top h3,
+[class^=os-gallery-tabs-main] .img-block.ariana-effect.text-top .os-gallery-caption-top h3,
+[class^=os-gallery-all-in-one-main] .img-block.ariana-effect.text-bottom .os-gallery-caption-bottom h3,
+[class^=os-gallery-album-tabs-main]  .img-block.ariana-effect.text-bottom .os-gallery-caption-bottom h3,
+[class^=os-gallery-tabs-main] .img-block.ariana-effect.text-bottom .os-gallery-caption-bottom h3,
+[class^=os-gallery-all-in-one-main] .img-block.ariana-effect.text-top .os-gallery-caption-top p,
+[class^=os-gallery-album-tabs-main]  .img-block.ariana-effect.text-top .os-gallery-caption-top p,
+[class^=os-gallery-tabs-main] .img-block.ariana-effect.text-top .os-gallery-caption-top p,
+[class^=os-gallery-all-in-one-main] .img-block.ariana-effect.text-bottom .os-gallery-caption-bottom p,
+[class^=os-gallery-album-tabs-main]  .img-block.ariana-effect.text-bottom .os-gallery-caption-bottom p,
+[class^=os-gallery-tabs-main] .img-block.ariana-effect.text-bottom .os-gallery-caption-bottom p {
+  padding: 10px;
+  margin: 0;
+  color: #394a63; 
+}
+
+[class^=os-gallery-all-in-one-main] .img-block.ariana-effect.text-top:hover .os-gallery-caption-top h3,
+[class^=os-gallery-album-tabs-main]  .img-block.ariana-effect.text-top:hover .os-gallery-caption-top h3,
+[class^=os-gallery-tabs-main] .img-block.ariana-effect.text-top:hover .os-gallery-caption-top h3,
+[class^=os-gallery-all-in-one-main] .img-block.ariana-effect.text-bottom:hover .os-gallery-caption-bottom h3,
+[class^=os-gallery-album-tabs-main]  .img-block.ariana-effect.text-bottom:hover .os-gallery-caption-bottom h3,
+[class^=os-gallery-tabs-main] .img-block.ariana-effect.text-bottom:hover .os-gallery-caption-bottom h3,
+[class^=os-gallery-all-in-one-main] .img-block.ariana-effect.text-top:hover .os-gallery-caption-top p,
+[class^=os-gallery-album-tabs-main]  .img-block.ariana-effect.text-top:hover .os-gallery-caption-top p,
+[class^=os-gallery-tabs-main] .img-block.ariana-effect.text-top:hover .os-gallery-caption-top p,
+[class^=os-gallery-all-in-one-main] .img-block.ariana-effect.text-bottom:hover .os-gallery-caption-bottom p,
+[class^=os-gallery-album-tabs-main]  .img-block.ariana-effect.text-bottom:hover .os-gallery-caption-bottom p,
+[class^=os-gallery-tabs-main] .img-block.ariana-effect.text-bottom:hover .os-gallery-caption-bottom p {
+  color: #fff;
+}
+
+/*---------- all in one ---------*/
+.all-in-one-block .img-block.ariana-effect:hover img {
+    -webkit-transform: scale3d(1,1,1);
+    transform: scale3d(1,1,1);
+} 
+.all-in-one-block .img-block.ariana-effect .os-gallery-caption-bottom h3,
+.all-in-one-block .img-block.ariana-effect .os-gallery-caption-bottom p,
+.all-in-one-block .img-block.ariana-effect .os-gallery-caption-top h3,
+.all-in-one-block .img-block.ariana-effect .os-gallery-caption-top p {
+  color: #fff;
+  margin: 0;
+  padding: 5%;
+  color: rgba(57, 74, 99, 1);
+    -webkit-transition: all .8s !important;
+  -o-transition: all .8s !important;
+  transition: all .8s !important;
+}
+.all-in-one-block .img-block.ariana-effect .os-gallery-caption-bottom,
+.all-in-one-block .img-block.ariana-effect .os-gallery-caption-top {
+  -webkit-transition: all .8s !important;
+  -o-transition: all .8s !important;
+  transition: all .8s !important;
+}
+.all-in-one-block .img-block.ariana-effect:hover .os-gallery-caption-bottom,
+.all-in-one-block .img-block.ariana-effect:hover .os-gallery-caption-top {
+  -webkit-transform: rotateY(360deg);
+  -ms-transform: rotateY(360deg);
+  -o-transform: rotateY(360deg);
+  transform: rotateY(360deg);
+  background: rgba(57, 74, 99, 1);
+}
+.all-in-one-block .img-block.ariana-effect:hover .os-gallery-caption-bottom p,
+.all-in-one-block .img-block.ariana-effect:hover .os-gallery-caption-top p,
+.all-in-one-block .img-block.ariana-effect:hover .os-gallery-caption-bottom h3,
+.all-in-one-block .img-block.ariana-effect:hover .os-gallery-caption-top h3 {
+  color: #fff;
+}
+[class^=os-gallery] .os-cat-tab-images .img-block.ariana-effect {
+  -webkit-box-shadow: 0 0 1px #666 !important;
+  box-shadow: 0 0 1px #666 !important;
+}
+[class^=os-gallery-all-in-one-main] .img-block.ariana-effect .os-gallery-caption {
+  width: auto;
+}
+
+/*****----------------------------------------------------- taras --------------------------------------------------------------*****/
+
+[class^=os-gallery-all-in-one-main] .img-block.taras-effect,
+[class^=os-gallery-album-tabs-main]  .img-block.taras-effect,
+[class^=os-gallery-tabs-main] .img-block.taras-effect {
+    background: #030c17;
+}
+
+[class^=os-gallery-album-tabs-main] .album-block .img-block.taras-effect .os-gallery-caption p {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    top:30%;
+    left:0;
+
+}
+[class^=os-gallery-all-in-one-main] .img-block.taras-effect .os-gallery-caption,
+[class^=os-gallery-album-tabs-main] .img-block.taras-effect .os-gallery-caption,
+[class^=os-gallery-tabs-main] .img-block.taras-effect .os-gallery-caption {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+}
+[class^=os-gallery-all-in-one-main] .img-block.taras-effect img,
+[class^=os-gallery-album-tabs-main]  .img-block.taras-effect img,
+[class^=os-gallery-tabs-main] .img-block.taras-effect img {
+    opacity: 0.9;
+    -webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s;
+}
+
+[class^=os-gallery-all-in-one-main] .img-block.taras-effect .os-gallery-caption::before,
+[class^=os-gallery-album-tabs-main]  .img-block.taras-effect .os-gallery-caption::before,
+[class^=os-gallery-tabs-main] .img-block.taras-effect .os-gallery-caption::before {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    bottom: 25px;
+    left: 25px;
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 10px rgba(255,255,255,0.2);
+    content: '';
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale3d(1.4,1.4,1);
+    transform: scale3d(1.4,1.4,1);
+}
+
+[class^=os-gallery-all-in-one-main] .img-block.taras-effect .os-gallery-caption h3,
+[class^=os-gallery-album-tabs-main] .img-block.taras-effect .os-gallery-caption h3,
+[class^=os-gallery-tabs-main] .img-block.taras-effect .os-gallery-caption h3 {
+    margin: 0;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    color: transparent;
+    display: block;
+    width: 100%;
+}
+
+[class^=os-gallery-all-in-one-main] .img-block.taras-effect .os-gallery-caption p,
+[class^=os-gallery-album-tabs-main] .img-block.taras-effect .os-gallery-caption p,
+[class^=os-gallery-tabs-main] .img-block.taras-effect .os-gallery-caption p {
+    padding: 0;
+    text-align: center;
+    color: #fff;
+    font-size: 70%;
+    line-height: 20px;
+    margin: 0;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    display: block;
+    width: 75%;
+}
+
+[class^=os-gallery-all-in-one-main] .img-block.taras-effect:hover .os-gallery-caption h3,
+[class^=os-gallery-album-tabs-main] .img-block.taras-effect:hover .os-gallery-caption h3,
+[class^=os-gallery-tabs-main] .img-block.taras-effect:hover .os-gallery-caption h3 {
+    /* -webkit-transform: scale(1.1);
+     transform: scale(1.1); */
+    color: #fff;
+    font-size: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+[class^=os-gallery-all-in-one-main]  .img-block.taras-effect:hover .os-gallery-caption::before,
+[class^=os-gallery-album-tabs-main]  .img-block.taras-effect:hover .os-gallery-caption::before,
+[class^=os-gallery-tabs-main] .img-block.taras-effect:hover .os-gallery-caption::before,
+[class^=os-gallery-all-in-one-main] .img-block.taras-effect:hover .os-gallery-caption p,
+[class^=os-gallery-album-tabs-main] .img-block.taras-effect:hover .os-gallery-caption p,
+[class^=os-gallery-tabs-main] .img-block.taras-effect:hover .os-gallery-caption p {
+    opacity: 1;
+    -webkit-transform: scale3d(1,1,1);
+    transform: scale3d(1,1,1);
+}
+[class^=os-gallery-all-in-one-main] .img-block.taras-effect:hover .os-gallery-caption,
+[class^=os-gallery-album-tabs-main]  .img-block.taras-effect:hover .os-gallery-caption,
+[class^=os-gallery-tabs-main] .img-block.taras-effect:hover .os-gallery-caption {
+    background-color: rgba(58,52,42,0);
+}
+
+[class^=os-gallery-all-in-one-main] .img-block.taras-effect:hover img,
+[class^=os-gallery-album-tabs-main] .img-block.taras-effect:hover img,
+[class^=os-gallery-tabs-main] .img-block.taras-effect:hover img {
+    opacity: 0.4;
+}
+
+/*****taras top/bottom text*****/
+
+[class^=os-gallery] .img-block.text-top.taras-effect {
+  -webkit-box-shadow: 0 0 1px #666 !important;
+  box-shadow: 0 0 1px #666 !important;
+}
+
+[class^=os-gallery-all-in-one-main] .img-block.text-top.taras-effect img,
+[class^=os-gallery-album-tabs-main] .img-block.text-top.taras-effect img,
+[class^=os-gallery-tabs-main] .img-block.text-top.taras-effect img,
+[class^=os-gallery-all-in-one-main] .img-block.text-bottom.taras-effect img,
+[class^=os-gallery-album-tabs-main] .img-block.text-bottom.taras-effect img,
+[class^=os-gallery-tabs-main] .img-block.text-bottom.taras-effect img {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+[class^=os-gallery-all-in-one-main] .img-block.text-top.taras-effect a:hover,
+[class^=os-gallery-album-tabs-main] .img-block.text-top.taras-effect a:hover,
+[class^=os-gallery-tabs-main] .img-block.text-top.taras-effect a:hover,
+[class^=os-gallery-all-in-one-main] .img-block.text-bottom.taras-effect a:hover,
+[class^=os-gallery-album-tabs-main] .img-block.text-bottom.taras-effect a:hover,
+[class^=os-gallery-tabs-main] .img-block.text-bottom.taras-effect a:hover {
+  text-decoration: none;
+}
+
+[class^=os-gallery-all-in-one-main] .img-block.text-top.taras-effect:hover .os-gallery-caption::before, 
+[class^=os-gallery-album-tabs-main] .img-block.text-top.taras-effect:hover .os-gallery-caption::before, 
+[class^=os-gallery-tabs-main] .img-block.text-top.taras-effect:hover .os-gallery-caption::before {
+  display: none;
+}
+[class^=os-gallery-all-in-one-main] .img-block.text-top.taras-effect:hover .os-gallery-caption p, 
+[class^=os-gallery-album-tabs-main] .img-block.text-top.taras-effect:hover .os-gallery-caption p, 
+[class^=os-gallery-tabs-main] .img-block.text-top.taras-effect:hover .os-gallery-caption p {
+  display: block;
+}
+
+.album-block .img-block.taras-effect p {
+  top: 50% !important;
+  width: 75% !important;
+  left: 0 !important;
+  right: 0 !important;
+  margin: 0 auto !important;
+  text-align: center !important;
+}
+.album-block .img-block.taras-effect .os-gallery-caption-top p,
+.album-block .img-block.taras-effect .os-gallery-caption-bottom p {
+  width: 50% !important;
+}
+
+[class^=os-gallery-all-in-one-main] .img-block.text-top.taras-effect .os-gallery-caption-top,
+[class^=os-gallery-album-tabs-main] .img-block.text-top.taras-effect .os-gallery-caption-top,
+[class^=os-gallery-tabs-main] .img-block.text-top.taras-effect .os-gallery-caption-top,
+[class^=os-gallery-all-in-one-main] .img-block.text-bottom.taras-effect .os-gallery-caption-bottom,
+[class^=os-gallery-album-tabs-main] .img-block.text-bottom.taras-effect .os-gallery-caption-bottom,
+[class^=os-gallery-tabs-main] .img-block.text-bottom.taras-effect .os-gallery-caption-bottom {
+    position: relative;
+    /*margin-bottom: 25px;*/
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+}
+
+[class^=os-gallery-all-in-one-main] .img-block.text-top.taras-effect::before,
+[class^=os-gallery-album-tabs-main] .img-block.text-top.taras-effect::before,
+[class^=os-gallery-tabs-main] .img-block.text-top.taras-effect::before,
+[class^=os-gallery-all-in-one-main] .img-block.text-bottom.taras-effect::before,
+[class^=os-gallery-album-tabs-main] .img-block.text-bottom.taras-effect::before,
+[class^=os-gallery-tabs-main] .img-block.text-bottom.taras-effect::before {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    bottom: 20px;
+    left: 20px;
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 10px rgba(255,255,255,0.2);
+    content: '';
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale3d(1.4,1.4,1);
+    transform: scale3d(1.4,1.4,1);
+}
+
+[class^=os-gallery-all-in-one-main] .img-block.text-top.taras-effect .os-gallery-caption-top h3,
+[class^=os-gallery-album-tabs-main] .img-block.text-top.taras-effect .os-gallery-caption-top h3,
+[class^=os-gallery-tabs-main] .img-block.text-top.taras-effect .os-gallery-caption-top h3,
+[class^=os-gallery-all-in-one-main] .img-block.text-bottom.taras-effect .os-gallery-caption-bottom h3,
+[class^=os-gallery-album-tabs-main] .img-block.text-bottom.taras-effect .os-gallery-caption-bottom h3,
+[class^=os-gallery-tabs-main] .img-block.text-bottom.taras-effect .os-gallery-caption-bottom h3 {
+    margin: 5px 0 10px;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    text-align: center;
+    color: #888;
+    display: block;
+    width: 100%;
+
+}
+[class^=os-gallery-all-in-one-main] .img-block.text-top.taras-effect .os-gallery-caption-top p,
+[class^=os-gallery-album-tabs-main] .img-block.text-top.taras-effect .os-gallery-caption-top p,
+[class^=os-gallery-tabs-main] .img-block.text-top.taras-effect .os-gallery-caption-top p,
+[class^=os-gallery-all-in-one-main] .img-block.text-bottom.taras-effect .os-gallery-caption-bottom p,
+[class^=os-gallery-album-tabs-main] .img-block.text-bottom.taras-effect .os-gallery-caption-bottom p,
+[class^=os-gallery-tabs-main] .img-block.text-bottom.taras-effect .os-gallery-caption-bottom p {
+    position: static;
+    /*top: 100px;
+    bottom: 40px;*/
+    padding: 0;
+    text-align: center;
+    line-height: normal ;
+    opacity: 1;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    color: #888;
+    display: block;
+    width: 50%;
+    font-size: 10px;
+    line-height: 12px;
+}
+[class^=os-gallery-all-in-one-main] .img-block.text-bottom.taras-effect .os-gallery-caption-bottom p,
+[class^=os-gallery-album-tabs-main] .img-block.text-bottom.taras-effect .os-gallery-caption-bottom p,
+[class^=os-gallery-tabs-main] .img-block.text-bottom.taras-effect .os-gallery-caption-bottom p {
+  margin: 0;
+}
+[class^=os-gallery-all-in-one-main] .img-block.text-top.taras-effect:hover .os-gallery-caption-top h3,
+[class^=os-gallery-album-tabs-main] .img-block.text-top.taras-effect:hover .os-gallery-caption-top h3,
+[class^=os-gallery-tabs-main] .img-block.text-top.taras-effect:hover .os-gallery-caption-top h3,
+[class^=os-gallery-all-in-one-main] .img-block.text-top.taras-effect:hover .os-gallery-caption-top p,
+[class^=os-gallery-album-tabs-main] .img-block.text-top.taras-effect:hover .os-gallery-caption-top p,
+[class^=os-gallery-tabs-main] .img-block.text-top.taras-effect:hover .os-gallery-caption-top p,
+[class^=os-gallery-all-in-one-main] .img-block.text-bottom.taras-effect:hover .os-gallery-caption-bottom h3,
+[class^=os-gallery-album-tabs-main] .img-block.text-bottom.taras-effect:hover .os-gallery-caption-bottom h3,
+[class^=os-gallery-tabs-main] .img-block.text-bottom.taras-effect:hover .os-gallery-caption-bottom h3,
+[class^=os-gallery-all-in-one-main] .img-block.text-bottom.taras-effect:hover .os-gallery-caption-bottom p,
+[class^=os-gallery-album-tabs-main] .img-block.text-bottom.taras-effect:hover .os-gallery-caption-bottom p,
+[class^=os-gallery-tabs-main] .img-block.text-bottom.taras-effect:hover .os-gallery-caption-bottom p {
+    /* -webkit-transform: scale(1.1);
+     transform: scale(1.1);*/
+    color: #fff;
+/*    font-size: 100%;*/
+    text-align: center;
+}
+
+[class^=os-gallery-all-in-one-main]  .img-block.text-top.taras-effect:hover::before,
+[class^=os-gallery-album-tabs-main]  .img-block.text-top.taras-effect:hover::before,
+[class^=os-gallery-tabs-main] .img-block.text-top.taras-effect:hover::before,
+[class^=os-gallery-all-in-one-main]  .img-block.text-bottom.taras-effect:hover::before,
+[class^=os-gallery-album-tabs-main]  .img-block.text-bottom.taras-effect:hover::before,
+[class^=os-gallery-tabs-main] .img-block.text-bottom.taras-effect:hover::before {
+    opacity: 1;
+    -webkit-transform: scale3d(1,1,1);
+    transform: scale3d(1,1,1);
+}
+
+/*--------- all in one ---------*/
+
+.all-in-one-block .img-block.taras-effect .os-gallery-caption-bottom,
+.all-in-one-block .img-block.taras-effect .os-gallery-caption-top {
+  text-align: center;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-align-items: center;
+  align-items: center;
+}
+.all-in-one-block .img-block.taras-effect .os-gallery-caption-bottom p,
+.all-in-one-block .img-block.taras-effect .os-gallery-caption-top p,
+.all-in-one-block .img-block.taras-effect .os-gallery-caption-bottom h3,
+.all-in-one-block .img-block.taras-effect .os-gallery-caption-top h3 {
+  color: #fff;
+}
+.all-in-one-block .img-block.taras-effect * {
+  -webkit-transform: translateZ(0px) !important;
+  -ms-transform: translateZ(0px) !important;
+  -o-transform: translateZ(0px) !important;
+  transform: translateZ(0px) !important;
+}
+.all-in-one-block .img-block.taras-effect:before {
+      position: absolute;
+    top: 15px;
+    right: 15px;
+    bottom: 15px;
+    left: 15px;
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 10px rgba(255,255,255,0.2);
+    content: '';
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale3d(1.4,1.4,1);
+    transform: scale3d(1.4,1.4,1);
+} 
+.all-in-one-block .img-block.taras-effect:hover:before,
+.all-in-one-block .img-block.taras-effect:hover:before {
+      opacity: 1;
+    -webkit-transform: scale3d(1,1,1);
+    transform: scale3d(1,1,1);
+}
+.all-in-one-block .img-block.taras-effect .os-gallery-caption:before,
+.album-block .img-block.taras-effect [class^=os-gallery-caption]:before {
+  display: none;
+}
+.all-in-one-block .img-block.taras-effect .os-gallery-caption-bottom p,
+.all-in-one-block .img-block.taras-effect .os-gallery-caption-top p {
+  font-size: inherit !important;
+  color: #888;
+}
+.all-in-one-block .img-block.taras-effect .os-gallery-caption-bottom h3,
+.all-in-one-block .img-block.taras-effect .os-gallery-caption-top h3 {
+  color: #888;
+}
+.all-in-one-block .img-block.taras-effect:hover .os-gallery-caption-bottom h3,
+.all-in-one-block .img-block.taras-effect:hover .os-gallery-caption-top h3,
+.all-in-one-block .img-block.taras-effect:hover .os-gallery-caption-bottom p,
+.all-in-one-block .img-block.taras-effect:hover .os-gallery-caption-top p {
+  color: #fff;
+}
+.img-block.taras-effect * {
+  -webkit-transform: translateZ(0px) !important;
+  -ms-transform: translateZ(0px) !important;
+  -o-transform: translateZ(0px) !important;
+  transform: translateZ(0px) !important;
+}
+
+/*****-----------------------------------------------------------andrea--------------------------------------------------------*****/
+[class^=os-gallery-all-in-one-main] .img-block.andrea-effect,
+[class^=os-gallery-album-tabs-main] .img-block.andrea-effect,
+[class^=os-gallery-tabs-main] .img-block.andrea-effect {
+    overflow: hidden;
+}
+[class^=os-gallery-all-in-one-main] .img-block.andrea-effect .os-gallery-caption,
+[class^=os-gallery-album-tabs-main] .img-block.andrea-effect .os-gallery-caption,
+[class^=os-gallery-tabs-main] .img-block.andrea-effect .os-gallery-caption {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+}
+/* .img-block.andrea-effect a {
+//     position: relative;
+//     width: 100%;
+//     height: 100%;
+//     z-index: 11;
+// }
+// [class^=os-gallery-all-in-one-main] .img-block.andrea-effect a:after,
+// [class^=os-gallery-album-tabs-main] .img-block.andrea-effect a:after,
+// [class^=os-gallery-tabs-main] .img-block.andrea-effect a:after {
+//     content: "\f00e";
+//     font-family: fontAwesome;
+//     display: inline-block;
+//     font-size: 40px;
+//     color: #fff;
+//     position: absolute;
+//     top: 100%;
+//     opacity: 0;
+//     left: 45%;
+//     transition: all 0.3s ease;
+//     -webkit-transition: all 0.3s ease;
+//     -moz-transition: all 0.3s ease;
+//     -o-transition: all 0.3s ease;
+//     z-index: 9;
+// }
+
+// [class^=os-gallery-all-in-one-main] .img-block.andrea-effect:hover a:after,
+// [class^=os-gallery-album-tabs-main] .img-block.andrea-effect:hover a:after,
+// [class^=os-gallery-tabs-main] .img-block.andrea-effect:hover a:after {
+//     top: 43%;
+//     opacity: 1;
+//     transition: all 0.3s ease;
+//     -webkit-transition: all 0.3s ease;
+//     -moz-transition: all 0.3s ease;
+//     -o-transition: all 0.3s ease;
+// }
+
+// [class^=os-gallery-all-in-one-main] .img-block.andrea-effect .fa-search-plus,
+// [class^=os-gallery-album-tabs-main] .img-block.andrea-effect .fa-search-plus,
+// [class^=os-gallery-tabs-main] .img-block.andrea-effect .fa-search-plus {
+//     font-family: fontAwesome;
+//     display: inline-block;
+//     // font-size: 30px;
+//     color: #fff;
+//     position: absolute;
+//     top: 100%;
+//     opacity: 0;
+//     left: 45%;
+//     transition: all 0.3s ease;
+//     -webkit-transition: all 0.3s ease;
+//     -moz-transition: all 0.3s ease;
+//     -o-transition: all 0.3s ease;
+//     z-index: 9;
+// }
+*/
+[class^=os-gallery-all-in-one-main] .img-block.andrea-effect .andrea-zoom-in,
+[class^=os-gallery-album-tabs-main] .img-block.andrea-effect .andrea-zoom-in,
+[class^=os-gallery-tabs-main] .img-block.andrea-effect .andrea-zoom-in {
+    /* font-family: fontAwesome; */
+    display: inline-block;
+    /* font-size: 30px; */
+    background: url(../images/zoom.svg) no-repeat;
+  background-size: cover;
+    color: #fff;
+    position: absolute;
+    top: 100%;
+    opacity: 0;
+    left: 45%;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    z-index: 9;
+}
+
+[class^=os-gallery-all-in-one-main] .img-block.andrea-effect:hover .andrea-zoom-in,
+[class^=os-gallery-album-tabs-main] .img-block.andrea-effect:hover .andrea-zoom-in,
+[class^=os-gallery-tabs-main] .img-block.andrea-effect:hover .andrea-zoom-in {
+    top: 43%;
+    opacity: 1;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+[class^=os-gallery-all-in-one-main] .img-block.andrea-effect .os-gallery-caption,
+[class^=os-gallery-album-tabs-main] .img-block.andrea-effect .os-gallery-caption,
+[class^=os-gallery-tabs-main] .img-block.andrea-effect .os-gallery-caption {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width:100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.0);
+    opacity: 0;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    z-index: 9;
+}
+[class^=os-gallery-all-in-one-main] .img-block.andrea-effect:hover .os-gallery-caption,
+[class^=os-gallery-album-tabs-main] .img-block.andrea-effect:hover .os-gallery-caption,
+[class^=os-gallery-tabs-main] .img-block.andrea-effect:hover .os-gallery-caption {
+    top: 0;
+    cursor: pointer;
+    opacity: 1;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    background: rgba(0, 0, 0, 0.55);
+}
+[class^=os-gallery-all-in-one-main] .img-block.andrea-effect .os-gallery-caption h3,
+[class^=os-gallery-tabs-main] .img-block.andrea-effect .os-gallery-caption h3,
+[class^=os-gallery-album-tabs-main] .img-block.andrea-effect .os-gallery-caption h3,
+[class^=os-gallery-all-in-one-main] .img-block.andrea-effect .os-gallery-caption p,
+[class^=os-gallery-album-tabs-main] .img-block.andrea-effect .os-gallery-caption p,
+[class^=os-gallery-tabs-main] .img-block.andrea-effect .os-gallery-caption p {
+    display: block;
+    padding: 10px 0 0 10px;
+    color: #ccc;
+}
+
+/*****andrea top/bottom text*****/
+
+[class^=os-gallery-all-in-one-main] .img-block.text-bottom.andrea-effect img,
+[class^=os-gallery-album-tabs-main] .img-block.text-bottom.andrea-effect img,
+[class^=os-gallery-tabs-main] .img-block.text-bottom.andrea-effect img,
+[class^=os-gallery-all-in-one-main] .img-block.text-top.andrea-effect img,
+[class^=os-gallery-album-tabs-main] .img-block.text-top.andrea-effect img,
+[class^=os-gallery-tabs-main] .img-block.text-top.andrea-effect img {
+      border: 1px solid #ccc;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+} 
+
+[class^=os-gallery-all-in-one-main] .img-block.text-bottom.andrea-effect .os-gallery-caption-bottom,
+[class^=os-gallery-album-tabs-main] .img-block.text-bottom.andrea-effect .os-gallery-caption-bottom,
+[class^=os-gallery-tabs-main] .img-block.text-bottom.andrea-effect .os-gallery-caption-bottom,
+[class^=os-gallery-all-in-one-main] .img-block.text-top.andrea-effect .os-gallery-caption-top,
+[class^=os-gallery-album-tabs-main] .img-block.text-top.andrea-effect .os-gallery-caption-top,
+[class^=os-gallery-tabs-main] .img-block.text-top.andrea-effect .os-gallery-caption-top {
+    position: static;
+    width:100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.0);
+    opacity: 1;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    z-index: 9;
+    border: 1px solid #ccc;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+[class^=os-gallery-all-in-one-main] .img-block.text-bottom.andrea-effect:hover .os-gallery-caption-bottom:before,
+[class^=os-gallery-album-tabs-main] .img-block.text-bottom.andrea-effect:hover .os-gallery-caption-bottom:before,
+[class^=os-gallery-tabs-main] .img-block.text-bottom.andrea-effect:hover .os-gallery-caption-bottom:before,
+[class^=os-gallery-all-in-one-main] .img-block.text-top.andrea-effect:hover .os-gallery-caption-top:before,
+[class^=os-gallery-album-tabs-main] .img-block.text-top.andrea-effect:hover .os-gallery-caption-top:before,
+[class^=os-gallery-tabs-main] .img-block.text-top.andrea-effect:hover .os-gallery-caption-top:before {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(0,0,0,0.5);
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+}
+[class^=os-gallery-all-in-one-main] .img-block.text-bottom.andrea-effect a:hover,
+[class^=os-gallery-album-tabs-main] .img-block.text-bottom.andrea-effect a:hover,
+[class^=os-gallery-tabs-main] .img-block.text-bottom.andrea-effect a:hover,
+[class^=os-gallery-all-in-one-main] .img-block.text-top.andrea-effect a:hover,
+[class^=os-gallery-album-tabs-main] .img-block.text-top.andrea-effect a:hover,
+[class^=os-gallery-tabs-main] .img-block.text-top.andrea-effect a:hover {
+  text-decoration: none;
+} 
+
+[class^=os-gallery-all-in-one-main] .img-block.text-bottom.andrea-effect:hover a,
+[class^=os-gallery-album-tabs-main] .img-block.text-bottom.andrea-effect:hover a,
+[class^=os-gallery-tabs-main] .img-block.text-bottom.andrea-effect:hover a,
+[class^=os-gallery-all-in-one-main] .img-block.text-top.andrea-effect:hover a,
+[class^=os-gallery-album-tabs-main] .img-block.text-top.andrea-effect:hover a,
+[class^=os-gallery-tabs-main] .img-block.text-top.andrea-effect:hover a {
+    top: 0;
+    cursor: pointer;
+    opacity: 1;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    background: rgba(0, 0, 0, 0.55);
+}
+[class^=os-gallery-all-in-one-main] .img-block.text-bottom.andrea-effect .os-gallery-caption-bottom h3,
+[class^=os-gallery-tabs-main] .img-block.text-bottom.andrea-effect .os-gallery-caption-bottom h3,
+[class^=os-gallery-album-tabs-main] .img-block.text-bottom.andrea-effect .os-gallery-caption-bottom h3,
+[class^=os-gallery-all-in-one-main] .img-block.text-bottom.andrea-effect .os-gallery-caption-bottom p,
+[class^=os-gallery-album-tabs-main] .img-block.text-bottom.andrea-effect .os-gallery-caption-bottom p,
+[class^=os-gallery-tabs-main] .img-block.text-bottom.andrea-effect .os-gallery-caption-bottom p,
+[class^=os-gallery-all-in-one-main] .img-block.text-top.andrea-effect .os-gallery-caption-top h3,
+[class^=os-gallery-tabs-main] .img-block.text-top.andrea-effect .os-gallery-caption-top h3,
+[class^=os-gallery-album-tabs-main] .img-block.text-top.andrea-effect .os-gallery-caption-top h3,
+[class^=os-gallery-all-in-one-main] .img-block.text-top.andrea-effect .os-gallery-caption-top p,
+[class^=os-gallery-album-tabs-main] .img-block.text-top.andrea-effect .os-gallery-caption-top p,
+[class^=os-gallery-tabs-main] .img-block.text-top.andrea-effect .os-gallery-caption-top p {
+    display: block;
+    padding-left: 15px;
+    color: #2f3238;
+    margin: 0;
+    padding-top: 10px;
+}
+
+/*-------- text-none---------*/
+
+[class^=os-gallery-all-in-one-main] .img-block.text-none.andrea-effect .andrea-zoom-in, 
+[class^=os-gallery-album-tabs-main] .img-block.text-none.andrea-effect .andrea-zoom-in, 
+[class^=os-gallery-tabs-main] .img-block.text-none.andrea-effect .andrea-zoom-in {
+  background: none;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-align-items: center;
+  align-items: center;
+}
+[class^=os-gallery-all-in-one-main] .img-block.text-none.andrea-effect .andrea-zoom-in:before, 
+[class^=os-gallery-album-tabs-main] .img-block.text-none.andrea-effect .andrea-zoom-in:before, 
+[class^=os-gallery-tabs-main] .img-block.text-none.andrea-effect .andrea-zoom-in:before,
+.album-block .img-block.andrea-effect .andrea-zoom-in:before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: url(../images/zoom.svg) no-repeat;
+  -webkit-background-size: contain;
+  background-size: contain;
+}
+[class^=os-gallery-all-in-one-main] .img-block.text-none.andrea-effect:hover .andrea-zoom-in, 
+[class^=os-gallery-album-tabs-main] .img-block.text-none.andrea-effect:hover .andrea-zoom-in, 
+[class^=os-gallery-tabs-main] .img-block.text-none.andrea-effect:hover .andrea-zoom-in,
+.album-block .img-block.andrea-effect .andrea-zoom-in:hover:before {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  background: rgba(0,0,0,0.5);
+}
+
+/*-------- album ---------*/
+
+.album .img-block .andrea-effect,
+.album .img-block .andrea-effect .album-main-image {
+  background: none;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-align-items: center;
+  align-items: center;
+}
+.album-block .img-block.andrea-effect a:before,
+.album-block .img-block.andrea-effect .album-main-image:before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: url(../images/zoom.svg) no-repeat;
+  -webkit-background-size: contain;
+  background-size: contain;
+  position: absolute;
+  left: 45%;
+  top: 0;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+  opacity: 0;
+}
+.album-block .img-block.andrea-effect a:hover:before,
+.album-block .img-block.andrea-effect .album-main-image:hover:before {
+  top: 45%;
+  opacity: 1;
+  z-index: 9999;
+}
+.album-block .img-block.andrea-effect a:after,
+.album-block .img-block.andrea-effect .album-main-image:after {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100% !important;
+  height: 0;
+  background: rgba(0,0,0,0.5);
+  content: "";
+  z-index: 999;
+  display: block;
+  position: absolute;
+    -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+.album-block .img-block.andrea-effect a:hover:after,
+.album-block .img-block.andrea-effect .album-main-image:hover:after {
+  height: 100%;
+  z-index: 999;
+}
+
+
+/*-------- all in one ----------*/
+.all-in-one-block .img-block .andrea-effect a {
+  background: none;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-align-items: center;
+  align-items: center;
+}
+.all-in-one-block .img-block.andrea-effect a:before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: url(../images/zoom.svg) no-repeat;
+  -webkit-background-size: contain;
+  background-size: contain;
+  position: absolute;
+  left: 45%;
+  top: 0;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+  opacity: 0;
+}
+.all-in-one-block .img-block.andrea-effect a:hover:before {
+  top: 45%;
+  opacity: 1;
+  z-index: 9999;
+}
+.all-in-one-block .img-block.andrea-effect a:after {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100% !important;
+  height: 0;
+  background: rgba(0,0,0,0.5);
+  content: "";
+  z-index: 999;
+  display: block;
+  position: absolute;
+    -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+.all-in-one-block .img-block.andrea-effect a:hover:after {
+  height: 100%;
+  z-index: 999;
+}
+.all-in-one-block .img-block.andrea-effect .andrea-zoom-in {
+  display: none;
+}
+.all-in-one-block .img-block.andrea-effect h3,
+.all-in-one-block .img-block.andrea-effect p {
+  margin: 0;
+  padding: 5%;
+}
+.all-in-one-block .img-block.andrea-effect .os-gallery-caption {
+  background-color: transparent !important; 
+}
+.all-in-one-block .img-block.andrea-effect .os-gallery-caption.onImage {
+  z-index: 9999;
+}
+.all-in-one-block .img-block.andrea-effect .os-gallery-caption-top h3,
+.all-in-one-block .img-block.andrea-effect .os-gallery-caption-top p,
+.all-in-one-block .img-block.andrea-effect .os-gallery-caption-bottom h3,
+.all-in-one-block .img-block.andrea-effect .os-gallery-caption-bottom p {
+  color: rgba(57, 74, 99, 1) !important
+}
+
+
+/*****----------------------------------------------------------------zema-------------------------------------------------------------------------*****/
+
+@-webkit-keyframes foto {
+    0% {
+        opacity: .4;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes foto {
+    0% {
+        opacity: .4;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+[class^=os-gallery-all-in-one-main] .img-block.zema-effect .os-gallery-caption h3,
+[class^=os-gallery-album-tabs-main] .img-block.zema-effect .os-gallery-caption h3,
+[class^=os-gallery-tabs-main] .img-block.zema-effect .os-gallery-caption h3 {
+  margin: 0;
+}
+
+[class^=os-gallery-all-in-one-main] .img-block.zema-effect .os-gallery-caption h3,
+[class^=os-gallery-album-tabs-main] .img-block.zema-effect .os-gallery-caption h3,
+[class^=os-gallery-tabs-main] .img-block.zema-effect .os-gallery-caption h3,
+[class^=os-gallery-album-tabs-main] .img-block.zema-effect .os-gallery-caption p,
+[class^=os-gallery-all-in-one-main] .img-block.zema-effect .os-gallery-caption p,
+[class^=os-gallery-tabs-main] .img-block.zema-effect .os-gallery-caption p {
+    display: block;
+    position: relative;
+    z-index: 99;
+    color: #333;
+    padding: 10px;
+}
+[class^=os-gallery-all-in-one-main] .img-block.zema-effect:hover .os-gallery-caption h3,
+[class^=os-gallery-album-tabs-main] .img-block.zema-effect:hover .os-gallery-caption h3,
+[class^=os-gallery-tabs-main] .img-block.zema-effect:hover .os-gallery-caption h3,
+[class^=os-gallery-album-tabs-main] .img-block.zema-effect:hover .os-gallery-caption p,
+[class^=os-gallery-all-in-one-main] .img-block.zema-effect:hover .os-gallery-caption p,
+[class^=os-gallery-tabs-main] .img-block.zema-effect:hover .os-gallery-caption p {
+  background: rgba(255,255,255,0.6);
+}
+
+[class^=os-gallery-all-in-one-main] .img-block.zema-effect .os-gallery-caption,
+[class^=os-gallery-album-tabs-main] .img-block.zema-effect .os-gallery-caption,
+[class^=os-gallery-tabs-main] .img-block.zema-effect .os-gallery-caption {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+}
+[class^=os-gallery-all-in-one-main] .img-block.zema-effect img,
+[class^=os-gallery-album-tabs-main] .img-block.zema-effect img,
+[class^=os-gallery-tabs-main] .img-block.zema-effect img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transform: scale(1.1);
+}
+[class^=os-gallery-all-in-one-main] .img-block.zema-effect:hover img,
+[class^=os-gallery-album-tabs-main] .img-block.zema-effect:hover img,
+[class^=os-gallery-tabs-main] .img-block.zema-effect:hover img {
+    cursor: pointer;
+    animation-name: foto;
+    animation-duration: 0.2s;
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+    transform: scale(1);
+}
+[class^=os-gallery-all-in-one-main] .os-cat-tab-images .img-block.zema-effect,
+[class^=os-gallery-album-tabs-main] .os-cat-tab-images .img-block.zema-effect,
+[class^=os-gallery-tabs-main] .os-cat-tab-images .img-block.zema-effect {
+  -webkit-box-shadow: 0 0 1px #666 !important;
+  box-shadow: 0 0 1px #666 !important;
+}
+
+/***** zema top/bottom text*****/
+
+[class^=os-gallery-all-in-one-main] .img-block.text-bottom.zema-effect a:hover,
+[class^=os-gallery-album-tabs-main] .img-block.text-bottom.zema-effect a:hover,
+[class^=os-gallery-tabs-main] .img-block.text-bottom.zema-effect a:hover,
+[class^=os-gallery-all-in-one-main] .img-block.text-top.zema-effect a:hover,
+[class^=os-gallery-album-tabs-main] .img-block.text-top.zema-effect a:hover,
+[class^=os-gallery-tabs-main] .img-block.text-top.zema-effect a:hover {
+  text-decoration: none;
+}
+
+[class^=os-gallery-all-in-one-main] .img-block.text-bottom.zema-effect .os-gallery-caption-bottom h3,
+[class^=os-gallery-album-tabs-main] .img-block.text-bottom.zema-effect .os-gallery-caption-bottom h3,
+[class^=os-gallery-tabs-main] .img-block.text-bottom.zema-effect .os-gallery-caption-bottom h3,
+[class^=os-gallery-album-tabs-main] .img-block.text-bottom.zema-effect .os-gallery-caption-bottom p,
+[class^=os-gallery-all-in-one-main] .img-block.text-bottom.zema-effect .os-gallery-caption-bottom p,
+[class^=os-gallery-tabs-main] .img-block.text-bottom.zema-effect .os-gallery-caption-bottom p,
+[class^=os-gallery-all-in-one-main] .img-block.text-top.zema-effect .os-gallery-caption-top h3,
+[class^=os-gallery-album-tabs-main] .img-block.text-top.zema-effect .os-gallery-caption-top h3,
+[class^=os-gallery-tabs-main] .img-block.text-top.zema-effect .os-gallery-caption-top h3,
+[class^=os-gallery-album-tabs-main] .img-block.text-top.zema-effect .os-gallery-caption-top p,
+[class^=os-gallery-all-in-one-main] .img-block.text-top.zema-effect .os-gallery-caption-top p,
+[class^=os-gallery-tabs-main] .img-block.text-top.zema-effect .os-gallery-caption-top p {
+    display: block;
+    color: #999;
+}
+[class^=os-gallery-all-in-one-main] .img-block.text-bottom.zema-effect:hover .os-gallery-caption-bottom h3,
+[class^=os-gallery-album-tabs-main] .img-block.text-bottom.zema-effect:hover .os-gallery-caption-bottom h3,
+[class^=os-gallery-tabs-main] .img-block.text-bottom.zema-effect:hover .os-gallery-caption-bottom h3,
+[class^=os-gallery-album-tabs-main] .img-block.text-bottom.zema-effect:hover .os-gallery-caption-bottom p,
+[class^=os-gallery-all-in-one-main] .img-block.text-bottom.zema-effect:hover .os-gallery-caption-bottom p,
+[class^=os-gallery-tabs-main] .img-block.text-bottom.zema-effect:hover .os-gallery-caption-bottom p,
+[class^=os-gallery-all-in-one-main] .img-block.text-top.zema-effect:hover .os-gallery-caption-top h3,
+[class^=os-gallery-album-tabs-main] .img-block.text-top.zema-effect:hover .os-gallery-caption-top h3,
+[class^=os-gallery-tabs-main] .img-block.text-top.zema-effect:hover .os-gallery-caption-top h3,
+[class^=os-gallery-album-tabs-main] .img-block.text-top.zema-effect:hover .os-gallery-caption-top p,
+[class^=os-gallery-all-in-one-main] .img-block.text-top.zema-effect:hover .os-gallery-caption-top p,
+[class^=os-gallery-tabs-main] .img-block.text-top.zema-effect:hover .os-gallery-caption-top p {
+    color: #000;
+}
+.zema-effect .os-gallery-caption-top,
+.zema-effect .os-gallery-caption-bottom {
+  color: #333;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.zema-effect .os-gallery-caption-top h3,
+.zema-effect .os-gallery-caption-bottom h3,
+.zema-effect .os-gallery-caption-top p,
+.zema-effect .os-gallery-caption-bottom p {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.zema-effect .os-gallery-caption-top h3,
+.zema-effect .os-gallery-caption-bottom h3 {
+  margin-bottom: 0;
+}
+.zema-effect .os-gallery-caption-top p,
+.zema-effect .os-gallery-caption-bottom p {
+  padding-top: 5%;
+}
+
+.all-in-one-block .img-block.zema-effect .os-gallery-caption-bottom h3,
+.all-in-one-block .img-block.zema-effect .os-gallery-caption-top h3,
+.all-in-one-block .img-block.zema-effect .os-gallery-caption-bottom p,
+.all-in-one-block .img-block.zema-effect .os-gallery-caption-top p  {
+  color: #999;
+  margin: 0;
+  padding: 5%;
+}
+.all-in-one-block .img-block.zema-effect .os-gallery-caption-bottom p,
+.all-in-one-block .img-block.zema-effect .os-gallery-caption-top p {
+  margin-bottom: 10%;
+  padding-bottom: 0;
+}
+
+.all-in-one-block .img-block.zema-effect:hover h3,
+.all-in-one-block .img-block.zema-effect:hover h3,
+.all-in-one-block .img-block.zema-effect:hover p,
+.all-in-one-block .img-block.zema-effect:hover p {
+  color: #000 !important;
+}
+
+
+
+/*****-------------------------------------------------------pytiton-effect-----------------------------------------------------------*****/
+
+[class^=os-gallery-all-in-one-main] .img-block.pytiton-effect .os-gallery-caption,
+[class^=os-gallery-album-tabs-main] .img-block.pytiton-effect .os-gallery-caption,
+[class^=os-gallery-tabs-main] .img-block.pytiton-effect .os-gallery-caption  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+     transition: all 0.6s ease;
+    -webkit-transition: all 0.6s ease;
+    -moz-transition: all 0.6s ease;
+    -o-transition: all 0.6s ease;
+    background: rgba(28, 86, 136, 0.52);
+}
+[class^=os-gallery-all-in-one-main] .img-block.pytiton-effect .os-gallery-caption h3.os-gallery-img-title,
+[class^=os-gallery-album-tabs-main] .img-block.pytiton-effect .os-gallery-caption h3.os-gallery-img-title,
+[class^=os-gallery-tabs-main] .img-block.pytiton-effect .os-gallery-caption h3.os-gallery-img-title {
+    opacity: 0;
+    position: absolute;
+    top:20%;
+    left: -100%;
+    background: #fff;
+    padding: 10px 20px;
+    font-size: 100%;
+    color: #2F3238;
+     transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+[class^=os-gallery-all-in-one-main] .img-block.pytiton-effect:hover .os-gallery-caption,
+[class^=os-gallery-album-tabs-main] .img-block.pytiton-effect:hover .os-gallery-caption,
+[class^=os-gallery-tabs-main] .img-block.pytiton-effect:hover .os-gallery-caption {
+     transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    background: rgba(170, 173, 4, 0.35);
+}
+[class^=os-gallery-all-in-one-main] .img-block.pytiton-effect:hover h3.os-gallery-img-title,
+[class^=os-gallery-album-tabs-main] .img-block.pytiton-effect:hover h3.os-gallery-img-title,
+[class^=os-gallery-tabs-main] .img-block.pytiton-effect:hover h3.os-gallery-img-title {
+     transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    left: 0;
+    opacity: 1;
+}
+[class^=os-gallery-all-in-one-main] .img-block.pytiton-effect .os-gallery-caption p.os-gallery-img-desc,
+[class^=os-gallery-album-tabs-main] .img-block.pytiton-effect .os-gallery-caption p.os-gallery-img-desc,
+[class^=os-gallery-tabs-main] .img-block.pytiton-effect .os-gallery-caption p.os-gallery-img-desc {
+    opacity: 0;
+    position: absolute;
+    top: 60%;
+    right: -100%;
+    background: #fff;
+    padding: 10px 20px;
+    font-size: 70%;
+    color: #2F3238;
+     transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+}
+[class^=os-gallery-all-in-one-main] .img-block.pytiton-effect:hover p.os-gallery-img-desc,
+[class^=os-gallery-album-tabs-main] .img-block.pytiton-effect:hover p.os-gallery-img-desc,
+[class^=os-gallery-tabs-main] .img-block.pytiton-effect:hover p.os-gallery-img-desc {
+     transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    right: 0;
+    opacity: 1;
+}
+[class^=os-gallery-all-in-one-main] .img-block.pytiton-effect .os-gallery-caption p.os-gallery-img-category,
+[class^=os-gallery-album-tabs-main] .img-block.pytiton-effect .os-gallery-caption p.os-gallery-img-category,
+[class^=os-gallery-tabs-main] .img-block.pytiton-effect .os-gallery-caption p.os-gallery-img-category {
+    display: none;
+}
+
+
+.os_fancybox-wrap .os_fancybox-title-outside-wrap h2 {
+    color: #fff;
+    text-shadow: 1px 2px 4px #505050;
+    font-weight: bold;
+}
+
+@media (max-width: 768px){
+    [class^=os-gallery-all-in-one-main] .img-block .os-gallery-caption p,
+    [class^=os-gallery-album-tabs-main] .img-block .os-gallery-caption p,
+    [class^=os-gallery-tabs-main] .img-block .os-gallery-caption p {
+        display: none !important;
+    }
+    [class^=os-gallery-all-in-one-main] .anet-effect .os-gallery-caption p,
+    [class^=os-gallery-album-tabs-main] .anet-effect .os-gallery-caption p,
+    [class^=os-gallery-tabs-main] .anet-effect .os-gallery-caption p {
+        display: block !important;
+    }
+}
+[class^=os-gallery-all-in-one-main] .os-cat-tab-images .img-block.pytiton-effect,
+[class^=os-gallery-album-tabs-main] .os-cat-tab-images .img-block.pytiton-effect,
+[class^=os-gallery-tabs-main] .os-cat-tab-images .img-block.pytiton-effect {
+  -webkit-box-shadow: 0 0 1px #666 !important;
+  box-shadow: 0 0 1px #666 !important;
+}
+
+/******----------- top/bottom -------------******/
+
+[class^=os-gallery-all-in-one-main] .img-block.pytiton-effect.text-top img,
+[class^=os-gallery-album-tabs-main]  .img-block.pytiton-effect.text-top img,
+[class^=os-gallery-tabs-main] .img-block.pytiton-effect.text-top img,
+[class^=os-gallery-all-in-one-main] .img-block.pytiton-effect.text-bottom img,
+[class^=os-gallery-album-tabs-main]  .img-block.pytiton-effect.text-bottom img,
+[class^=os-gallery-tabs-main] .img-block.pytiton-effect.text-bottom img {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+[class^=os-gallery-all-in-one-main] .img-block.pytiton-effect.text-top a,
+[class^=os-gallery-album-tabs-main]  .img-block.pytiton-effect.text-top a,
+[class^=os-gallery-tabs-main] .img-block.pytiton-effect.text-top a,
+[class^=os-gallery-all-in-one-main] .img-block.pytiton-effect.text-bottom a,
+[class^=os-gallery-album-tabs-main]  .img-block.pytiton-effect.text-bottom a,
+[class^=os-gallery-tabs-main] .img-block.pytiton-effect.text-bottom a,
+.album-block .img-block.pytiton-effect.text-top, 
+.album-block .img-block.pytiton-effect.text-bottom  {
+  position: relative;
+  z-index: 1; 
+  perspective: 1000;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  -webkit-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  transition: all .3s linear;
+}
+.album-block .img-block.pytiton-effect.text-top:hover, 
+.album-block .img-block.pytiton-effect.text-bottom:hover {
+  -webkit-transition: all .5s linear;
+  -o-transition: all .5s linear;
+  transition: all .5s linear;
+}
+
+[class^=os-gallery-all-in-one-main] .img-block.pytiton-effect.text-top:hover a,
+[class^=os-gallery-album-tabs-main]  .img-block.pytiton-effect.text-top:hover a,
+[class^=os-gallery-tabs-main] .img-block.pytiton-effect.text-top:hover a,
+[class^=os-gallery-all-in-one-main] .img-block.pytiton-effect.text-bottom:hover a,
+[class^=os-gallery-album-tabs-main]  .img-block.pytiton-effect.text-bottom:hover a,
+[class^=os-gallery-tabs-main] .img-block.pytiton-effect.text-bottom:hover a,
+.album-block .img-block.pytiton-effect.text-top:hover, 
+.album-block .img-block.pytiton-effect.text-bottom:hover  {
+  -webkit-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  text-decoration: none;
+}
+[class^=os-gallery-all-in-one-main] .img-block.pytiton-effect.text-top .os-gallery-caption-top,
+[class^=os-gallery-album-tabs-main]  .img-block.pytiton-effect.text-top .os-gallery-caption-top,
+[class^=os-gallery-tabs-main] .img-block.pytiton-effect.text-top .os-gallery-caption-top,
+[class^=os-gallery-all-in-one-main] .img-block.pytiton-effect.text-bottom .os-gallery-caption-bottom,
+[class^=os-gallery-album-tabs-main]  .img-block.pytiton-effect.text-bottom .os-gallery-caption-bottom,
+[class^=os-gallery-tabs-main] .img-block.pytiton-effect.text-bottom .os-gallery-caption-bottom,
+.album-block .img-block.pytiton-effect.text-top .os-gallery-caption-top, 
+.album-block .img-block.pytiton-effect.text-bottom  .os-gallery-caption-bottom {
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+[class^=os-gallery-all-in-one-main] .img-block.pytiton-effect.text-top:hover .os-gallery-caption-top,
+[class^=os-gallery-album-tabs-main]  .img-block.pytiton-effect.text-top:hover .os-gallery-caption-top,
+[class^=os-gallery-tabs-main] .img-block.pytiton-effect.text-top:hover .os-gallery-caption-top,
+[class^=os-gallery-all-in-one-main] .img-block.pytiton-effect.text-bottom:hover .os-gallery-caption-bottom,
+[class^=os-gallery-album-tabs-main]  .img-block.pytiton-effect.text-bottom:hover .os-gallery-caption-bottom,
+[class^=os-gallery-tabs-main] .img-block.pytiton-effect.text-bottom:hover .os-gallery-caption-bottom,
+.album-block .img-block.pytiton-effect.text-top:hover .os-gallery-caption-top, 
+.album-block .img-block.pytiton-effect.text-bottom:hover .os-gallery-caption-bottom  {
+  background: rgba(57, 74, 99, 1);
+}
+[class^=os-gallery-all-in-one-main] .img-block.pytiton-effect.text-top .os-gallery-caption-top h3,
+[class^=os-gallery-album-tabs-main]  .img-block.pytiton-effect.text-top .os-gallery-caption-top h3,
+[class^=os-gallery-tabs-main] .img-block.pytiton-effect.text-top .os-gallery-caption-top h3,
+[class^=os-gallery-all-in-one-main] .img-block.pytiton-effect.text-bottom .os-gallery-caption-bottom h3,
+[class^=os-gallery-album-tabs-main]  .img-block.pytiton-effect.text-bottom .os-gallery-caption-bottom h3,
+[class^=os-gallery-tabs-main] .img-block.pytiton-effect.text-bottom .os-gallery-caption-bottom h3,
+[class^=os-gallery-all-in-one-main] .img-block.pytiton-effect.text-top .os-gallery-caption-top p,
+[class^=os-gallery-album-tabs-main]  .img-block.pytiton-effect.text-top .os-gallery-caption-top p,
+[class^=os-gallery-tabs-main] .img-block.pytiton-effect.text-top .os-gallery-caption-top p,
+[class^=os-gallery-all-in-one-main] .img-block.pytiton-effect.text-bottom .os-gallery-caption-bottom p,
+[class^=os-gallery-album-tabs-main]  .img-block.pytiton-effect.text-bottom .os-gallery-caption-bottom p,
+[class^=os-gallery-tabs-main] .img-block.pytiton-effect.text-bottom .os-gallery-caption-bottom p {
+  padding: 10px;
+  margin: 0;
+  color: #394a63; 
+}
+
+[class^=os-gallery-all-in-one-main] .img-block.pytiton-effect.text-top:hover .os-gallery-caption-top h3,
+[class^=os-gallery-album-tabs-main]  .img-block.pytiton-effect.text-top:hover .os-gallery-caption-top h3,
+[class^=os-gallery-tabs-main] .img-block.pytiton-effect.text-top:hover .os-gallery-caption-top h3,
+[class^=os-gallery-all-in-one-main] .img-block.pytiton-effect.text-bottom:hover .os-gallery-caption-bottom h3,
+[class^=os-gallery-album-tabs-main]  .img-block.pytiton-effect.text-bottom:hover .os-gallery-caption-bottom h3,
+[class^=os-gallery-tabs-main] .img-block.pytiton-effect.text-bottom:hover .os-gallery-caption-bottom h3,
+[class^=os-gallery-all-in-one-main] .img-block.pytiton-effect.text-top:hover .os-gallery-caption-top p,
+[class^=os-gallery-album-tabs-main]  .img-block.pytiton-effect.text-top:hover .os-gallery-caption-top p,
+[class^=os-gallery-tabs-main] .img-block.pytiton-effect.text-top:hover .os-gallery-caption-top p,
+[class^=os-gallery-all-in-one-main] .img-block.pytiton-effect.text-bottom:hover .os-gallery-caption-bottom p,
+[class^=os-gallery-album-tabs-main]  .img-block.pytiton-effect.text-bottom:hover .os-gallery-caption-bottom p,
+[class^=os-gallery-tabs-main] .img-block.pytiton-effect.text-bottom:hover .os-gallery-caption-bottom p {
+  color: #fff;
+}
+
+/*--------- album ------------*/
+.album-block  .img-block.pytiton-effect:first-of-type:hover {
+  -webkit-transform: rotateY(0deg) !important;
+  -ms-transform: rotateY(0deg) !important;
+  -o-transform: rotateY(0deg) !important;
+  transform: rotateY(0deg) !important;
+}
+
+/*---------- all in one ---------*/
+
+.all-in-one-block .img-block.pytiton-effect .os-gallery-caption-bottom h3,
+.all-in-one-block .img-block.pytiton-effect .os-gallery-caption-bottom p,
+.all-in-one-block .img-block.pytiton-effect .os-gallery-caption-top h3,
+.all-in-one-block .img-block.pytiton-effect .os-gallery-caption-top p {
+  color: #fff;
+  margin: 0;
+  padding: 5%;
+  color: rgba(57, 74, 99, 1);
+    -webkit-transition: all .8s !important;
+  -o-transition: all .8s !important;
+  transition: all .8s !important;
+}
+.all-in-one-block .img-block.pytiton-effect .os-gallery-caption-bottom,
+.all-in-one-block .img-block.pytiton-effect .os-gallery-caption-top {
+  -webkit-transition: all .8s !important;
+  -o-transition: all .8s !important;
+  transition: all .8s !important;
+}
+.all-in-one-block .img-block.pytiton-effect:hover .os-gallery-caption-bottom,
+.all-in-one-block .img-block.pytiton-effect:hover .os-gallery-caption-top {
+  -webkit-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  background: rgba(57, 74, 99, 1);
+}
+.all-in-one-block .img-block.pytiton-effect:hover .os-gallery-caption-bottom p,
+.all-in-one-block .img-block.pytiton-effect:hover .os-gallery-caption-top p,
+.all-in-one-block .img-block.pytiton-effect:hover .os-gallery-caption-bottom h3,
+.all-in-one-block .img-block.pytiton-effect:hover .os-gallery-caption-top h3 {
+  color: #fff;
+}
+
+
+
+
+/*****------------------------------------------------------- oleg-effect -----------------------------------------------------------*****/
+
+[class^=os-gallery-all-in-one-main] .img-block.oleg-effect,
+[class^=os-gallery-album-tabs-main] .img-block.oleg-effect,
+[class^=os-gallery-tabs-main] .img-block.oleg-effect,
+.album-block .img-block.text-onImage.oleg-effect,
+.all-in-one-block .img-block.text-onImage.oleg-effect {
+  margin: 10px;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  box-shadow: 1px 1px 2px #e6e6e6;
+  cursor: default;
+  background: rgba(255,255,255,.5);
+}
+
+
+[class^=os-gallery-all-in-one-main] .img-block.oleg-effect img,
+[class^=os-gallery-album-tabs-main] .img-block.oleg-effect img,
+[class^=os-gallery-tabs-main] .img-block.oleg-effect img,
+.album-block .img-block.text-onImage.oleg-effect img,
+.all-in-one-block .img-block.text-onImage.oleg-effect img {
+  display: block;
+  position: relative
+}
+
+[class^=os-gallery-all-in-one-main] .img-block.oleg-effect h3,
+[class^=os-gallery-album-tabs-main] .img-block.oleg-effect h3,
+[class^=os-gallery-tabs-main] .img-block.oleg-effect h3,
+.album-block .img-block.text-onImage.oleg-effect h3,
+.all-in-one-block .img-block.text-onImage.oleg-effect h3 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 1em;
+  padding: 10px;
+  margin: 20px 0 0 0
+}
+
+[class^=os-gallery-all-in-one-main] .img-block.oleg-effect p,
+[class^=os-gallery-album-tabs-main] .img-block.oleg-effect p,
+[class^=os-gallery-tabs-main] .img-block.oleg-effect p,
+.album-block .img-block.text-onImage.oleg-effect p,
+.all-in-one-block .img-block.text-onImage.oleg-effect p {
+  font-size: .8em;
+  position: relative;
+  color: #fff;
+  padding: 0px 20px 0px;
+  text-align: center
+}
+
+
+[class^=os-gallery-all-in-one-main] .img-block.oleg-effect img,
+[class^=os-gallery-album-tabs-main] .img-block.oleg-effect img,
+[class^=os-gallery-tabs-main] .img-block.oleg-effect img,
+.album-block .img-block.text-onImage.oleg-effect img,
+.all-in-one-block .img-block.text-onImage.oleg-effect img {
+  transform: scaleY(1);
+  transition: all .7s ease-in-out;
+}
+
+[class^=os-gallery-all-in-one-main] .img-block.oleg-effect h3,
+[class^=os-gallery-album-tabs-main] .img-block.oleg-effect h3,
+[class^=os-gallery-tabs-main] .img-block.oleg-effect h3,
+.album-block .img-block.text-onImage.oleg-effect h3,
+.all-in-one-block .img-block.text-onImage.oleg-effect h3 {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  background: transparent;
+  margin: 10px 10px 10px 10px;
+  transform: scale(0);
+  color: #333;
+  transition: all 0.5s linear;
+  opacity: 0;
+}
+
+[class^=os-gallery-all-in-one-main] .img-block.oleg-effect p,
+[class^=os-gallery-album-tabs-main] .img-block.oleg-effect p,
+[class^=os-gallery-tabs-main] .img-block.oleg-effect p,
+.album-block .img-block.text-onImage.oleg-effect p,
+.all-in-one-block .img-block.text-onImage.oleg-effect p {
+  color: #333;
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.5s linear;
+  padding:5px;
+  margin-top: 15px;
+}
+
+
+[class^=os-gallery-all-in-one-main] .img-block.oleg-effect:hover img,
+[class^=os-gallery-album-tabs-main] .img-block.oleg-effect:hover img,
+[class^=os-gallery-tabs-main] .img-block.oleg-effect:hover img,
+.album-block .img-block.text-onImage.oleg-effect:hover img,
+.all-in-one-block .img-block.text-onImage.oleg-effect:hover img {
+  -webkit-transform: scale(10);
+  transform: scale(10);
+}
+
+
+[class^=os-gallery-all-in-one-main] .img-block.oleg-effect:hover h3,
+[class^=os-gallery-album-tabs-main] .img-block.oleg-effect:hover h3,
+[class^=os-gallery-tabs-main] .img-block.oleg-effect:hover h3,
+[class^=os-gallery-all-in-one-main] .img-block.oleg-effect:hover p,
+[class^=os-gallery-album-tabs-main] .img-block.oleg-effect:hover p,
+[class^=os-gallery-tabs-main] .img-block.oleg-effect:hover p,
+.album-block .img-block.text-onImage.oleg-effect:hover h3,
+.album-block .img-block.text-onImage.oleg-effect:hover p,
+.all-in-one-block .img-block.text-onImage.oleg-effect:hover h3,
+.all-in-one-block .img-block.text-onImage.oleg-effect:hover p {
+  transform: scale(1);
+  opacity: 1;
+}
+[class^=os-gallery-all-in-one-main] .img-block.oleg-effect:hover .os-gallery-caption,
+[class^=os-gallery-album-tabs-main] .img-block.oleg-effect:hover .os-gallery-caption,
+[class^=os-gallery-tabs-main] .img-block.oleg-effect:hover .os-gallery-caption,
+.album-block .img-block.text-onImage.oleg-effect:hover [class^=os-gallery-caption],
+.all-in-one-block .img-block.text-onImage.oleg-effect:hover [class^=os-gallery-caption] {
+ z-index: 99;
+ background: rgba(255,255,255,.6);
+}
+.album-block .img-block.text-onImage.oleg-effect [class^=os-gallery-caption],
+.all-in-one-block .img-block.text-onImage.oleg-effect [class^=os-gallery-caption],
+.all-in-one-block .img-block.text-none.oleg-effect [class^=os-gallery-caption] {
+  position: absolute !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/******---------- top/bottom --------------*/
+
+.album-block .img-block.oleg-effect,
+.all-in-one-block .img-block.oleg-effect {
+  -webkit-transform: scale3d(1, 1, 1) !important;
+  transform: scale3d(1, 1, 1) !important;
+}
+[class^=os-gallery-all-in-one-main] .img-block.text-top.oleg-effect h3,
+[class^=os-gallery-album-tabs-main] .img-block.text-top.oleg-effect h3,
+[class^=os-gallery-tabs-main] .img-block.text-top.oleg-effect h3,
+[class^=os-gallery-all-in-one-main] .img-block.text-bottom.oleg-effect h3,
+[class^=os-gallery-album-tabs-main] .img-block.text-bottom.oleg-effect h3,
+[class^=os-gallery-tabs-main] .img-block.text-bottom.oleg-effect h3,
+[class^=os-gallery-all-in-one-main] .img-block.text-top.oleg-effect p,
+[class^=os-gallery-album-tabs-main] .img-block.text-top.oleg-effect p,
+[class^=os-gallery-tabs-main] .img-block.text-top.oleg-effect p,
+[class^=os-gallery-all-in-one-main] .img-block.text-bottom.oleg-effect p,
+[class^=os-gallery-album-tabs-main] .img-block.text-bottom.oleg-effect p,
+[class^=os-gallery-tabs-main] .img-block.text-bottom.oleg-effect p,
+.album-block .img-block.text-top.oleg-effect [class^=os-gallery-caption] h3,
+.album-block .img-block.text-bottom.oleg-effect [class^=os-gallery-caption] h3,
+.album-block .img-block.text-top.oleg-effect [class^=os-gallery-caption] p,
+.album-block .img-block.text-bottom.oleg-effect [class^=os-gallery-caption] p,
+.all-in-one-block .img-block.text-top.oleg-effect [class^=os-gallery-caption] h3,
+.all-in-one-block .img-block.text-bottom.oleg-effect [class^=os-gallery-caption] h3,
+.all-in-one-block .img-block.text-top.oleg-effect [class^=os-gallery-caption] p,
+.all-in-one-block .img-block.text-bottom.oleg-effect [class^=os-gallery-caption] p {
+  transform: scale(1);
+   opacity: 1;
+   border-bottom: none;
+}
+.img-block.text-bottom.oleg-effect h3,
+.img-block.text-bottom.oleg-effect h3,
+.img-block.text-top.oleg-effect p,
+.img-block.text-top.oleg-effect p,
+.album-block .img-block.text-top.oleg-effect p,
+.album-block .img-block.text-bottom.oleg-effect h3,
+.all-in-one-block .img-block.text-top.oleg-effect p,
+.all-in-one-block .img-block.text-bottom.oleg-effect h3 {
+  transform: scale(1);
+  opacity: 1;
+  border-bottom: none;
+}
+[class^=os-gallery-all-in-one-main] .img-block.text-top.oleg-effect img,
+[class^=os-gallery-album-tabs-main] .img-block.text-top.oleg-effect img,
+[class^=os-gallery-tabs-main] .img-block.text-top.oleg-effect img,
+[class^=os-gallery-all-in-one-main] .img-block.text-bottom.oleg-effect img,
+[class^=os-gallery-album-tabs-main] .img-block.text-bottom.oleg-effect img,
+[class^=os-gallery-tabs-main] .img-block.text-bottom.oleg-effect img,
+.img-block.text-bottom.oleg-effect img,
+.img-block.text-top.oleg-effect img,
+.album-block .img-block.text-top.oleg-effect img,
+.album-block .img-block.text-bottom.oleg-effect img,
+.all-in-one-block .img-block.text-top.oleg-effect img,
+.all-in-one-block .img-block.text-bottom.oleg-effect img {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+    -webkit-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none;
+}
+[class^=os-gallery-all-in-one-main] .img-block.text-top.oleg-effect:hover img,
+[class^=os-gallery-album-tabs-main] .img-block.text-top.oleg-effect:hover img,
+[class^=os-gallery-tabs-main] .img-block.text-top.oleg-effect:hover img,
+[class^=os-gallery-all-in-one-main] .img-block.text-bottom.oleg-effect:hover img,
+[class^=os-gallery-album-tabs-main] .img-block.text-bottom.oleg-effect:hover img,
+[class^=os-gallery-tabs-main] .img-block.text-bottom.oleg-effect:hover img,
+.album-block .img-block.text-top.oleg-effect:hover img, 
+.album-block .img-block.text-bottom.oleg-effect:hover img,
+.all-in-one-block .img-block.text-top.oleg-effect:hover img, 
+.all-in-one-block .img-block.text-bottom.oleg-effect:hover img  {
+  -webkit-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none;
+}
+
+[class^=os-gallery-all-in-one-main] .img-block.oleg-effect.text-top a,
+[class^=os-gallery-album-tabs-main]  .img-block.oleg-effect.text-top a,
+[class^=os-gallery-tabs-main] .img-block.oleg-effect.text-top a,
+[class^=os-gallery-all-in-one-main] .img-block.oleg-effect.text-bottom a,
+[class^=os-gallery-album-tabs-main]  .img-block.oleg-effect.text-bottom a,
+[class^=os-gallery-tabs-main] .img-block.oleg-effect.text-bottom a,
+.album-block .img-block.text-top.oleg-effect:first-of-type,
+.album-block .img-block.text-bottom.oleg-effect:first-of-type,
+.album-block .img-block.text-top.oleg-effect [class^=os-gallery-album],
+.album-block .img-block.text-bottom.oleg-effect [class^=os-gallery-album], 
+.all-in-one-block .img-block.text-top.oleg-effect [class^=os-gallery-album],
+.all-in-one-block .img-block.text-bottom.oleg-effect [class^=os-gallery-album]    {
+  position: relative;
+  z-index: 1; 
+  perspective: 1000;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  transition: all .3s linear;
+  -webkit-transform: rotateY(-180deg) !important;
+  -ms-transform: rotateY(-180deg) !important;
+  -o-transform: rotateY(-180deg) !important;
+  transform: rotateY(-180deg) !important;
+}
+
+.album-block .img-block.text-top.oleg-effect,
+.album-block .img-block.text-bottom.oleg-effect,
+.all-in-one-block  .img-block.text-top.oleg-effect,
+.all-in-one-block  .img-block.text-bottom.oleg-effect {
+  -webkit-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+.album-block .img-block.text-top.oleg-effect:first-of-type,
+.album-block .img-block.text-bottom.oleg-effect:first-of-type,
+.album-block .img-block.text-top.oleg-effect [class^=os-gallery-album],
+.album-block .img-block.text-bottom.oleg-effect [class^=os-gallery-album],
+.all-in-one-block .img-block.text-top.oleg-effect,
+.all-in-one-block .img-block.text-bottom.oleg-effect {
+  -webkit-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  transition: all .3s linear;
+  -webkit-transform: rotateY(-180deg) !important;
+  -ms-transform: rotateY(-180deg) !important;
+  -o-transform: rotateY(-180deg) !important;
+  transform: rotateY(-180deg) !important;
+}
+
+[class^=os-gallery-all-in-one-main] .img-block.oleg-effect.text-top:hover a,
+[class^=os-gallery-album-tabs-main]  .img-block.oleg-effect.text-top:hover a,
+[class^=os-gallery-tabs-main] .img-block.oleg-effect.text-top:hover a,
+[class^=os-gallery-all-in-one-main] .img-block.oleg-effect.text-bottom:hover a,
+[class^=os-gallery-album-tabs-main]  .img-block.oleg-effect.text-bottom:hover a,
+[class^=os-gallery-tabs-main] .img-block.oleg-effect.text-bottom:hover a,
+.album-block  .img-block.text-bottom.oleg-effect:first-of-type:hover,
+.album-block  .img-block.text-top.oleg-effect:first-of-type:hover,
+.album-block .img-block.text-top.oleg-effect:hover [class^=os-gallery-album],
+.album-block .img-block.text-bottom.oleg-effect:hover [class^=os-gallery-album],
+.all-in-one-block .img-block.text-top.oleg-effect:hover,
+.all-in-one-block .img-block.text-bottom.oleg-effect:hover  {
+  -webkit-transform: rotateY(0deg) !important;
+  -ms-transform: rotateY(0deg) !important;
+  -o-transform: rotateY(0deg) !important;
+  transform: rotateY(0deg) !important;
+  text-decoration: none;
+}
+
+[class^=os-gallery-all-in-one-main] .img-block.oleg-effect.text-top .os-gallery-caption-top,
+[class^=os-gallery-album-tabs-main]  .img-block.oleg-effect.text-top .os-gallery-caption-top,
+[class^=os-gallery-tabs-main] .img-block.oleg-effect.text-top .os-gallery-caption-top,
+[class^=os-gallery-all-in-one-main] .img-block.oleg-effect.text-bottom .os-gallery-caption-bottom,
+[class^=os-gallery-album-tabs-main]  .img-block.oleg-effect.text-bottom .os-gallery-caption-bottom,
+[class^=os-gallery-tabs-main] .img-block.oleg-effect.text-bottom .os-gallery-caption-bottom,
+.album-block .img-block.text-top.oleg-effect [class^=os-gallery-caption],
+.album-block .img-block.text-bottom.oleg-effect [class^=os-gallery-caption],
+.all-in-one-block .img-block.text-top.oleg-effect [class^=os-gallery-caption],
+.all-in-one-block .img-block.text-bottom.oleg-effect [class^=os-gallery-caption] {
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+[class^=os-gallery-all-in-one-main] .img-block.oleg-effect.text-top:hover .os-gallery-caption-top,
+[class^=os-gallery-album-tabs-main]  .img-block.oleg-effect.text-top:hover .os-gallery-caption-top,
+[class^=os-gallery-tabs-main] .img-block.oleg-effect.text-top:hover .os-gallery-caption-top,
+[class^=os-gallery-all-in-one-main] .img-block.oleg-effect.text-bottom:hover .os-gallery-caption-bottom,
+[class^=os-gallery-album-tabs-main]  .img-block.oleg-effect.text-bottom:hover .os-gallery-caption-bottom,
+[class^=os-gallery-tabs-main] .img-block.oleg-effect.text-bottom:hover .os-gallery-caption-bottom,
+
+.album-block .img-block.text-bottom.oleg-effect:hover [class^=os-gallery-caption],
+.album-block .img-block.text-top.oleg-effect:hover [class^=os-gallery-caption],
+.all-in-one-block .img-block.text-bottom.oleg-effect:hover [class^=os-gallery-caption],
+.all-in-one-block .img-block.text-top.oleg-effect:hover [class^=os-gallery-caption] {
+  background: rgba(57, 74, 99, 1);
+}
+[class^=os-gallery-all-in-one-main] .img-block.oleg-effect.text-top .os-gallery-caption-top h3,
+[class^=os-gallery-album-tabs-main]  .img-block.oleg-effect.text-top .os-gallery-caption-top h3,
+[class^=os-gallery-tabs-main] .img-block.oleg-effect.text-top .os-gallery-caption-top h3,
+[class^=os-gallery-all-in-one-main] .img-block.oleg-effect.text-bottom .os-gallery-caption-bottom h3,
+[class^=os-gallery-album-tabs-main]  .img-block.oleg-effect.text-bottom .os-gallery-caption-bottom h3,
+[class^=os-gallery-tabs-main] .img-block.oleg-effect.text-bottom .os-gallery-caption-bottom h3,
+[class^=os-gallery-all-in-one-main] .img-block.oleg-effect.text-top .os-gallery-caption-top p,
+[class^=os-gallery-album-tabs-main]  .img-block.oleg-effect.text-top .os-gallery-caption-top p,
+[class^=os-gallery-tabs-main] .img-block.oleg-effect.text-top .os-gallery-caption-top p,
+[class^=os-gallery-all-in-one-main] .img-block.oleg-effect.text-bottom .os-gallery-caption-bottom p,
+[class^=os-gallery-album-tabs-main]  .img-block.oleg-effect.text-bottom .os-gallery-caption-bottom p,
+[class^=os-gallery-tabs-main] .img-block.oleg-effect.text-bottom .os-gallery-caption-bottom p,
+.album-block .img-block.text-bottom.oleg-effect [class^=os-gallery-caption] h3,
+.album-block .img-block.text-top.oleg-effect [class^=os-gallery-caption] h3,
+.album-block .img-block.text-bottom.oleg-effect [class^=os-gallery-caption] p,
+.album-block .img-block.text-top.oleg-effect [class^=os-gallery-caption] p,
+.all-in-one-block .img-block.text-bottom.oleg-effect [class^=os-gallery-caption] h3,
+.all-in-one-block .img-block.text-top.oleg-effect [class^=os-gallery-caption] h3,
+.all-in-one-block .img-block.text-bottom.oleg-effect [class^=os-gallery-caption] p,
+.all-in-one-block .img-block.text-top.oleg-effect [class^=os-gallery-caption] p {
+  padding: 10px;
+  margin: 0;
+  color: #394a63; 
+  text-align: left;
+}
+[class^=os-gallery-all-in-one-main] .img-block.oleg-effect.text-top:hover .os-gallery-caption-top h3,
+[class^=os-gallery-album-tabs-main]  .img-block.oleg-effect.text-top:hover .os-gallery-caption-top h3,
+[class^=os-gallery-tabs-main] .img-block.oleg-effect.text-top:hover .os-gallery-caption-top h3,
+[class^=os-gallery-all-in-one-main] .img-block.oleg-effect.text-bottom:hover .os-gallery-caption-bottom h3,
+[class^=os-gallery-album-tabs-main]  .img-block.oleg-effect.text-bottom:hover .os-gallery-caption-bottom h3,
+[class^=os-gallery-tabs-main] .img-block.oleg-effect.text-bottom:hover .os-gallery-caption-bottom h3,
+[class^=os-gallery-all-in-one-main] .img-block.oleg-effect.text-top:hover .os-gallery-caption-top p,
+[class^=os-gallery-album-tabs-main]  .img-block.oleg-effect.text-top:hover .os-gallery-caption-top p,
+[class^=os-gallery-tabs-main] .img-block.oleg-effect.text-top:hover .os-gallery-caption-top p,
+[class^=os-gallery-all-in-one-main] .img-block.oleg-effect.text-bottom:hover .os-gallery-caption-bottom p,
+[class^=os-gallery-album-tabs-main]  .img-block.oleg-effect.text-bottom:hover .os-gallery-caption-bottom p,
+[class^=os-gallery-tabs-main] .img-block.oleg-effect.text-bottom:hover .os-gallery-caption-bottom p,
+.album-block .img-block.text-bottom.oleg-effect:hover [class^=os-gallery-caption] h3,
+.album-block .img-block.text-top.oleg-effect:hover [class^=os-gallery-caption] h3,
+.album-block .img-block.text-bottom.oleg-effect:hover [class^=os-gallery-caption] p,
+.album-block .img-block.text-top.oleg-effect:hover [class^=os-gallery-caption] p,
+.all-in-one-block .img-block.text-bottom.oleg-effect:hover [class^=os-gallery-caption] h3,
+.all-in-one-block .img-block.text-top.oleg-effect:hover [class^=os-gallery-caption] h3,
+.all-in-one-block .img-block.text-bottom.oleg-effect:hover [class^=os-gallery-caption] p,
+.all-in-one-block .img-block.text-top.oleg-effect:hover [class^=os-gallery-caption] p {
+  color: #fff;
+
+}
+/*--------- album ---------*/
+
+.album-block .img-block.text-none.oleg-effect [class^=os-gallery-caption] {
+  display: none;
+}
+.all-in-one-block .img-block.text-none.oleg-effect .os-gallery-caption-bottom,
+.all-in-one-block .img-block.text-none.oleg-effect .os-gallery-caption-top {
+  position: static !important;
+}
+/*---------- all in one ---------*/
+.all-in-one-block .img-block.oleg-effect:hover img {
+    -webkit-transform: scale3d(1,1,1) !important;
+    transform: scale3d(1,1,1) !important;
+} 
+.all-in-one-block .img-block.oleg-effect img,
+.all-in-one-block .img-block.oleg-effect h3 {
+  -webkit-transform: translateZ(0px) !important;
+  -ms-transform: translateZ(0px) !important;
+  -o-transform: translateZ(0px) !important;
+  transform: translateZ(0px) !important;
+}
+.all-in-one-block .img-block.oleg-effect .os-gallery-caption-bottom h3,
+.all-in-one-block .img-block.oleg-effect .os-gallery-caption-bottom p,
+.all-in-one-block .img-block.oleg-effect .os-gallery-caption-top h3,
+.all-in-one-block .img-block.oleg-effect .os-gallery-caption-top p {
+  color: #fff;
+  margin: 0;
+  padding: 5%;
+  color: rgba(57, 74, 99, 1);
+    -webkit-transition: all .8s !important;
+  -o-transition: all .8s !important;
+  transition: all .8s !important;
+    -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+  border-bottom: none;
+  text-align: left;
+}
+.all-in-one-block .img-block.oleg-effect .os-gallery-caption-bottom,
+.all-in-one-block .img-block.oleg-effect .os-gallery-caption-top {
+  -webkit-transition: all .8s !important;
+  -o-transition: all .8s !important;
+  transition: all .8s !important;
+    -webkit-transform: rotateY(-180deg);
+  -ms-transform: rotateY(-180deg);
+  -o-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+}
+.all-in-one-block .img-block.text-onImage.oleg-effect [class^=os-gallery-caption-top],
+.all-in-one-block .img-block.text-onImage.oleg-effect [class^=os-gallery-caption-bottom] {
+  position: static !important;
+}
+.all-in-one-block .img-block.oleg-effect:hover .os-gallery-caption-bottom,
+.all-in-one-block .img-block.oleg-effect:hover .os-gallery-caption-top {
+  -webkit-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  -o-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  background: rgba(57, 74, 99, 1) !important;
+
+}
+.all-in-one-block .img-block.oleg-effect:hover .os-gallery-caption-bottom p,
+.all-in-one-block .img-block.oleg-effect:hover .os-gallery-caption-top p,
+.all-in-one-block .img-block.oleg-effect:hover .os-gallery-caption-bottom h3,
+.all-in-one-block .img-block.oleg-effect:hover .os-gallery-caption-top h3 {
+  color: #fff;
+    -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+
+
+
+
+/*--------------------------------------gallery tabs-------------------------------------------*/
+[class^=os-gallery-tabs-main] .osgalery-cat-tabs {
+    list-style: none;
+    margin:0;
+    padding: 0;
+}
+[class^=os-gallery-tabs-main] .osgalery-cat-tabs li {
+    display: inline-block;
+    height: 35px;
+    margin:0;
+    padding: 0;
+}
+[class^=os-gallery-tabs-main] .osgalery-cat-tabs li a {
+    height: 100%;
+    display: block;
+    text-align: center;
+    line-height: 33px;
+    padding: 0 5px;
+    color: #555;
+}
+[class^=os-gallery-tabs-main] .osgalery-cat-tabs li a.active {
+    background: #ccc;
+    color: #333;
+}
+[class^=os-gallery-tabs-main] .osgalery-cat-tabs li a:active,
+[class^=os-gallery-tabs-main] .osgalery-cat-tabs li a:focus,
+[class^=os-gallery-tabs-main] .osgalery-cat-tabs li a:hover {
+    text-decoration: none;
+}
+/*-------------------------load more button-----------------*/
+.osGallery-button-box .load-more-button {
+    border: none;
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+    -webkit-text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+    -moz-text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+    -o-text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.osGallery-button-box .load-more-button:hover {
+    background: #788aa8 !important;
+}
+
+.add-zoomIn {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+}
+
+.add-animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.grid-item {
+  float: left;
+}
+.grid-item img {
+  display: block;
+  width: 100%;
+}
+[class=sharing] {
+  position: absolute;
+  top: 0;
+  z-index: 10000;
+  width: 100%;
+  text-align: right;
+  padding: 4px 0;
+  min-height: 20px;
+}
+[class=sharing] a {
+  width: auto !important;
+  margin-left: 2px;
+}
+
+[class=sharing] .soc1{
+  -webkit-animation-duration: 0.5s;
+  -moz-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+[class=sharing] .soc2{
+  -webkit-animation-duration: 0.8s;
+  -moz-animation-duration: 0.8s;
+  animation-duration: 0.8s;
+  webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+[class=sharing] .soc3{
+  -webkit-animation-duration: 1.1s;
+  -moz-animation-duration: 1.1s;
+  animation-duration: 1.1s;
+  webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+[class=sharing] .soc4{
+  -webkit-animation-duration: 1.4s;
+  -moz-animation-duration: 1.4s;
+  animation-duration: 1.4s;
+  webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+[class=sharing] .soc5{
+  -webkit-animation-duration: 1.7s;
+  -moz-animation-duration: 1.7s;
+  animation-duration: 1.7s;
+  webkit-animation-fill-mode: both;
+  animation-fill-mode: both;    
+}
+[class=sharing] .soc6{
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  animation-duration: 2s;
+  webkit-animation-fill-mode: both;
+  animation-fill-mode: both; 
+}
+[class=sharing] .soc7{
+  -webkit-animation-duration: 2.3s;
+  -moz-animation-duration: 2.3s;
+  animation-duration: 2.3s;
+  webkit-animation-fill-mode: both;
+  animation-fill-mode: both;    
+}
+
+
+[class=sharing] .soc7.zoomOut {
+   -webkit-animation-duration: 0.5s;
+   -moz-animation-duration: 0.5s;
+   animation-duration: 0.5s;
+   webkit-animation-fill-mode: both;
+   animation-fill-mode: both;
+}
+[class=sharing] .soc6.zoomOut {
+   -webkit-animation-duration: 0.8s;
+   -moz-animation-duration: 0.8s;
+   animation-duration: 0.8s;
+   webkit-animation-fill-mode: both;
+   animation-fill-mode: both;
+}
+[class=sharing] .soc5.zoomOut {
+   -webkit-animation-duration: 1.1s;
+   -moz-animation-duration: 1.1s;
+   animation-duration: 1.1s;
+   webkit-animation-fill-mode: both;
+   animation-fill-mode: both;
+}
+[class=sharing] .soc4.zoomOut {
+   -webkit-animation-duration: 1.4s;
+   -moz-animation-duration: 1.4s;
+   animation-duration: 1.4s;
+   webkit-animation-fill-mode: both;
+   animation-fill-mode: both
+}
+[class=sharing] .soc3.zoomOut {
+   -webkit-animation-duration: 1.7s;
+   -moz-animation-duration: 1.7s;
+   animation-duration: 1.7s;
+   webkit-animation-fill-mode: both;
+   animation-fill-mode: both;
+}
+[class=sharing] .soc2.zoomOut {
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  animation-duration: 2s;
+  webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+[class=sharing] .soc1.zoomOut {
+  -webkit-animation-duration: 2.3s;
+  -moz-animation-duration: 2.3s;
+  animation-duration: 2.3s;
+  webkit-animation-fill-mode: both;
+  animation-fill-mode: both;     
+}
+
+[class=sharing] .act {
+    display: none;
+}
+[class=sharing] .act.zoomIn {
+    display: block;
+}
+[class=sharing] .zoomIn, 
+[class=sharing] .zoomOut {
+  display: block;
+  float: right;
+}
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.icons_os_image {
+    background: url(../images/shareLink.png) no-repeat;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 4px;
+    right: 5px;
+    cursor: pointer;
+}
+.icons_os {
+    margin-right: 39px;
+    overflow: hidden;
+
+}
+
+.icons_download {
+    background: url(../images/downloadButton.png) no-repeat;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 40px;
+    right: 5px;
+    cursor: pointer;
+}
+
+.img-block1 {
+  /*position: fixed;*/
+  left: 0;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  height: 400px;
+  overflow: visible;
+  background: url('../images/preloader.gif') no-repeat center center;
+}
+.img-block1-load-more {
+  /*position: fixed;*/
+  left: 0;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  height: 30px;
+  overflow: visible;
+  display: none;
+  background: url('../images/preloader.gif') no-repeat center center;
+}
+
+@-webkit-keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.zoomIn {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+}
+.oleg-effect {
+  -webkit-animation-name: oleg-effect;
+  animation-name: oleg-effect;
+}
+
+
+@-webkit-keyframes zoomOut {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes zoomOut {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.zoomOut {
+  -webkit-animation-name: zoomOut;
+  animation-name: zoomOut;
+}
+
+.os_fancybox-outer a.os_fancybox-nav {
+    width: 10%;
+}
+
+/*UPDATE to FancyBox 3*/
+
+/*image in Html block*/
+.os_fancybox-slide .imgInHtml img{
+    display: block;
+    margin: auto;
+}
+
+/*all contents in Html block maxwidth 100%*/
+.os_fancybox-slide.os_fancybox-slide--inline .data-html-wrap,
+.os_fancybox-slide.os_fancybox-slide--inline .data-html-wrap *{
+    max-width: 100%;
+}
+
+/*bottom HTML position*/
+.os_fancybox-slide.os_fancybox-slide--inline .data-html-wrap.position_bottom{
+    display: inline-flex !important;
+    flex-direction: column;
+}
+
+/*top HTML position*/
+.os_fancybox-slide.os_fancybox-slide--inline .data-html-wrap.position_top{
+    display: inline-flex !important;
+    flex-direction: column-reverse;
+}
+
+.load-more-hidden,
+.fitrow-more-hidden{
+    display: none;
+}
+
+/*Thumnails position - bottom */
+ .thumb_bottom .os_fancybox-thumbs {
+    top: auto !important;
+    width: auto !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right : 0 !important;
+    height: 95px !important;
+    padding: 10px 10px 5px 10px !important;
+    box-sizing: border-box !important;
+    background: rgba(0, 0, 0, 0.3) !important;
+  }
+  .thumb_bottom.os_fancybox-show-thumbs .os_fancybox-inner {
+    right: 0 !important;
+    bottom: 95px !important;
+  }
+
+/*Thumnails position - bottom */
+[class^=os-gallery-tabs-main] .os-cat-tab-images .img-block {
+    box-shadow: none !important;
+}
+
+.searh_module_text{
+    margin-bottom: 0px !important;
+}
+
+/*No conflict fancy-box buttons */
+
+.os_fancybox-button {
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+  width: 44px !important;
+  height: 44px !important;
+  margin: 0;
+  padding: 10px !important;
+  border: 0;
+  border-radius: 0;
+  background: rgba(30, 30, 30, 0.6) !important;
+  transition: color .3s ease;
+  cursor: pointer;
+  outline: none; 
+}
+.os_fancybox-navigation button {
+    position: absolute;
+    top: 50%;
+    margin: -50px 0 0 0;
+    z-index: 99997;
+    background: transparent !important;
+    width: 60px !important;
+    height: 100px !important;
+    padding: 17px !important;
+}
+.search_module_wrapper form.search_module_form input[type="submit"] {
+  display: inline-block;
+  padding: 4px 12px;
+  margin-bottom: 0;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  color: #333;
+  text-shadow: 0 1px 1px rgba(255,255,255,0.75);
+  background-color: #f5f5f5;
+  background-image: -moz-linear-gradient(top,#fff,#e6e6e6);
+  background-image: -webkit-gradient(linear,0 0,0 100%,from(#fff),to(#e6e6e6));
+  background-image: -webkit-linear-gradient(top,#fff,#e6e6e6);
+  background-image: -o-linear-gradient(top,#fff,#e6e6e6);
+  background-image: linear-gradient(to bottom,#fff,#e6e6e6);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe5e5e5', GradientType=0);
+  border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  border: 1px solid #bbb;
+  border-bottom-color: #a2a2a2;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+  -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+}

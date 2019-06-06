@@ -1,0 +1,451 @@
+/*===== Privacy Page ======*/
+
+.page-item__privacy_policy .item_fulltext {
+  *[class*=heading-style] {
+    float: left;
+    padding-right: 5%;
+    width: 35%;
+  }
+  p {
+    margin-left: 40%;
+    position: relative;
+    &:before {
+      border-right: 1px dotted @tableBorderColor;
+      bottom: 0px;
+      content: '';
+      left: -3%;
+      position: absolute;
+      top: 0;
+      width: 0px;
+    }
+  }
+}
+
+/*===== Team Page ======*/
+
+.social-links {
+  font-size: 0;
+  line-height: 0;
+  margin: 0;
+  li {
+    display: inline-block;
+    font-size: 23px;
+    margin: 0 5px !important;
+    &:before {
+      display: none;
+    }
+    i {
+      .border-radius(1000px);
+      color: #FFF;
+      display: block;
+      line-height: 52px;
+      text-align: center;
+      .transition(all .5s ease);
+      width: 52px;
+      &[class*=facebook] {
+        background: #45619D;
+      }
+      &[class*=twitter] {
+        background: #1AB2E8;
+      }
+      &[class*=skype] {
+        background: #00D8EB;
+      }
+    }
+    a {
+      text-decoration: none !important;
+    }
+  }
+}
+
+/*======================= Contacts Page ========================*/
+
+#jform_contact_message {
+  height: 149px;
+  resize: none;
+  width: 100%;
+}
+
+#contact-form {
+  label {
+    display: inline-block;
+    margin-bottom: 5px;
+  }
+}
+
+.contact_misc {
+  margin-bottom: 15px;
+}
+
+#contact {
+  margin-top: 15px;
+}
+
+.phone-num {
+  display: inline-block;
+}
+
+#jform_contact_name,
+#jform_contact_email,
+#jform_contact_emailmsg {
+  width: 100%;
+}
+
+.contact_email-copy,
+.contact_vcard {
+  display: inline-block;
+  height: @inputHeight;
+  line-height: @inputHeight;
+  margin: 0 @inputHeight/2 0 0;
+}
+
+.contact_vcard {
+  margin: 0;
+}
+
+.contact_details {
+  margin: 0 -15px;
+  .clearfix;
+  > div {
+    float: left;
+    width: 33.33%;
+    padding: 0 15px;
+    .box-sizing(border-box);
+    word-spacing: 0;
+    i + * {
+      margin: 15px 0 0;
+      display: inline-block;
+    }
+    .title {
+      .clearfix;
+      margin-bottom: 10px;
+      div {
+        display: inline-block;
+      }
+      .contact_address {
+        clear: both;
+        display: block;
+      }
+    }
+    .fax {
+      clear: both;
+      margin-top: 15px;
+    }
+  }
+  .icons-marker {
+    display: block;
+    float: left;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    font-size: 27px;
+    border: 2px solid @globalColor;
+    .border-radius(50%);
+    color: @globalColor;
+    margin: 0 16px 15px 0;
+  }
+
+}
+
+#contact_map {
+  margin-bottom: @baseLineHeight;
+  .map {
+    border: 1px solid darken(@bodyBackground, 15%);
+    .box-sizing(border-box);
+    &.mfp-hide {
+      display: block !important;
+    }
+  }
+}
+
+#map {
+  margin-bottom: 30px;
+  header {
+    margin-bottom: 30px;
+  }
+}
+
+.map {
+  img {
+    max-width: none !important;
+  }
+}
+
+.mfp-content {
+  .map {
+    max-width: @gridRowWidth1200;
+  }
+}
+
+.contact_details_item {
+  margin-bottom: 20px;
+}
+
+/*======================= 404 PAGE =======================*/
+
+.errorBox {
+  background: none;
+  text-align: left;
+}
+
+#error {
+  .well {
+    margin-bottom: 0;
+  }
+}
+
+.body__404 {
+  .big-404 {
+    text-align: center;
+  }
+  big {
+    display: block;
+    font-weight: bold;
+    padding: 0 0 @baseFontSize;
+  }
+  .page-item__404 {
+    padding: 100px 0;
+  }
+  .mod-search_searchword + .btn {
+    margin-top: 10px;
+  }
+}
+
+/*======================= Site Map =======================*/
+.site_map {
+  .menu ul {
+    padding-left: 15px;
+    ul {
+      padding-left: 30px;
+      ul {
+        padding-left: 45px;
+      }
+    }
+  }
+}
+
+/*======================= Archives Page ========================*/
+
+.page-archive_filters {
+  .filter-search {
+    overflow: hidden;
+    padding-bottom: 21px;
+  }
+  select,
+  button {
+    display: inline-block;
+    margin-bottom: 8px;
+  }
+}
+
+/*======================= Registration =======================*/
+#member-registration,
+#member-profile,
+#user-registration {
+  width: 65%;
+  margin: 0 auto;
+  .chzn-container {
+    width: 100% !important;
+  }
+  #helpsite-refresh {
+    margin-top: 10px;
+  }
+  .btn {
+    vertical-align: inherit;
+  }
+  .input-append {
+    .box-sizing(border-box);
+    padding-right: @inputHeight;
+    width: 50%;
+  }
+  .calendar_wrapper {
+    #jform_profile_dob_spacer-lbl {
+      display: block;
+      margin-top: 10px;
+    }
+  }
+}
+
+.page-login {
+  text-align: center;
+  .btn {
+    vertical-align: inherit;
+  }
+  width: 50%;
+  margin: 0 auto;
+  .input-prepend {
+    width: 100%;
+  }
+}
+
+/*======================= ADMIN EDIT PAGES =======================*/
+#modules-form, #adminForm {
+  .chzn-container {
+    width: 100% !important;
+  }
+  .input-prepend, .input-append {
+    .btn + .btn {
+      margin-left: 1px;
+    }
+  }
+  .radio.btn-group > label {
+    margin-left: -(@radioWidth+2);
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .btn-toolbar > .btn {
+    margin: 0 5px 5px 0;
+    + .btn {
+      margin-left: 0;
+    }
+  }
+  .accordion-inner {
+    padding: 5px;
+  }
+  .input-prepend.input-append {
+    width: 100%;
+    .btn {
+      width: 5%;
+      + input {
+        width: 85%;
+        + .btn {
+          width: 10%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  #contact_map {
+    height: 376px;
+  }
+}
+
+@media (max-width: 767px) {
+  .body__404 .big-404 {
+    margin-bottom: 15px;
+  }
+
+  #member-registration,
+  #member-profile,
+  #user-registration,
+  .page-login {
+    width: 100%;
+  }
+
+  #helpsite-refresh {
+    display: block;
+    margin-top: 10px;
+  }
+
+  .page_profile {
+    .btn-toolbar {
+      float: none;
+    }
+  }
+
+  .input-prepend input {
+    width: 100%;
+  }
+
+  #modules-form, #adminForm {
+    .input-prepend.input-append .btn {
+      width: 12%;
+      + input {
+        width: 68%;
+        padding-left: 14%;
+        + .btn {
+          width: 20%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 639px) {
+  #modules-form {
+    fieldset#jform_published {
+      label.btn {
+        span {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 500px) and (max-width: 767px) {
+  .row-fluid [class*="span"].site_map {
+    float: left;
+    width: 50%;
+    &:nth-child(2n-1) {
+      clear: both;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .control-label + .controls {
+    margin-top: 10px;
+  }
+
+  .page-item__privacy_policy .item_fulltext {
+    *[class*=heading-style] {
+      float: none;
+      width: 100%;
+    }
+    p {
+      margin-left: 0;
+      &:before {
+        display: none;
+      }
+    }
+  }
+
+  #modules-form {
+    .btn {
+      span:not(.icon-calendar) {
+        display: none;
+      }
+    }
+    .form-horizontal .control-label {
+      padding-bottom: 10px;
+      padding-top: 0;
+    }
+  }
+
+  #adminForm #images .input-prepend.input-append .btn {
+    width: 13%;
+    + input {
+      width: 64%;
+      padding-left: 15%;
+      + .btn {
+        width: 25%;
+      }
+    }
+  }
+
+  #login-form,
+  #member-registration,
+  #member-profile,
+  #user-registration {
+    .controls {
+      .input-prepend, .input-append {
+        .btn {
+          margin-bottom: 0;
+        }
+      }
+      .btn {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  #adminForm .btn-toolbar .btn-group {
+    margin-bottom: 10px;
+  }
+
+}
+

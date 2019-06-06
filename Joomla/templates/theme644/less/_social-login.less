@@ -1,0 +1,238 @@
+//=======================
+// Social Module Shell
+//=======================
+.login_shell {
+  background: @globalColor;
+  button {
+    vertical-align: inherit;
+  }
+  .moduleTitle {
+    //color: inherit;
+  }
+  .controls {
+    text-align: center;
+  }
+  input[type=text],
+  input[type=password] {
+    border: none;
+    width: 100%;
+  }
+  .input-prepend {
+    display: block;
+  }
+  .add-on {
+    border: none;
+  }
+  * + .mod-login_submit {
+    margin-top: 15px;
+  }
+  .btn-primary {
+    //background: @white;
+    //color: @headingsColor;
+    &:hover {
+      //background: @headingsColor;
+      //color: @white;
+    }
+  }
+  label.checkbox {
+    cursor: inherit;
+    display: inline-block;
+    font-size: @fontSizeSmall;
+    padding-top: 14px;
+    span.checkbox input[type="checkbox"] {
+      position: relative;
+      z-index: 2;
+    }
+  }
+  a {
+    color: @white;
+  }
+  .reset_remind {
+    font-size: @fontSizeSmall;
+    line-height: @baseLineHeight - 5;
+    margin: 20px 0 25px;
+    a {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  .social_login_profile{
+    text-align: center;
+  }
+  .login-greeting {
+
+    a {
+      font-size: 18px;
+      font-weight: 500;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+//Social Buttons
+
+div[class*="lr_social_login_basic"] {
+  > a {
+    display: none;
+  }
+}
+
+* + .lr_social_login_basic_150 {
+  margin-top: 20px;
+}
+
+.lr_social_login_basic_150 {
+  width: 100% !important;
+  .lr_providers {
+    .lr_icons_box {
+      float: none !important;
+      width: 100% !important;
+      div {
+        float: none !important;
+        margin: 0 0 10px !important;
+      }
+    }
+    .lr_providericons {
+      .border-radius(3px);
+      color: #FFF;
+      display: block;
+      font-weight: 500;
+      height: 40px !important;
+      line-height: 40px;
+      position: relative;
+      text-align: center;
+      .transition(.2s);
+      width: auto !important;
+      z-index: 1 !important;
+      &:before {
+        display: inline-block;
+        font-family: @fa;
+        font-size: 21px;
+        vertical-align: middle;
+      }
+      &:hover {
+        .scale(1.05);
+      }
+    }
+    .lr_facebook {
+      background: #3B5998 !important;
+      &:before {
+        content: '\f09a';
+        margin-right: 13px;
+      }
+    }
+    .lr_google {
+      background: #DF4A32 !important;
+      &:before {
+        content: '\f0d5';
+        margin-right: 9px;
+      }
+    }
+  }
+}
+
+// =======================
+// Fixed Sidebar Right
+// =======================
+
+@sidebarIconWidth: 40px;
+@sidebarIconHeight: 40px;
+@sidebarIconFontSize: 18px;
+
+div#fixed-sidebar-right {
+  bottom: 0;
+  height: 100%;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 0;
+  z-index: 8001;
+  .moduletable.login {
+    .box-sizing(border-box);
+    color: @white;
+    left: 0;
+    position: absolute;
+    top: 150px;
+    .transition(transform .2s ease);
+    width: 331px;
+    > i.fa-user {
+      .border-radius(3px 0 0 3px);
+      color: @white;
+      cursor: pointer;
+      font-size: @sidebarIconFontSize;
+      height: @sidebarIconHeight;
+      left: -@sidebarIconWidth;
+      line-height: @sidebarIconHeight;
+      position: absolute;
+      text-align: center;
+      top: 0;
+      width: @sidebarIconWidth;
+      background: @globalColor;
+      .transition(all .2s ease);
+      &:hover {
+        font-size: @sidebarIconFontSize+4;
+      }
+    }
+    input {
+      color: @inputColor;
+    }
+    &.shown {
+      .translate(-100%, 0);
+      //      z-index: 1010;
+    }
+    .mod_login_wrapper {
+      .box-sizing(border-box);
+      max-height: 100%;
+      overflow: auto;
+      padding: 22px 30px 15px;
+      position: relative;
+      background: @globalColor;
+      .input-prepend .add-on:hover i {
+        background: transparent;
+        color: @globalColor;
+      }
+    }
+  }
+
+}
+
+@media (max-width: 767px) {
+  .login_shell {
+    .control-group + * {
+      margin-top: 10px;
+    }
+    label.checkbox {
+      padding-top: 0;
+      .checkbox {
+        top: -3px; 
+      }
+    }
+    .reset_remind {
+      margin: 10px 0;
+    }
+  }
+}
+
+@media screen and (max-height: 550px) {
+  #style_switcher,
+  div#fixed-sidebar-right .moduletable.login {
+    padding-bottom: 10px;
+    bottom: 0;
+    .mod_login_wrapper {
+      max-height: 100%;
+    }
+  }
+}
+
+@media (max-width: 479px) {
+  div#fixed-sidebar-right .moduletable.login {
+    width: 280px;
+    .mod_login_wrapper {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+}

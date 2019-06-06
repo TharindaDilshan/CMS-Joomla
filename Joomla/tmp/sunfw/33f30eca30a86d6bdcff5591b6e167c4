@@ -1,0 +1,49 @@
+{
+  "developer": [
+    {
+      "id": "mall",
+      "name": "JSN Mall",
+      "thumbnail": "http://demo.joomlashine.com/media/joomla-templates/jsn_mall/thumbnail_mall.jpg",
+      "demo": "http://demo.joomlashine.com/joomla-templates/jsn_mall/pro/mall/index.php",
+      "download": "https://joomlashine.com/files/downloads/sample-data/jsn_mall_pro_mall_sample_data_j3x.zip",
+      "tags": []
+    },
+    {
+      "id": "fashion",
+      "name": "JSN Fashion",
+      "thumbnail": "http://demo.joomlashine.com/media/joomla-templates/jsn_mall/thumbnail_fashion.jpg",
+      "demo": "http://demo.joomlashine.com/joomla-templates/jsn_mall/pro/fashion/index.php",
+      "download": "https://joomlashine.com/files/downloads/sample-data/jsn_mall_pro_fashion_sample_data_j3x.zip",
+      "tags": []
+    }
+  ],
+  "individual": [
+    {
+      "id": "mall",
+      "name": "JSN Mall",
+      "thumbnail": "http://demo.joomlashine.com/media/joomla-templates/jsn_mall/thumbnail_mall.jpg",
+      "demo": "http://demo.joomlashine.com/joomla-templates/jsn_mall/pro/mall/index.php",
+      "download": "https://joomlashine.com/files/downloads/sample-data/jsn_mall_pro_mall_sample_data_j3x.zip",
+      "tags": []
+    },
+    {
+      "id": "fashion",
+      "name": "JSN Fashion",
+      "thumbnail": "http://demo.joomlashine.com/media/joomla-templates/jsn_mall/thumbnail_fashion.jpg",
+      "demo": "http://demo.joomlashine.com/joomla-templates/jsn_mall/pro/fashion/index.php",
+      "download": "https://joomlashine.com/files/downloads/sample-data/jsn_mall_pro_fashion_sample_data_j3x.zip",
+      "tags": []
+    }
+  ],
+  "free": [
+    {
+      "id": "mall",
+      "name": "JSN Mall",
+      "thumbnail": "http://demo.joomlashine.com/media/joomla-templates/jsn_mall/thumbnail_mall.jpg",
+      "demo": "http://demo.joomlashine.com/joomla-templates/jsn_mall/pro/mall/index.php",
+      "download": "https://joomlashine.com/files/downloads/sample-data/jsn_mall_pro_mall_sample_data_j3x.zip",
+      "tags": []
+    }
+  ]
+}
+

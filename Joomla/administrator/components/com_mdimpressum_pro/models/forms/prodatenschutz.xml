@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+
+              <field name="id" type="text" default="0" label="COM_MDIMPRESSUM_PRO_FORM_LBL_PRODATENSCHUTZ_ID"
+            readonly="true" class="readonly"
+            description="JGLOBAL_FIELD_ID_DESC" /> 
+
+       <field name="created_by" type="createdby" default="" 
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_PRODATENSCHUTZ_CREATED_BY"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_PRODATENSCHUTZ_CREATED_BY"  /> 
+
+       <field name="modified_by" type="modifiedby" default="" 
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_PRODATENSCHUTZ_MODIFIED_BY"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_PRODATENSCHUTZ_MODIFIED_BY"  /> 
+
+       <field name="uberschrift" type="text"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_PRODATENSCHUTZ_UBERSCHRIFT"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_PRODATENSCHUTZ_UBERSCHRIFT" 
+                
+                
+                 required="true" 
+            menu_published="0"
+            filter="raw"
+            directory_stripext="true"
+            directory_hidenode="true"
+            directory_hidedefault="true"
+            alias_generator="2280945"
+            heading="h4"
+            close="true"
+            size="30"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="datenschutz" type="textarea"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_PRODATENSCHUTZ_DATENSCHUTZ"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_PRODATENSCHUTZ_DATENSCHUTZ" 
+            default="Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.
+
+Die Nutzung unserer Webseite ist in der Regel ohne Angabe personenbezogener Daten möglich. Soweit auf unseren Seiten personenbezogene Daten (beispielsweise Name, Anschrift oder E-Mail-Adressen) erhoben werden, erfolgt dies, soweit möglich, stets auf freiwilliger Basis. Diese Daten werden ohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben.
+
+Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich."    
+                
+                
+            cols="30"
+            rows="10"
+            filter="raw" /> 
+
+       <field name="amazon" type="textarea"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_PRODATENSCHUTZ_AMAZON"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_PRODATENSCHUTZ_AMAZON" 
+            default="Die Betreiber der Seiten nehmen am Amazon EU- Partnerprogramm teil. Auf unseren Seiten werden durch Amazon Werbeanzeigen und Links zur Seite von  Amazon.de eingebunden, an denen wir über Werbekostenerstattung Geld verdienen können. Amazon setzt dazu Cookies ein, um die Herkunft der Bestellungen nachvollziehen zu können. Dadurch kann Amazon erkennen, dass Sie den Partnerlink auf unserer Webseite geklickt haben. Weitere Informationen zur Datennutzung durch Amazon erhalten Sie in der Datenschutzerklärung von Amazon: &lt;a href=&quot;http://www.amazon.de/gp/help/customer/display.html/ref=footer_privacy?ie=UTF8&amp;nodeId=3312401&quot; target=&quot;_blank&quot;&gt;http://www.amazon.de/gp/help/customer/display.html/ref=footer_privacy?ie=UTF8&amp;nodeId=3312401&lt;/a&gt;"    
+                
+                
+            cols="30"
+            rows="10"
+            filter="raw"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="etracker" type="textarea"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_PRODATENSCHUTZ_ETRACKER"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_PRODATENSCHUTZ_ETRACKER" 
+            default="Unsere Webseite nutzt den Analysedienst etracker. Anbieter ist die etracker GmbH, Erste Brunnenstraße 1 20459 Hamburg Germany.
+Aus den Daten können unter einem Pseudonym Nutzungsprofile erstellt werden. Dazu können Cookies eingesetzt werden. Bei Cookies handelt es sich um kleine Textdateien, die lokal im Zwischenspeicher Ihres Internet-Browsers gespeichert werden. Die Cookies ermöglichen es, Ihren Browser wieder zu erkennen. Die mit den etracker-Technologien erhobenen Daten werden ohne die gesondert erteilte Zustimmung des Betroffenen nicht genutzt, Besucher unserer Website persönlich zu identifizieren und werden nicht mit personenbezogenen Daten über den Träger des Pseudonyms zusammengeführt.
+
+Der Datenerhebung und -speicherung können Sie jederzeit mit Wirkung für die Zukunft widersprechen. Um einer Datenerhebung und -speicherung Ihrer Besucherdaten für die Zukunft zu widersprechen, können Sie unter nachfolgendem Link ein Opt-Out-Cookie von etracker beziehen, dieser bewirkt, dass zukünftig keine Besucherdaten Ihres Browsers bei etracker erhoben und gespeichert werden: &lt;a href=&quot;http://www.etracker.de/privacy?et=V23Jbb&quot; target=&quot;_blank&quot;&gt;http://www.etracker.de/privacy?et=V23Jbb&lt;/a&gt;
+Dadurch wird ein Opt-Out-Cookie mit dem Namen &quot;cntcookie&quot; von etracker gesetzt. Bitte löschen Sie diesen Cookie nicht, solange Sie Ihren Widerspruch aufrecht erhalten möchten. Weitere Informationen finden Sie in den Datenschutzbestimmungen von etracker:&lt;a href=&quot;http://www.etracker.com/de/datenschutz.html&quot; target=&quot;_blank&quot;&gt;http://www.etracker.com/de/datenschutz.html&lt;/a&gt;"    
+                
+                
+            cols="30"
+            rows="10"
+            filter="raw"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="facebook" type="textarea"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_PRODATENSCHUTZ_FACEBOOK"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_PRODATENSCHUTZ_FACEBOOK" 
+            default="
+Only in Pro Version! - Nur in der Pro Version enthalten!
+"
+                
+                
+            cols="30"
+            rows="10"
+            filter="raw"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="google_adsense" type="textarea"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_PRODATENSCHUTZ_GOOGLE_ADSENSE"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_PRODATENSCHUTZ_GOOGLE_ADSENSE" 
+            default="
+Only in Pro Version! - Nur in der Pro Version enthalten!"
+                
+                
+            cols="30"
+            rows="10"
+            filter="raw"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="google_analytics" type="textarea"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_PRODATENSCHUTZ_GOOGLE_ANALYTICS"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_PRODATENSCHUTZ_GOOGLE_ANALYTICS" 
+            default="
+Only in Pro Version! - Nur in der Pro Version enthalten!"
+                
+                
+            cols="30"
+            rows="10"
+            filter="raw"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="googleplus" type="textarea"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_PRODATENSCHUTZ_GOOGLEPLUS"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_PRODATENSCHUTZ_GOOGLEPLUS" 
+            default="
+Only in Pro Version! - Nur in der Pro Version enthalten!"
+                
+                
+            cols="30"
+            rows="10"
+            filter="raw"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="googleanalyticsremark" type="textarea"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_PRODATENSCHUTZ_GOOGLEANALYTICSREMARK"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_PRODATENSCHUTZ_GOOGLEANALYTICSREMARK" 
+            default="
+Only in Pro Version! - Nur in der Pro Version enthalten!"
+                
+                
+            cols="30"
+            rows="10"
+            filter="raw"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="instagram" type="textarea"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_PRODATENSCHUTZ_INSTAGRAM"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_PRODATENSCHUTZ_INSTAGRAM" 
+            default="Only in Pro Version! - Nur in der Pro Version enthalten!"
+                
+                
+            cols="30"
+            rows="10"
+            filter="raw"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+ 
+		<field name="version_note"
+			type="text"
+			label="JGLOBAL_FIELD_VERSION_NOTE_LABEL"
+			description="JGLOBAL_FIELD_VERSION_NOTE_DESC"
+			class="inputbox" size="45"
+			labelclass="control-label"
+		/> 
+
+ 
+		<field
+			name="state"
+			type="list"
+			label="JSTATUS"
+			description="JFIELD_PUBLISHED_DESC"
+			class="inputbox"
+			size="1"
+			default="1">
+			<option value="1">JPUBLISHED</option>
+			<option value="0">JUNPUBLISHED</option>
+			<option value="2">JARCHIVED</option>
+			<option value="-2">JTRASHED</option>
+		</field> 
+
+                        <field name="checked_out" type="hidden" filter="unset" />
+        <field name="checked_out_time" type="hidden" filter="unset" />
+
+	</fieldset>
+
+</form>

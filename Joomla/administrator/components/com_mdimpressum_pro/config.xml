@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <fieldset label="COM_MDIMPRESSUM_PRO" name="mdimpressum_pro">
+              <field name="iconcolor" type="color"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_ICONCOLOR"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_ICONCOLOR" 
+                
+                
+                
+            filter="raw"
+            size="30" />      <field name="textsize" type="text"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_TEXTSIZE"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_TEXTSIZE" 
+                 default="10" 
+                
+                
+            filter="int"
+            size="10" />      <field name="headfarbe" type="color"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_HEADFARBE"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_HEADFARBE"
+                
+                
+                 />      <field name="headsize" type="list"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_HEADSIZE"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_HEADSIZE" 
+                 default="h4" 
+                
+                
+            multiple="false">
+                <option value="h1">H1</option>
+                <option value="h2">H2</option>
+                <option value="h3">H3</option>
+                <option value="h4">H4</option>
+                <option value="h5">H5</option>
+                <option value="h6">H6</option>
+        </field>      <field name="spaltea" type="list"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_SPALTEA"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_SPALTEA" 
+            default="col-md-4"
+                
+                
+            multiple="false">
+                <option value="col-md-1">col-md-1</option>
+                <option value="col-md-2">col-md-2</option>
+                <option value="col-md-3">col-md-3</option>
+				<option value="col-md-4">col-md-4</option>
+                <option value="col-md-5">col-md-5</option>
+				<option value="col-md-6">col-md-6</option>
+                <option value="col-md-7">col-md-7</option>
+				<option value="col-md-8">col-md-8</option>
+                <option value="col-md-9">col-md-9</option>
+        </field>      <field name="spalteb" type="list"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_SPALTEB"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_SPALTEB" 
+            default="col-md-6"
+                
+                
+            multiple="false">
+                <option value="col-md-1">col-md-1</option>
+                <option value="col-md-2">col-md-2</option>
+                <option value="col-md-3">col-md-3</option>
+				<option value="col-md-4">col-md-4</option>
+                <option value="col-md-5">col-md-5</option>
+				<option value="col-md-6">col-md-6</option>
+                <option value="col-md-7">col-md-7</option>
+				<option value="col-md-8">col-md-8</option>
+                <option value="col-md-9">col-md-9</option>
+				<option value="col-md-10">col-md-10</option>
+                <option value="col-md-11">col-md-11</option>
+        </field>      <field name="fontawaysupp" type="radio"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_FONTAWAYSUPP"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_FONTAWAYSUPP" 
+             default="1"
+              
+                class="btn-group btn-group-yesno"
+                multiple="false">   
+                <option value="0">nein</option>
+                <option value="1">ja</option>
+                
+            
+                </field>    
+        <field name="bootstrapsupp" type="radio"
+                
+            label="Bootstrap Support"
+            description="" 
+             default="0"
+              
+                class="btn-group btn-group-yesno"
+                multiple="false">   
+                <option value="0">nein</option>
+                <option value="1">ja</option>
+                
+            
+                </field>               
+    </fieldset>  
+ <fieldset label="Anzeigen Impressum" name="anzimp">    
+   <field name="anzeigeimpressum" type="radio"
+                
+            label="vertretungsb. Personen"
+            description="" 
+                 default="1"
+                class="btn-group btn-group-yesno"
+                
+            multiple="false">
+                <option value="0">nein</option>
+                <option value="1">ja</option>
+        </field>              
+    <field name="anzeigeimpressum2" type="radio"
+                
+            label="inhaltl. verantw. Personen"
+            description="" 
+                 default="1"
+                class="btn-group btn-group-yesno"
+                
+            multiple="false">
+                <option value="0">nein</option>
+                <option value="1">ja</option>
+        </field>                          
+     <field name="anzeigeimpressum3" type="radio"
+                
+            label="techn. verantw. Personen"
+            description="" 
+                 default="1"
+                class="btn-group btn-group-yesno"
+                
+            multiple="false">
+                <option value="0">nein</option>
+                <option value="1">ja</option>
+        </field> 
+     <field name="anzeigeimpressum4" type="radio"
+                
+            label="Bankdaten"
+            description="" 
+                 default="1"
+                class="btn-group btn-group-yesno"
+                
+            multiple="false">
+                <option value="0">nein</option>
+                <option value="1">ja</option>
+        </field>    
+     <field name="anzeigeimpressum5" type="radio"
+                
+            label="Templatedaten"
+            description="" 
+                 default="1"
+                class="btn-group btn-group-yesno"
+                
+            multiple="false">
+                <option value="0">nein</option>
+                <option value="1">ja</option>
+        </field>                                         
+                                                                                  
+    <field name="anzeigeimpressum6" type="radio"
+                
+            label="Link zum Datenschutz"
+            description="" 
+                 default="0"
+                class="btn-group btn-group-yesno"
+                
+            multiple="false">
+                <option value="0">nein</option>
+                <option value="1">ja</option>
+        </field>                                                                                                                    
+                                                                                                                                                            
+                                                                                                                                                                                                 
+                                                                                                                                                                                                                                                                           
+   </fieldset>                                                                  
+ <fieldset label="Datenschutz" name="datenschutz">               
+                
+                
+                <field name="anzeigedatenschhinter" type="radio"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_ANZEIGEDATENSCHHINTER"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_ANZEIGEDATENSCHHINTER" 
+                 default="1"
+                class="btn-group btn-group-yesno"
+                
+            multiple="false">
+                <option value="0">nein</option>
+                <option value="1">ja</option>
+        </field>      <field name="datenschutzrichtung" type="radio"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_DATENSCHUTZRICHTUNG"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_DATENSCHUTZRICHTUNG" 
+                 default="justify" 
+             class="btn-group"   
+                
+            menu_published="0"
+            filter="raw"
+            multiple="false">
+                <option value="left">Left</option>
+                <option value="right">Right</option>
+                <option value="center">Center</option>
+                <option value="justify">Justify</option>
+        </field>      <field name="datenschutz" type="radio"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_DATENSCHUTZ"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_DATENSCHUTZ" 
+             class="btn-group btn-group-yesno"   
+                default="1"
+                
+            multiple="false">
+                <option value="0">nein</option>
+                <option value="1">ja</option>
+        </field>      <field name="amazon" type="radio"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_AMAZON"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_AMAZON" 
+             class="btn-group btn-group-yesno"   
+                default="1"
+                
+            multiple="false">
+                <option value="0">nein</option>
+                <option value="1">ja</option>
+        </field>      <field name="etracker" type="radio"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_ETRACKER"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_ETRACKER" 
+              class="btn-group btn-group-yesno"  
+                default="1"
+                
+            multiple="false">
+                <option value="0">nein</option>
+                <option value="1">ja</option>
+        </field>      <field name="facebook" type="radio"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_FACEBOOK"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_FACEBOOK" 
+             class="btn-group btn-group-yesno"   
+                default="1"
+                
+            multiple="false">
+                <option value="0">nein</option>
+                <option value="1">ja</option>
+        </field>      <field name="googleadsense" type="radio"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_GOOGLEADSENSE"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_GOOGLEADSENSE" 
+            class="btn-group btn-group-yesno"    
+            default="1"
+                
+            multiple="false">
+                <option value="0">nein</option>
+                <option value="1">ja</option>
+        </field>      <field name="googleanalytics" type="radio"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_GOOGLEANALYTICS"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_GOOGLEANALYTICS" 
+            class="btn-group btn-group-yesno"    
+             default="1"
+                
+            multiple="false">
+                <option value="0">nein</option>
+                <option value="1">ja</option>
+        </field>      <field name="googleplus" type="radio"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_GOOGLEPLUS"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_GOOGLEPLUS" 
+             default="1"
+                class="btn-group btn-group-yesno"    
+                
+                
+            multiple="false">
+                <option value="0">nein</option>
+                <option value="1">ja</option>
+        </field>      <field name="remark" type="radio"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_REMARK"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_REMARK" 
+             default="1"
+                class="btn-group btn-group-yesno"    
+                
+                
+            multiple="false">
+                <option value="0">nein</option>
+                <option value="1">ja</option>
+        </field>      <field name="instagram" type="radio"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_INSTAGRAM"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_INSTAGRAM" 
+              default="1"
+                class="btn-group btn-group-yesno"   
+                
+                
+            multiple="false">
+                <option value="0">nein</option>
+                <option value="1">ja</option>
+        </field>      <field name="linkedin" type="radio"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_LINKEDIN"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_LINKEDIN" 
+              default="1"
+                class="btn-group btn-group-yesno"   
+                
+                
+            multiple="false">
+                <option value="0">nein</option>
+                <option value="1">ja</option>
+        </field>      <field name="pinterest" type="radio"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_PINTEREST"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_PINTEREST" 
+             default="1"
+                class="btn-group btn-group-yesno"    
+                
+                
+            multiple="false">
+                <option value="0">nein</option>
+                <option value="1">ja</option>
+        </field>      <field name="piwik" type="radio"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_PIWIK"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_PIWIK" 
+              default="1"
+                class="btn-group btn-group-yesno"   
+                
+                
+            multiple="false">
+                <option value="0">nein</option>
+                <option value="1">ja</option>
+        </field>      <field name="tumblr" type="radio"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_TUMBLR"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_TUMBLR" 
+              default="1"
+                class="btn-group btn-group-yesno"   
+                
+                
+            multiple="false">
+                <option value="0">nein</option>
+                <option value="1">ja</option>
+        </field>      <field name="twitter" type="radio"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_TWITTER"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_TWITTER" 
+              default="1"
+                class="btn-group btn-group-yesno"   
+                
+                
+            multiple="false">
+                <option value="0">nein</option>
+                <option value="1">ja</option>
+        </field>      <field name="xing" type="radio"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_XING"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_XING" 
+              default="1"
+                class="btn-group btn-group-yesno"   
+                
+                
+            multiple="false">
+                <option value="0">nein</option>
+                <option value="1">ja</option>
+        </field>      <field name="als" type="radio"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_ALS"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_ALS" 
+              default="1"
+                class="btn-group btn-group-yesno"   
+                
+                
+            multiple="false">
+                <option value="0">nein</option>
+                <option value="1">ja</option>
+        </field>      <field name="shop" type="radio"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_SHOP"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_SHOP" 
+             default="1"
+                class="btn-group btn-group-yesno"    
+                
+                
+            multiple="false">
+                <option value="0">nein</option>
+                <option value="1">ja</option>
+        </field>      <field name="daten" type="radio"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_DATEN"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_DATEN" 
+             default="1"
+                class="btn-group btn-group-yesno"    
+                
+                
+            multiple="false">
+                <option value="0">nein</option>
+                <option value="1">ja</option>
+        </field>      <field name="cookies" type="radio"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_COOKIES"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_COOKIES" 
+              default="1"
+                class="btn-group btn-group-yesno"   
+                
+                
+            multiple="false">
+                <option value="0">nein</option>
+                <option value="1">ja</option>
+        </field>      <field name="slv" type="radio"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_SLV"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_SLV" 
+              default="1"
+                class="btn-group btn-group-yesno"   
+                
+                
+            multiple="false">
+                <option value="0">nein</option>
+                <option value="1">ja</option>
+        </field>      <field name="kontaktformular" type="radio"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_KONTAKTFORMULAR"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_KONTAKTFORMULAR" 
+              default="1"
+                class="btn-group btn-group-yesno"   
+                
+                
+            multiple="false">
+                <option value="0">nein</option>
+                <option value="1">ja</option>
+        </field>      <field name="werbemails" type="radio"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_WERBEMAILS"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_WERBEMAILS" 
+             default="1"
+                class="btn-group btn-group-yesno"    
+                
+                
+            multiple="false">
+                <option value="0">nein</option>
+                <option value="1">ja</option>
+        </field>      <field name="newsletterdaten" type="radio"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_NEWSLETTERDATEN"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_NEWSLETTERDATEN" 
+              default="1"
+                class="btn-group btn-group-yesno"   
+                
+                
+            multiple="false">
+                <option value="0">nein</option>
+                <option value="1">ja</option>
+        </field>      <field name="registrierung" type="radio"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_REGISTRIERUNG"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_REGISTRIERUNG" 
+              default="1"
+                class="btn-group btn-group-yesno"   
+                
+                
+            multiple="false">
+                <option value="0">nein</option>
+                <option value="1">ja</option>
+        </field>      <field name="verarb" type="radio"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_VERARB"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_VERARB" 
+              default="1"
+                class="btn-group btn-group-yesno"   
+                
+                
+            multiple="false">
+                <option value="0">nein</option>
+                <option value="1">ja</option>
+        </field>      <field name="haftung" type="radio"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_HAFTUNG"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_HAFTUNG" 
+              default="1"
+                class="btn-group btn-group-yesno"   
+                
+                
+            multiple="false">
+                <option value="0">nein</option>
+                <option value="1">ja</option>
+        </field>      <field name="urheberrecht" type="radio"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_URHEBERRECHT"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_URHEBERRECHT" 
+              default="1"
+                class="btn-group btn-group-yesno"   
+                
+                
+            multiple="false">
+                <option value="0">nein</option>
+                <option value="1">ja</option>
+        </field>      <field name="bildquellen" type="radio"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_BILDQUELLEN"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_BILDQUELLEN" 
+              default="1"
+                class="btn-group btn-group-yesno"   
+                
+                
+            multiple="false">
+                <option value="0">nein</option>
+                <option value="1">ja</option>
+        </field>      <field name="bildrechte" type="radio"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_BILDRECHTE"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_BILDRECHTE" 
+             default="1"
+                class="btn-group btn-group-yesno"    
+                
+                
+            multiple="false">
+                <option value="0">nein</option>
+                <option value="1">ja</option>
+        </field>      <field name="sonstiges" type="radio"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_SONSTIGES"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_SONSTIGES" 
+              default="1"
+                class="btn-group btn-group-yesno"   
+                
+                
+            multiple="false">
+                <option value="0">nein</option>
+                <option value="1">ja</option>
+        </field>      
+ </fieldset>
+        <fieldset label="Überschriften" name="uberschriften">
+        
+        <field name="uberimpressum" type="text"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_UBERIMPRESSUM"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_UBERIMPRESSUM" 
+            default="Impressum nach §5 TMG"
+                
+                
+            filter="raw"
+            size="30" />      <field name="uberinhalt" type="text"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_UBERINHALT"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_UBERINHALT" 
+            default="inhaltlich verantwortliche Person"
+                
+                
+            filter="raw"
+            size="30" />      <field name="ubertechnisch" type="text"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_UBERTECHNISCH"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_UBERTECHNISCH" 
+            default="technisch verantwortliche Person"
+                
+                
+            filter="raw"
+            size="30" />      <field name="ubervertretung" type="text"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_UBERVERTRETUNG"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_UBERVERTRETUNG" 
+            default="vertretungsberechtigte Person(en)"
+
+                
+            filter="raw"
+            size="30" />
+    </fieldset>
+    
+ <fieldset name="addcss"
+              description="CSS Overrides"
+              label="CSS Overrides"
+ filter="raw"
+ >
+
+        <field name="cssover" type="textarea" 
+               class="textarea" 
+               label="Add CSS Overrides"
+               
+        />
+	</fieldset>   
+    
+
+    <fieldset name="permissions"
+              description="JCONFIG_PERMISSIONS_DESC"
+              label="JCONFIG_PERMISSIONS_LABEL">
+
+        <field name="rules" type="rules" component="com_mdimpressum_pro"
+               class="inputbox" filter="rules" validate="rules"
+               label="JCONFIG_PERMISSIONS_LABEL"
+               section="component"
+        />
+	</fieldset>
+
+    <fieldset name="component">
+        <field name="save_history"
+               type="radio"
+               class="btn-group btn-group-yesno"
+               default="0"
+               label="JGLOBAL_SAVE_HISTORY_OPTIONS_LABEL"
+               description="JGLOBAL_SAVE_HISTORY_OPTIONS_DESC"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+
+        <field name="history_limit"
+               type="text"
+               filter="integer"
+               label="JGLOBAL_HISTORY_LIMIT_OPTIONS_LABEL"
+               description="JGLOBAL_HISTORY_LIMIT_OPTIONS_DESC"
+               default="5"
+        />
+    </fieldset>
+</config>
+

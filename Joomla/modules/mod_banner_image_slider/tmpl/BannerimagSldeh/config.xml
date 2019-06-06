@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<style>
+  <name>banner image slider</name>
+  <author>joombest</author>
+  <description>banner image slider module.</description>
+  <version>1.2</version>
+  <files>
+    <public>
+    </public>
+    <admin></admin>
+  </files>
+  <config>
+    <fieldset name="Other config">
+    </fieldset>
+  </config>
+</style>

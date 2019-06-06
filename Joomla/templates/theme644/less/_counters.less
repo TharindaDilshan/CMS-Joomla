@@ -1,0 +1,71 @@
+
+.counters {
+  .radial-progress {
+    @circle-size: 270px;
+    @circle-background: #f73a4c;
+    @inset-size: 262px;
+    @percentage-color: #f73a4c;
+    @percentage-font-size: 43px;
+    @percentage-text-width: 120px;
+    @transition-length: 1s;
+    @transition-timing: ease;
+    width: @circle-size;
+    height: @circle-size;
+    &:before {
+      border: (@circle-size - @inset-size)/2 solid #fff;
+      .border-radius(1000px);
+      bottom: 0;
+      content: '';
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .circle {
+      .fill {
+        border: (@circle-size - @inset-size)/2 solid; //@circle-background;
+        clip: rect(0px, @circle-size/2, @circle-size, 0px);
+        height: @inset-size;
+        width: @inset-size;
+      }
+      .mask {
+        clip: rect(0px, @circle-size, @circle-size, @circle-size/2);
+        height: @circle-size;
+        width: @circle-size;
+      }
+    }
+    .inset {
+      background: #fff;
+      background: rgba(255, 255, 255, .5);
+      height: @inset-size;
+      width: @inset-size;
+      margin-left: (@circle-size - @inset-size)/2;
+      margin-top: (@circle-size - @inset-size)/2;
+      .percentage {
+        bottom: 50%;
+        height: @percentage-font-size;
+        left: (@inset-size - @percentage-text-width) / 2;
+        width: @percentage-text-width;
+        .numbers {
+          margin-top: -@percentage-font-size;
+          span {
+            font-size: @percentage-font-size;
+            width: @percentage-text-width;
+          }
+        }
+      }
+      .title {
+        top: 50%;
+      }
+    }
+    .number_width (@counter) when (@counter <= 180) {
+      &[data-number="@{counter}"] {
+        .inset .percentage .numbers {
+          width: @counter * @percentage-text-width + @percentage-text-width;
+        }
+      }
+      .number_width(@counter + 1);
+    }
+    .number_width(0);
+  }
+}

@@ -1,0 +1,97 @@
+/* Share */
+
+.os_fancybox-share {
+    padding: 30px;
+    border-radius: 3px;
+    background: #f4f4f4;
+    max-width: 90%;
+    text-align: center;
+}
+
+.os_fancybox-share h1 {
+    color: #222;
+    margin: 0 0 20px 0;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.os_fancybox-share p {
+    margin: 0;
+    padding: 0;
+}
+
+p.os_fancybox-share__links {
+    margin-right: -10px;
+}
+
+.os_fancybox-share__button {
+    display: inline-block;
+    text-decoration: none;
+    margin: 0 10px 10px 0;
+    padding: 0 15px;
+    min-width: 130px;
+    border: 0;
+    border-radius: 3px;
+    background: #fff;
+    white-space: nowrap;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 40px;
+    user-select: none;
+    color: #fff;
+    transition: all .2s;
+}
+
+.os_fancybox-share__button:hover {
+    text-decoration: none;
+}
+
+.os_fancybox-share__button--fb {
+    background: #3b5998;
+}
+
+.os_fancybox-share__button--fb:hover {
+    background: #344e86;
+}
+
+.os_fancybox-share__button--pt {
+    background: #bd081d;
+}
+
+.os_fancybox-share__button--pt:hover {
+    background: #aa0719;
+}
+
+.os_fancybox-share__button--tw {
+    background: #1da1f2;
+}
+
+.os_fancybox-share__button--tw:hover {
+    background: #0d95e8;
+}
+
+.os_fancybox-share__button svg {
+    position: relative;
+    top: -1px;
+    width: 25px;
+    height: 25px;
+    margin-right: 7px;
+    vertical-align: middle;
+}
+
+.os_fancybox-share__button svg path {
+    fill: #fff;
+}
+
+.os_fancybox-share__input {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 10px 0 0 0;
+    padding: 10px 15px;
+    background: transparent;
+    color: #5d5b5b;
+    font-size: 14px;
+    outline: none;
+    border: 0;
+    border-bottom: 2px solid #d7d7d7;
+}

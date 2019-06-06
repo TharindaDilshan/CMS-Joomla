@@ -1,0 +1,7 @@
+#menu_item_menu_cdzpDK1R ul.navbar-nav > li > a, #menu_item_menu_cdzpDK1R ul.navbar-nav > li > span.nav-header {
+  font-size: 25px;
+  text-transform: uppercase;
+}
+#menu_item_menu_cdzpDK1R ul.navbar-nav > li:hover > a, #menu_item_menu_cdzpDK1R ul.navbar-nav > li.active > a, #menu_item_menu_cdzpDK1R ul.navbar-nav > li:hover > span.nav-header, #menu_item_menu_cdzpDK1R ul.navbar-nav > li.active > span.nav-header {
+  color: #19a5d7;
+}

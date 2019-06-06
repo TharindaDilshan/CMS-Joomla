@@ -1,0 +1,300 @@
+//
+// Buttons
+// --------------------------------------------------
+
+@btnFontSize: 14px;
+@btnLineHeight: 20px;
+@btnHeight: 46px;
+@btnPadding: ((@btnHeight - @btnLineHeight)/2) 15px
+  ((@btnHeight - @btnLineHeight)/2) 15px;
+@btnBorderRadius: @baseBorderRadius;
+
+@btnColor: @white;
+@btnColorHighlight: @white;
+
+@btnBackground: @globalColor2;
+@btnHighlightBackground: @headingsColor;
+@btnActBackground: @globalColor;
+//@btnBorder: 1px solid  darken(desaturate(spin(@globalColor2, 0.19411764705884593), 42.245171160833806%), 18.03921568627451%);
+//@btnBorder2: 1px solid  darken(desaturate(spin(@globalColor, 0.3265710044532426), 22.598780584369322%), 9.019607843137258%);
+
+// Info button(Read More)
+
+@btnInfoColor: @btnColor;
+@btnInfoColorHighlight: @btnColorHighlight;
+
+@btnInfoBackground: @btnBackground;
+@btnInfoHighlightBackground: @btnHighlightBackground;
+@btnActInfoBackground: @btnActBackground;
+
+@btnInfoBorder: none;
+
+// Base styles
+// --------------------------------------------------
+
+// Core
+
+.buttonBackgroundAlt(@bgColor, @textColor) {
+  background: @bgColor;
+  color: @textColor;
+}
+#checkoutFormSubmit {
+  &:after{
+    content: '\f054';
+   //color: @globalColor;
+    display: inline-block;
+    text-align: center;
+    font-size: 13px;
+    //line-height: 18px;
+    //margin-right: 14px;
+    margin-left: 4px;
+    font-family: @fa;
+    position: relative;
+    //margin-bottom: 20px;
+    }
+}
+button.btn , input.btn , a.btn {
+  .border-radius(@btnBorderRadius);
+  background: #fff;
+  color: @globalColor;
+  cursor: pointer;
+  display: inline-block;
+  font-size: @btnFontSize;
+  line-height: @btnLineHeight;
+  outline: none;
+  padding: @btnPadding;
+  text-shadow: none;
+  box-shadow: none;
+  text-align: center;
+  font-weight: 300;
+  position: relative;
+  overflow: hidden;
+  font-family: @sansFontFamily;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  //height: 40px;
+   border: 1px solid #d4b79b;
+  .transition(all 0.4s ease);
+  .fa {
+    margin: 0 3px;
+    position: relative;
+    top: 0px!important;
+    display: inline-block;
+    font-size: 13px;
+    pointer-events: none;
+    //line-height: @btnLineHeight;
+  }
+  span {
+    pointer-events: none;
+  }
+  &.disabled,
+  &[disabled] {
+    cursor: default;
+    pointer-events: none;
+  }
+  &:hover,
+  &.active,
+  &.selected {
+    outline: none;
+    color: #fff;
+    background: @globalColor2;
+    border-color: @globalColor2;
+    //.gradient(@globalColor, darken(@globalColor,10%));
+  }
+  &.jmodedit {
+    &:hover,
+  
+    &:active {
+      > span {
+        .transform(rotateX(0deg) translateY(0px));
+      }
+    }
+  }
+}
+.row-box-cart {
+  .btn{
+    .fa {
+      position: relative;
+      top: -1px;
+    }
+  }
+}
+form .btn{
+
+}
+
+// Button Sizes
+// --------------------------------------------------
+
+// Large
+.btn-large {
+  padding: @paddingLarge;
+  font-size: @fontSizeLarge;
+  .border-radius(@baseBorderRadius);
+}
+
+.btn-large [class^="icon-"],
+.btn-large [class*=" icon-"] {
+  margin-top: 4px;
+}
+
+// Small
+.btn-small {
+  padding: @paddingSmall;
+  font-size: @fontSizeSmall;
+  .border-radius(@baseBorderRadius);
+}
+
+.btn-small [class^="icon-"],
+.btn-small [class*=" icon-"] {
+  margin-top: 0;
+}
+
+.btn-mini [class^="icon-"],
+.btn-mini [class*=" icon-"] {
+  margin-top: -1px;
+}
+
+// Mini
+.btn-mini {
+  padding: @paddingMini;
+  font-size: @fontSizeMini;
+  .border-radius(@baseBorderRadius);
+}
+
+// Block button
+// -------------------------
+
+.btn-block {
+  display: block;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  .box-sizing(border-box);
+}
+
+// Vertically space out multiple block buttons
+.btn-block + .btn-block {
+  margin-top: 5px;
+}
+
+// Specificity overrides
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  &.btn-block {
+    width: 100%;
+  }
+}
+
+// Alternate buttons
+// --------------------------------------------------
+
+// Provide *some* extra contrast for those who can get it
+.btn-primary.active,
+.btn-warning.active,
+.btn-danger.active,
+.btn-success.active,
+.btn-info.active,
+.btn-inverse.active {
+  color: rgba(255, 255, 255, .75);
+}
+
+// Set the backgrounds
+// -------------------------
+// Warning appears are orange
+.btn-warning {
+  background: #f9b21a;
+  color: @btnColor;
+  &:hover {
+    background: #faac06;
+    color: @btnColorHighlight;
+  }
+}
+
+// Danger and error appear as red
+.btn-danger {
+  background: #ee5f5b;
+  color: @btnColor;
+ 
+  &:hover,&.selected {
+    background: #bd362f;
+    color: @btnColorHighlight;
+  }
+}
+
+// Success appears as green
+.btn-success {
+   background: #62c462!important;
+    color: @btnColor;
+  &:hover,&.selected {
+    background:  #51a351;
+    color: @btnColorHighlight;
+  }
+}
+
+.btn-info,.cancel , .cance-shop .btn {
+   background: @globalColor!important;
+  color: @btnColor!important;
+    
+
+  &:hover {
+   background: @btnInfoBackground!important;
+    color: @btnColorHighlight!important;
+    
+  }
+}
+
+// Inverse appears as dark gray
+.btn-inverse {
+  background: #62c462;
+    color: @btnColor;
+  &:hover {
+     background:  #51a351;
+    color: @btnColorHighlight;
+  }
+}
+
+// Cross-browser Jank@
+// --------------------------------------------------
+
+button.btn,
+input[type="submit"].btn {
+  // Firefox 3.6 only I believe
+  &::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+  }
+}
+
+// Link buttons
+// --------------------------------------------------
+
+// Make a button look and behave like a link
+.btn-link,
+.btn-link:active,
+.btn-link[disabled] {
+  background-color: transparent;
+  background-image: none;
+  .box-shadow(none);
+}
+
+.btn-link {
+  border-color: transparent;
+  cursor: pointer;
+  color: @linkColor;
+  .border-radius(0);
+}
+
+.btn-link:hover,
+.btn-link:focus {
+  color: @linkHoverColor;
+  text-decoration: underline;
+  background-color: transparent;
+}
+
+.btn-link[disabled]:hover,
+.btn-link[disabled]:focus {
+  color: @grayDark;
+  text-decoration: none;
+}

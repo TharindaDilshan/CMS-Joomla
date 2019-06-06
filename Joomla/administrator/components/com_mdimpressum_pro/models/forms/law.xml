@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+
+              <field name="id" type="text" default="0" label="COM_MDIMPRESSUM_PRO_FORM_LBL_LAW_ID"
+            readonly="true" class="readonly"
+            description="JGLOBAL_FIELD_ID_DESC" /> 
+
+       <field name="created_by" type="createdby" default="" 
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_LAW_CREATED_BY"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_LAW_CREATED_BY"  /> 
+
+       <field name="rechte" type="text"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_LAW_RECHTE"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_LAW_RECHTE" 
+                 default="Rechteverwaltung (wird nicht angezeigt)" 
+                
+                 /> 
+
+       <field name="haftung" type="textarea"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_LAW_HAFTUNG"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_LAW_HAFTUNG" 
+            default="&lt;strong&gt;Haftung für Inhalte&lt;/strong&gt; &lt;br /&gt;&lt;br /&gt;Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.&lt;br /&gt;&lt;br /&gt;&lt;strong&gt;Haftung für Links&lt;/strong&gt;&lt;br /&gt;&lt;br /&gt;Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen."    
+                
+                
+            menu_published="0"
+            cols="30"
+            rows="10"
+            filter="safehtml"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="urheberrecht" type="textarea"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_LAW_URHEBERRECHT"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_LAW_URHEBERRECHT" 
+            default="Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen."    
+                
+                
+            cols="30"
+            rows="10"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="bildquellen" type="textarea"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_LAW_BILDQUELLEN"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_LAW_BILDQUELLEN" 
+                
+                
+                
+            filter="raw"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="bildrechte" type="textarea"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_LAW_BILDRECHTE"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_LAW_BILDRECHTE" 
+                
+                
+                
+            filter="raw"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="sonstige" type="textarea"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_LAW_SONSTIGE"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_LAW_SONSTIGE" 
+                
+                
+                
+            menu_published="0"
+            cols="30"
+            rows="10"
+            filter="raw"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+ 
+		<field name="version_note"
+			type="text"
+			label="JGLOBAL_FIELD_VERSION_NOTE_LABEL"
+			description="JGLOBAL_FIELD_VERSION_NOTE_DESC"
+			class="inputbox" size="45"
+			labelclass="control-label"
+		/> 
+
+ 
+		<field
+			name="state"
+			type="list"
+			label="JSTATUS"
+			description="JFIELD_PUBLISHED_DESC"
+			class="inputbox"
+			size="1"
+			default="1">
+			<option value="1">JPUBLISHED</option>
+			<option value="0">JUNPUBLISHED</option>
+			<option value="2">JARCHIVED</option>
+			<option value="-2">JTRASHED</option>
+		</field> 
+
+                        <field name="checked_out" type="hidden" filter="unset" />
+        <field name="checked_out_time" type="hidden" filter="unset" />
+
+	</fieldset>
+
+</form>

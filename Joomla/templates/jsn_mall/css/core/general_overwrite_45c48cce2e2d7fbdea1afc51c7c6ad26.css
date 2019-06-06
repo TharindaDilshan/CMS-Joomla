@@ -1,0 +1,6 @@
+#eb .btn-primary:hover {
+  background: custom !important;
+}
+#es h1, #es h2, #es h3, #es h4, #es h5, #es h6, #es .h1, #es .h2, #es .h3, #es .h4, #es .h5, #es .h6 {
+  font-family: Adamina;
+}

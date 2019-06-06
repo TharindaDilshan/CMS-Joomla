@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<contenttype>
+	<title>Blog articles</title>
+	<version>5.6.0</version>
+	<published>1</published>
+	<metakey></metakey>
+	<metadesc></metadesc>
+	<settings>
+		<article_caption>Blog article</article_caption>
+	</settings>
+	<attribs>
+		<show_title />
+		<link_titles />
+		<show_tags />
+		<show_intro>0</show_intro>
+		<show_category />
+		<link_category />
+		<show_parent_category />
+		<link_parent_category />
+		<show_author />
+		<link_author />
+		<show_create_date />
+		<show_modify_date />
+		<show_publish_date />
+		<show_item_navigation />
+		<show_icons />
+		<show_print_icon />
+		<show_email_icon />
+		<show_vote />
+		<show_hits />
+		<show_noauth />
+		<alternative_readmore />
+		<article_layout />
+	</attribs>
+	<metadata>
+		<robots />
+		<author />
+		<rights />
+		<xreference />
+	</metadata>
+	<fields>
+		<field>
+			<fieldname>id</fieldname>
+			<title>JGLOBAL_FIELD_ID_LABEL</title>
+			<description></description>
+			<fieldtype>Joomlaid</fieldtype>
+			<ordering>1</ordering>
+			<frontvisible>1</frontvisible>
+			<settings>
+				<requiredfield>1</requiredfield>
+				<error_message_required />
+			</settings>
+		</field>
+		<field>
+			<fieldname>title</fieldname>
+			<title>Blog article title</title>
+			<description></description>
+			<fieldtype>Joomlatitle</fieldtype>
+			<ordering>2</ordering>
+			<frontvisible>1</frontvisible>
+			<settings>
+				<requiredfield>1</requiredfield>
+				<error_message_required />
+				<default />
+				<attributes />
+			</settings>
+		</field>
+		<field>
+			<fieldname>title_alias</fieldname>
+			<title></title>
+			<description></description>
+			<fieldtype>Joomlaalias</fieldtype>
+			<ordering>3</ordering>
+			<frontvisible>1</frontvisible>
+			<settings>
+				<requiredfield>0</requiredfield>
+				<error_message_required />
+			</settings>
+		</field>
+		<field>
+			<fieldname>meta_description</fieldname>
+			<title>JFIELD_META_DESCRIPTION_LABEL</title>
+			<description></description>
+			<fieldtype>Joomlametadescription</fieldtype>
+			<ordering>4</ordering>
+			<frontvisible>1</frontvisible>
+			<settings>
+				<requiredfield>0</requiredfield>
+				<error_message_required />
+				<default />
+			</settings>
+		</field>
+		<field>
+			<fieldname>meta_keywords</fieldname>
+			<title>JFIELD_META_KEYWORDS_LABEL</title>
+			<description></description>
+			<fieldtype>Joomlametakeywords</fieldtype>
+			<ordering>5</ordering>
+			<frontvisible>1</frontvisible>
+			<settings>
+				<requiredfield>0</requiredfield>
+				<error_message_required />
+				<default />
+			</settings>
+		</field>
+		<field>
+			<fieldname>tags</fieldname>
+			<title>Add tags to your blog</title>
+			<description></description>
+			<fieldtype>Joomlatags</fieldtype>
+			<ordering>6</ordering>
+			<frontvisible>1</frontvisible>
+			<settings>
+				<requiredfield>0</requiredfield>
+				<error_message_required />
+				<field_ajax_mode>1</field_ajax_mode>
+				<allow_custom>1</allow_custom>
+			</settings>
+		</field>
+		<field>
+			<fieldname>category</fieldname>
+			<title>JCATEGORY</title>
+			<description></description>
+			<fieldtype>Joomlacategory</fieldtype>
+			<ordering>7</ordering>
+			<frontvisible>1</frontvisible>
+			<settings>
+				<requiredfield>1</requiredfield>
+				<error_message_required />
+				<default>-1</default>
+				<behaviour>1</behaviour>
+				<use_joomla_acl>0</use_joomla_acl>
+			</settings>
+		</field>
+		<field>
+			<fieldname>joomla_author</fieldname>
+			<title>COM_FORM2CONTENT_FIELD_CREATED_BY_LABEL</title>
+			<description></description>
+			<fieldtype>Joomlacreatedby</fieldtype>
+			<ordering>8</ordering>
+			<frontvisible>1</frontvisible>
+			<settings>
+				<requiredfield>0</requiredfield>
+				<error_message_required />
+			</settings>
+		</field>
+		<field>
+			<fieldname>author_alias</fieldname>
+			<title>COM_FORM2CONTENT_FIELD_CREATED_BY_ALIAS_LABEL</title>
+			<description></description>
+			<fieldtype>Joomlacreatedbyalias</fieldtype>
+			<ordering>9</ordering>
+			<frontvisible>1</frontvisible>
+			<settings>
+				<requiredfield>0</requiredfield>
+				<error_message_required />
+			</settings>
+		</field>
+		<field>
+			<fieldname>access</fieldname>
+			<title>JFIELD_ACCESS_LABEL</title>
+			<description></description>
+			<fieldtype>Joomlaaccess</fieldtype>
+			<ordering>10</ordering>
+			<frontvisible>1</frontvisible>
+			<settings>
+				<requiredfield>0</requiredfield>
+				<error_message_required />
+				<default />
+			</settings>
+		</field>
+		<field>
+			<fieldname>intro_template</fieldname>
+			<title>COM_FORM2CONTENT_INTRO_TEMPLATE</title>
+			<description></description>
+			<fieldtype>Joomlatemplate</fieldtype>
+			<ordering>11</ordering>
+			<frontvisible>0</frontvisible>
+			<settings>
+				<requiredfield>0</requiredfield>
+				<error_message_required />
+				<default>blog_intro_template.tpl</default>
+			</settings>
+		</field>
+		<field>
+			<fieldname>main_template</fieldname>
+			<title>COM_FORM2CONTENT_MAIN_TEMPLATE</title>
+			<description></description>
+			<fieldtype>Joomlatemplate</fieldtype>
+			<ordering>12</ordering>
+			<frontvisible>0</frontvisible>
+			<settings>
+				<requiredfield>0</requiredfield>
+				<error_message_required />
+				<default>blog_main_template.tpl</default>
+			</settings>
+		</field>
+		<field>
+			<fieldname>created</fieldname>
+			<title>COM_FORM2CONTENT_FIELD_CREATED_LABEL</title>
+			<description></description>
+			<fieldtype>Joomlacreated</fieldtype>
+			<ordering>13</ordering>
+			<frontvisible>1</frontvisible>
+			<settings>
+				<requiredfield>0</requiredfield>
+				<error_message_required />
+			</settings>
+		</field>
+		<field>
+			<fieldname>publish_start</fieldname>
+			<title>COM_FORM2CONTENT_FIELD_PUBLISH_UP_LABEL</title>
+			<description></description>
+			<fieldtype>Joomlapublishup</fieldtype>
+			<ordering>14</ordering>
+			<frontvisible>1</frontvisible>
+			<settings>
+				<requiredfield>0</requiredfield>
+				<error_message_required />
+			</settings>
+		</field>
+		<field>
+			<fieldname>publish_stop</fieldname>
+			<title>COM_FORM2CONTENT_FIELD_PUBLISH_DOWN_LABEL</title>
+			<description></description>
+			<fieldtype>Joomlapublishdown</fieldtype>
+			<ordering>15</ordering>
+			<frontvisible>1</frontvisible>
+			<settings>
+				<requiredfield>0</requiredfield>
+				<error_message_required />
+			</settings>
+		</field>
+		<field>
+			<fieldname>published</fieldname>
+			<title>JSTATUS</title>
+			<description></description>
+			<fieldtype>Joomlapublished</fieldtype>
+			<ordering>16</ordering>
+			<frontvisible>1</frontvisible>
+			<settings>
+				<requiredfield>0</requiredfield>
+				<error_message_required />
+				<default>0</default>
+			</settings>
+		</field>
+		<field>
+			<fieldname>language</fieldname>
+			<title>JFIELD_LANGUAGE_LABEL</title>
+			<description></description>
+			<fieldtype>Joomlalanguage</fieldtype>
+			<ordering>17</ordering>
+			<frontvisible>1</frontvisible>
+			<settings>
+				<requiredfield>0</requiredfield>
+				<error_message_required />
+				<default />
+			</settings>
+		</field>
+		<field>
+			<fieldname>featured</fieldname>
+			<title>JFEATURED</title>
+			<description></description>
+			<fieldtype>Joomlafeatured</fieldtype>
+			<ordering>18</ordering>
+			<frontvisible>1</frontvisible>
+			<settings>
+				<requiredfield>0</requiredfield>
+				<error_message_required />
+				<default>0</default>
+			</settings>
+		</field>
+		<field>
+			<fieldname>associations</fieldname>
+			<title>JGLOBAL_FIELDSET_ASSOCIATIONS</title>
+			<description></description>
+			<fieldtype>Joomlaassociations</fieldtype>
+			<ordering>19</ordering>
+			<frontvisible>0</frontvisible>
+			<settings>
+				<requiredfield>0</requiredfield>
+				<error_message_required />
+			</settings>
+		</field>
+		<field>
+			<fieldname>intro</fieldname>
+			<title>Article introduction</title>
+			<description>Shown in category blog layout</description>
+			<fieldtype>Multilinetext</fieldtype>
+			<ordering>21</ordering>
+			<frontvisible>1</frontvisible>
+			<settings>
+				<mlt_max_num_chars>250</mlt_max_num_chars>
+			</settings>
+		</field>
+		<field>
+			<fieldname>image</fieldname>
+			<title>Blog image</title>
+			<description></description>
+			<fieldtype>Image</fieldtype>
+			<ordering>22</ordering>
+			<frontvisible>1</frontvisible>
+			<settings>
+				<img_max_width>960</img_max_width>
+				<img_max_height>480</img_max_height>
+				<img_output_mode>0</img_output_mode>
+			</settings>
+		</field>
+		<field>
+			<fieldname>source</fieldname>
+			<title>Article source (link)</title>
+			<description></description>
+			<fieldtype>Hyperlink</fieldtype>
+			<ordering>23</ordering>
+			<frontvisible>1</frontvisible>
+			<settings>
+				<lnk_output_mode>0</lnk_output_mode>
+				<lnk_attributes_url />
+				<lnk_attributes_display_as>placeholder="link text"
+				</lnk_attributes_display_as>
+				<lnk_attributes_title>placeholder="title text"
+				</lnk_attributes_title>
+				<lnk_attributes_target />
+				<lnk_add_http_prefix>0</lnk_add_http_prefix>
+			</settings>
+		</field>
+		<field>
+			<fieldname>author</fieldname>
+			<title>Display author name?</title>
+			<description></description>
+			<fieldtype>Singleselectlist</fieldtype>
+			<ordering>24</ordering>
+			<frontvisible>1</frontvisible>
+			<settings>
+				<ssl_display_mode>0</ssl_display_mode>
+				<ssl_show_empty_choice_text>1</ssl_show_empty_choice_text>
+				<ssl_empty_choice_text>- make a choice -</ssl_empty_choice_text>
+				<ssl_options>
+					<arrayelement>
+						<key>no</key>
+						<value>No author name</value>
+					</arrayelement>
+					<arrayelement>
+						<key>joomla</key>
+						<value>Joomla author name</value>
+					</arrayelement>
+					<arrayelement>
+						<key>custom</key>
+						<value>Custom name (from textbox below)</value>
+					</arrayelement>
+				</ssl_options>
+			</settings>
+		</field>
+		<field>
+			<fieldname>author_name</fieldname>
+			<title>Author name (custom)</title>
+			<description></description>
+			<fieldtype>Singlelinetext</fieldtype>
+			<ordering>25</ordering>
+			<frontvisible>1</frontvisible>
+			<settings />
+		</field>
+		<field>
+			<fieldname>info_article</fieldname>
+			<title></title>
+			<description></description>
+			<fieldtype>Infotext</fieldtype>
+			<ordering>26</ordering>
+			<frontvisible>1</frontvisible>
+			<settings>
+				<inf_text>&lt;p&gt;The introduction text from above is shown in the
+					Category Blog Layout. The text for the article below is shown on
+					the Article page. If the introduction text shows up above the
+					article text you can choose to hide this using the Joomla article
+					paramaters &lt;strong&gt;display intro&lt;/strong&gt; and setting
+					it to &lt;strong&gt;no&lt;/strong&gt;.&lt;/p&gt;&#13;
+					&lt;p&gt;If &lt;strong&gt;NO&lt;/strong&gt; content is added in the article
+					text, there weill be &lt;strong&gt;NO&lt;/strong&gt; Read More
+					link! Do not use the read more button of the editor.&lt;/p&gt;
+				</inf_text>
+			</settings>
+		</field>
+		<field>
+			<fieldname>article</fieldname>
+			<title>Article text</title>
+			<description></description>
+			<fieldtype>Editor</fieldtype>
+			<ordering>27</ordering>
+			<frontvisible>1</frontvisible>
+			<settings />
+		</field>
+	</fields>
+	<introtemplatefile><![CDATA[<!--
+This is the FORM2CONTENT INTRO TEMPLATE for the BLOG CONTENT TYPE 
+
+It can be found in < root >/media/com_from2content/templates
+
+The template shows you how you can:
+
+1) Add HTML/CSS for your article
+2) Add F2C Template Parameters (placeholders for your form data)
+3) Use basic SMARTY syntax
+
+-->
+{literal}<!--block escaping so SMARTY doesn't break on use of {} tags-->
+<style>
+.f2c_intro_image {float:left; padding:5px;}
+</style>
+{/literal}
+
+<div class="f2c article_intro_wrapper">
+{if $IMAGE}
+	{if $ARTICLE}<!--check to add the read more around the image-->
+    <a href="{$JOOMLA_ARTICLE_LINK}" target="_parent" title="{$JOOMLA_TITLE}">
+    {/if}
+		<img src="images/stories/{$IMAGE_THUMB_URL_RELATIVE}" alt="{$IMAGE_ALT}" title="{$IMAGE_TITLE}" class="f2c_intro_image">
+    {if $ARTICLE}
+	</a>
+    {/if}
+{/if}
+{if $INTRO}
+	<p>{$INTRO}</p>
+{/if}
+</div><!--article intro wrapper-->]]></introtemplatefile>
+	<maintemplatefile><![CDATA[{if $ARTICLE}<!--If no article text, NO read more button will generate because the template will be empty! -->
+<!--PLEASE REMEMBER THAT YOU CAN HIDE THE INTRO in your article by using the Joomla article setting => show intro: NO -->
+	{if $IMAGE}
+		<img src="images/stories/{$IMAGE_THUMB_URL_RELATIVE}" alt="{$IMAGE_ALT}" title="{$IMAGE_TITLE}" class="f2c_intro_image" style="float:right; padding-left:15px;">
+	{/if}
+    <div>{$ARTICLE}</div>
+    
+    {if $SOURCE}
+    <p><strong>Source:</strong> <a href="{$SOURCE_URL}" target="{$SOURCE_TARGET}" title="{$SOURCE_TITLE}">{$SOURCE_DISPLAY}</a></p>
+    {/if}
+
+    {if $AUTHOR=='custom'}
+            {if $AUTHOR_NAME}
+        <p><strong>Author:</strong> {$AUTHOR_NAME}</p>
+            {else}
+            <p><strong>Author:</strong> webmaster</p>
+            {/if}
+    {/if}
+    {if $AUTHOR=='joomla'}
+            <p><strong>Author:</strong> {$JOOMLA_AUTHOR}</p>
+    {/if}
+{/if}]]></maintemplatefile>
+</contenttype>

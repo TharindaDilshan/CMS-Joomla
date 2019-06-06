@@ -1,0 +1,119 @@
+// Core variables and mixins
+@import "_variables.less";
+// Custom for this template
+@import "bootstrap_addons/_mixins.less";
+
+.mod_caroufredsel {
+  overflow: hidden;
+}
+
+.caroufredsel_wrapper {
+  cursor: auto !important;
+}
+
+.list_carousel {
+  margin: 0 0 0 -@gridGutterWidth1200;
+  padding: 0;
+  position: relative;
+  width: auto;
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      display: block;
+      float: left;
+      padding: 0;
+      .item_content {
+        margin: 0;
+        padding: 0 0 0 @gridGutterWidth1200;
+      }
+      &:before {
+        display: none;
+      }
+    }
+  }
+}
+
+.clearfix {
+  clear: both;
+  float: none;
+}
+
+/*Navigation*/
+
+.caroufredsel_prev,
+.caroufredsel_next {
+  color: #fff;
+  display: block;
+  height: 20px;
+  line-height: 20px;
+  margin: -10px 0 0 0;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  .transition(all 0.5s ease);
+  width: 20px;
+  background: @globalColor;
+  &:hover {
+    background: #000;
+  }
+  span {
+    cursor: pointer;
+    display: block;
+    .transition(all 0.5s ease);
+  }
+}
+
+.caroufredsel_prev {
+  left: @gridGutterWidth1200;
+}
+
+.caroufredsel_next {
+  right: 0;
+}
+
+/*Pagination*/
+
+.caroufredsel_pagination {
+  text-align: center;
+  a {
+    display: inline-block;
+    padding: 0 0.5em;
+  }
+}
+
+@media (max-width: 1200px) {
+  .list_carousel {
+    margin: 0 0 0 -@gridGutterWidth;
+    ul {
+      li {
+        .item_content {
+          padding: 0 0 0 @gridGutterWidth;
+        }
+      }
+    }
+  }
+
+  .caroufredsel_prev {
+    left: @gridGutterWidth;
+  }
+}
+
+@media (max-width: 979px) {
+  .list_carousel {
+    margin: 0 0 0 -@gridGutterWidth768;
+    ul {
+      li {
+        .item_content {
+          padding: 0 0 0 @gridGutterWidth768;
+        }
+      }
+    }
+  }
+
+  .caroufredsel_prev {
+    left: @gridGutterWidth768;
+  }
+
+}

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+
+              <field name="id" type="text" default="0" label="COM_MDIMPRESSUM_PRO_FORM_LBL_PRODATEN2_ID"
+            readonly="true" class="readonly"
+            description="JGLOBAL_FIELD_ID_DESC" /> 
+
+       <field name="created_by" type="createdby" default="" 
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_PRODATEN2_CREATED_BY"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_PRODATEN2_CREATED_BY"  /> 
+
+       <field name="modified_by" type="modifiedby" default="" 
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_PRODATEN2_MODIFIED_BY"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_PRODATEN2_MODIFIED_BY"  /> 
+
+       <field name="uberschrift2" type="text"
+              required="true"
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_PRODATEN2_UBERSCHRIFT2"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_PRODATEN2_UBERSCHRIFT2" 
+                
+                
+                
+            filter="raw" /> 
+
+       <field name="linkedin" type="textarea"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_PRODATEN2_LINKEDIN"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_PRODATEN2_LINKEDIN" 
+             cols="30"
+            rows="10"   
+            default="Only in Pro Version! - Nur in der Pro Version enthalten!"
+                
+            filter="raw"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="pinterest" type="textarea"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_PRODATEN2_PINTEREST"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_PRODATEN2_PINTEREST" 
+            cols="30"
+            rows="10"    
+            default="Auf unserer Seite verwenden wir Social Plugins des sozialen Netzwerkes Pinterest, das von der Pinterest Inc., 635 High Street, Palo Alto, CA, 94301, USA (&quot;Pinterest&quot;) betrieben wird. Wenn Sie eine Seite aufrufen die ein solches Plugin enthält, stellt Ihr Browser eine direkte Verbindung zu den Servern von Pinterest her. Das Plugin übermittelt dabei Protokolldaten an den Server von Pinterest in die USA. Diese Protokolldaten enthalten möglicherweise Ihre IP-Adresse, die Adresse der besuchten Websites, die ebenfalls Pinterest-Funktionen enthalten, Art und Einstellungen des Browsers, Datum und Zeitpunkt der Anfrage, Ihre Verwendungsweise von Pinterest sowie Cookies.
+
+Weitere Informationen zu Zweck, Umfang und weiterer Verarbeitung und Nutzung der Daten durch Pinterest sowie Ihre diesbezüglichen Rechte und Möglichkeiten zum Schutz Ihrer Privatsphäre finden Sie in den den Datenschutzhinweisen von Pinterest: &lt;a href=&quot;https://about.pinterest.com/de/privacy-policy&quot; target=&quot;_blank&quot;&gt;https://about.pinterest.com/de/privacy-policy&lt;/a&gt;
+"    
+                
+            filter="raw"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="piwik" type="textarea"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_PRODATEN2_PIWIK"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_PRODATEN2_PIWIK" 
+            cols="30"
+            rows="10"    
+            default="Only in Pro Version! - Nur in der Pro Version enthalten!
+"    
+                
+            filter="raw"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="tumblr" type="textarea"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_PRODATEN2_TUMBLR"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_PRODATEN2_TUMBLR" 
+             cols="30"
+            rows="10"   
+            default="Only in Pro Version! - Nur in der Pro Version enthalten!
+"    
+                
+            filter="raw"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="twitter" type="textarea"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_PRODATEN2_TWITTER"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_PRODATEN2_TWITTER" 
+            default="
+Only in Pro Version! - Nur in der Pro Version enthalten!
+"    
+                
+                
+            filter="raw"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="xing" type="textarea"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_PRODATEN2_XING"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_PRODATEN2_XING" 
+             cols="30"
+            rows="10"   
+            default="Only in Pro Version! - Nur in der Pro Version enthalten!"
+                
+            filter="raw"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="auslosperr" type="textarea"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_PRODATEN2_AUSLOSPERR"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_PRODATEN2_AUSLOSPERR" 
+            cols="30"
+            rows="10"    
+             default="Sie haben jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck der Datenverarbeitung sowie ein Recht auf Berichtigung, Sperrung oder Löschung dieser Daten. Hierzu sowie zu weiteren Fragen zum Thema personenbezogene Daten können Sie sich jederzeit unter der im Impressum angegebenen Adresse an uns wenden."   
+                
+            filter="raw"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="shop" type="textarea"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_PRODATEN2_SHOP"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_PRODATEN2_SHOP" 
+            cols="30"
+            rows="10"    
+            default="Only in Pro Version! - Nur in der Pro Version enthalten!"
+                
+            filter="raw"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="datenubermi" type="textarea"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_PRODATEN2_DATENUBERMI"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_PRODATEN2_DATENUBERMI" 
+             cols="30"
+            rows="10"   
+            default="Only in Pro Version! - Nur in der Pro Version enthalten!"
+                
+            filter="raw"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+ 
+		<field name="version_note"
+			type="text"
+			label="JGLOBAL_FIELD_VERSION_NOTE_LABEL"
+			description="JGLOBAL_FIELD_VERSION_NOTE_DESC"
+			class="inputbox" size="45"
+			labelclass="control-label"
+		/> 
+
+ 
+		<field
+			name="state"
+			type="list"
+			label="JSTATUS"
+			description="JFIELD_PUBLISHED_DESC"
+			class="inputbox"
+			size="1"
+			default="1">
+			<option value="1">JPUBLISHED</option>
+			<option value="0">JUNPUBLISHED</option>
+			<option value="2">JARCHIVED</option>
+			<option value="-2">JTRASHED</option>
+		</field> 
+
+                        <field name="checked_out" type="hidden" filter="unset" />
+        <field name="checked_out_time" type="hidden" filter="unset" />
+
+	</fieldset>
+
+</form>

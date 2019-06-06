@@ -1,0 +1,100 @@
+//
+// Alerts
+// --------------------------------------------------
+
+// Base styles
+// -------------------------
+
+.alert {
+  padding: 28px 128px 28px;
+  min-height: 60px;
+  margin-bottom: @baseLineHeight;
+  background-color: @warningBackground;
+  position: relative;
+  color: @warningText;
+  h4 {
+    color: @warningText;
+  }
+  &:before {
+    position: absolute;
+    font-family: FontAwesome;
+    left: 26px;
+    top: 50%;
+    line-height: 0;
+    content: '\f071';
+    font-size: 79px;
+    color: @warningIcon;
+  }
+}
+
+// Adjust close link position
+.alert .close {
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  line-height: @baseLineHeight;
+}
+
+// Alternate styles
+// -------------------------
+
+.alert-success {
+  background-color: @successBackground;
+  border-color: @successBorder;
+  color: @successText;
+  h4 {
+    color: @successText;
+  }
+  &:before {
+    content: '\f05d';
+    color: @successIcon;
+  }
+}
+
+.alert-danger,
+.alert-error {
+  background-color: @errorBackground;
+  border-color: @errorBorder;
+  color: @errorText;
+  h4 {
+    color: @errorText;
+  }
+  &:before {
+    content: '\f05c';
+    color: @errorIcon;
+  }
+}
+
+.alert-info {
+  background-color: @infoBackground;
+  border-color: @infoBorder;
+  color: @infoText;
+  h4 {
+    color: @infoText;
+  }
+  &:before {
+    content: '\f05a';
+    color: @infoIcon;
+  }
+}
+
+// Block alerts
+// -------------------------
+
+.alert-block {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.alert-block > p,
+.alert-block > ul {
+  margin-bottom: 0;
+}
+
+.alert-block p + p {
+  margin-top: 5px;
+}
+
+.alert-heading {
+  color: inherit;
+}

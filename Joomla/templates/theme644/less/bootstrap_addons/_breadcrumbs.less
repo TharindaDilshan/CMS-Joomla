@@ -1,0 +1,54 @@
+//
+// Breadcrumbs
+// --------------------------------------------------
+
+.breadcrumb {
+  background: none;
+  font-size: 12px;
+  padding: 0;
+  text-align: left;
+  margin: 0 0 @baseLineHeight;
+  li {
+    padding: 0;
+    display: inline-block;
+    .ie7-inline-block();
+    &:before {
+      display: none;
+    }
+    .divider {
+      display: inline-block;
+      vertical-align: middle;
+      padding: 0 5px;
+      color: #CCC;
+    }
+    &.active {
+      color: @headingsColor;
+    }
+    > span:first-child:hover {
+      color: inherit;
+    }
+  }
+
+  a {
+    color: @globalColor;
+    &:hover {
+      color: @headingsColor;
+    }
+  }
+
+  .firstItem {
+    > a.pathway {
+      display: inline-block;
+      font-size: 0;
+      line-height: 0;
+      vertical-align: middle;
+      &:before {
+        content: '\f015';
+        font-family: FontAwesome;
+        font-size: 14px;
+        line-height: @baseLineHeight;
+        .transition(all .5s ease);
+      }
+    }
+  }
+}

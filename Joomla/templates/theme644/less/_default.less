@@ -1,0 +1,673 @@
+body {
+  &:after {
+    content: '';
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: -999;
+  }
+  &.disable-hover {
+    &:after {
+      z-index: 999999999999999999;
+    }
+  }
+}
+
+.custom_hover strong { display: none; }
+
+html {
+  -ms-overflow-style: scrollbar;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+#wrapper {
+}
+
+.container-fluid {
+  margin: 0 20px;
+  padding: 0;
+  position: relative;
+}
+
+// Input button height fix
+#Kunena #jumpto,
+#Kunena .search-user,
+.krowmoderation,
+.input-append,
+.input-prepend,
+#kpost-attachments,
+#searchForm {
+  .btn {
+    height: @inputHeight;
+    .box-sizing(border-box);
+    padding: 0 15px!important;
+    line-height: @inputHeight;
+    vertical-align: middle;
+    &#jform_profile_dob_img {
+      padding: 0 15px!important;
+    }
+  }
+}
+
+.offline_container {
+  font-size: 0;
+  height: 100%;
+  line-height: 0;
+  text-align: center;
+  &:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    overflow: hidden;
+    vertical-align: middle;
+    width: 0;
+  }
+  .container {
+    display: inline-block;
+    max-width: 100%;
+    vertical-align: middle;
+  }
+  #logo,
+  .offline_message {
+    text-align: center;
+  }
+  .well {
+    .box-sizing(border-box);
+    display: inline-block;
+    font-size: @baseFontSize;
+    line-height: @baseLineHeight;
+    margin: 0;
+    max-width: 100%;
+    text-align: left;
+    vertical-align: middle;
+    background: #fff;
+    color: @textColor;
+    > p {
+      color: #FFF;
+      color: @textColor;
+    }
+    .input > div {
+      padding-bottom: 20px;
+    }
+    #logo {
+      margin-bottom: @baseLineHeight;
+      max-width: 100%;
+    }
+    .btn {
+      float: right;
+    }
+    #form-login-remember {
+      float: left;
+      overflow: hidden;
+      padding: 10px 0;
+      label {
+        color: @textColor;
+        display: inline-block;
+        margin-bottom: 0;
+        white-space: nowrap;
+      }
+    }
+    input[type=text],
+    input[type=password] {
+      width: 100%;
+    }
+    div[id*=form-login] {
+      position: relative;
+    }
+    #form-login {
+      padding-top: 30px;
+      text-align: center;
+    }
+    fieldset {
+      display: inline-block;
+      max-width: 100%;
+      text-align: left;
+      width: 400px;
+    }
+  }
+}
+
+.moduletable {
+  .clearfix;
+  &.span12 + .moduletable {
+    clear: both;
+  }
+  margin-bottom: 40px;
+  &.span12:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.mod-menu .nav.menu.nav-pills > li > a {
+  display: block;
+}
+
+.mod-menu .nav.menu.nav-pills > li.active > a {
+  background: @globalColor;
+}
+
+time,
+.item_hits,
+.item_category-name
+address,
+.item_createdby {
+  white-space: nowrap;
+  margin: 0;
+}
+
+.item {
+  margin-bottom: @baseLineHeight*2;
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+.icons {
+  &:after {
+    content: '';
+    clear: both;
+    display: block;
+  }
+}
+
+.calendar {
+  table {
+    border: none;
+    border-collapse: collapse;
+    th,
+    td {
+      border: none !important;
+      padding: 0 !important;
+      text-align: center !important;
+    }
+  }
+}
+
+/*=================================================================*/
+/*======================= MODULE STYLES ===========================*/
+/*=================================================================*/
+
+.moduletable.span12{
+  margin-bottom: @baseLineHeight*1.5;
+}
+
+.moduletable.span12.title_only + * {
+  margin-top: 0;
+}
+
+/*== Login ==*/
+
+.mod-login_submit {
+  margin: 0 0 9px;
+}
+
+#form-login-remember label {
+  margin-bottom: 20px;
+}
+
+/*Finder*/
+#mod-finder-searchword {
+  border: 1px solid #EBEBEB;
+  .border-radius(0px);
+  box-shadow: none;
+  margin-bottom: 4px;
+}
+
+/*======================= MODULE ITEM WIDTH =======================*/
+
+.fluid {
+  margin-left: -@gridGutterWidth1200;
+  width: auto;
+}
+
+.row-fluid {
+  margin-left: -@gridGutterWidth1200;
+  width: auto;
+  [class*="itemSpan"],
+  [class*="span"] {
+    .box-sizing(border-box);
+    display: block;
+    float: left;
+    margin-left: 0;
+    min-height: 1px;
+    padding-left: @gridGutterWidth1200;
+    width: 100%;
+  }
+  .itemSpan1, .span1 {
+    .fluidcol(1);
+  }
+  .itemSpan2, .span2 {
+    .fluidcol(2);
+  }
+  .itemSpan3, .span3 {
+    .fluidcol(3);
+  }
+  .itemSpan4, .span4 {
+    .fluidcol(4);
+  }
+  .itemSpan5, .span5 {
+    .fluidcol(5);
+  }
+  .itemSpan6, .span6 {
+    .fluidcol(6);
+  }
+  .itemSpan7, .span7 {
+    .fluidcol(7);
+  }
+  .itemSpan8, .span8 {
+    .fluidcol(8);
+  }
+  .itemSpan9, .span9 {
+    .fluidcol(9);
+  }
+  .itemSpan10, .span10 {
+    .fluidcol(10);
+  }
+  .itemSpan11, .span11 {
+    .fluidcol(11);
+  }
+  .itemSpan12, .span12 {
+    width: 100%;
+  }
+}
+
+.cols-1 {
+  [class*="span"] {
+    .fluidcols(1);
+  }
+}
+
+.cols-2 {
+  [class*="span"] {
+    .fluidcols(2);
+  }
+}
+
+.cols-3 {
+  [class*="span"] {
+    .fluidcols(3);
+  }
+}
+
+.cols-4 {
+  [class*="span"] {
+    .fluidcols(4);
+  }
+}
+
+.cols-5 {
+  [class*="span"] {
+    .fluidcols(5);
+  }
+}
+
+.cols-6 {
+  [class*="span"] {
+    .fluidcols(6);
+  }
+}
+
+/*======================= MAILTO WINDOW =======================*/
+
+#mailto-window {
+  padding-top: 1em;
+}
+
+.mailto-close {
+  margin-bottom: 1em;
+  overflow: hidden;
+  a {
+    float: right;
+  }
+}
+
+/*=================================================================*/
+/*======================= COMPONENT STYLES ========================*/
+/*=================================================================*/
+
+//===============================
+//  Admin Mode article edit btn
+//===============================
+.icons .btn-group.pull-right {
+  margin: 0 0 10px 10px;
+  position: relative;
+  z-index: 10;
+  a.dropdown-toggle {
+    //margin-top: 30px;
+   // padding: 0 5px;
+    .caret {
+      border: none;
+      font-size: .8em;
+      height: auto;
+      margin: 0;
+      width: auto;
+      &:before {
+        content: '\f078';
+        font-family: @fa;
+      }
+    }
+  }
+  ul.dropdown-menu {
+    background-clip: padding-box;
+    background-color: @dropdownBackground;
+    border: 1px solid @dropdownBorder;
+    .box-shadow(0 5px 10px rgba(0, 0, 0, 0.15));
+    list-style: none;
+    margin: 2px 0 0;
+    min-width: 160px;
+    padding: 5px 0;
+    position: absolute;
+    top: 100%;
+    z-index: 1000;
+    > li {
+      float: none;
+      padding: 0;
+      .fa-edit {
+        margin-right: 5px;
+      }
+      > a {
+        color: @textColor;
+        &:hover {
+          color: @white;
+          background: @globalColor;
+        }
+      }
+    }
+  }
+}
+
+.icons {
+  &:after {
+    content: '';
+    clear: both;
+    display: block;
+  }
+}
+
+.jmodedit {
+  padding: 0 5px !important;
+}
+
+/* Category */
+
+.category_desc {
+  padding-bottom: 2em;
+}
+
+.category_children {
+  .category_child {
+    margin-bottom: 20px;
+  }
+}
+
+/*======================= ADDTHIS STYLES =======================*/
+
+.page-item_addThis {
+  padding-top: 12px;
+}
+
+.addthis_sharing_toolbox {
+  margin-top: @baseLineHeight;
+}
+
+/*======================= CAPTION FIXES =======================*/
+
+.img_caption {
+  text-align: center !important;
+  &.left {
+    float: left;
+    margin-right: 1em;
+    p {
+      clear: left;
+      text-align: center;
+    }
+  }
+  &.right {
+    float: right;
+    margin-left: 1em;
+    p {
+      clear: right;
+      text-align: center;
+    }
+  }
+  &.none {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/*======================= SCROLL TO TOP =======================*/
+
+#back-top {
+  bottom: 90px;
+  position: fixed;
+  right: 20px;
+  -webkit-transform: translateZ(0);
+  z-index: 999;
+  display: none;
+  a {
+    background: #fff;
+    border: 2px solid @linkColor;
+    .border-radius(1000px);
+    display: block;
+    font: 38px/56px FontAwesome;
+    height: 58px;
+    text-align: center;
+    width: 58px;
+    border: 2px solid @globalColor;
+    color: @globalColor;
+    > span:before {
+      content: "\f106";
+    }
+    &:hover {
+      background: @globalColor;
+      color: @bodyBackground;
+    }
+  }
+}
+
+.dropdown-toggle {
+  > * {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .fa-cog {
+    margin-right: 4px;
+  }
+}
+
+label[for=mod-login_remember] {
+  display: inline-block;
+}
+
+.btn-group {
+  max-width: 100%;
+  white-space: normal;
+}
+
+.form-horizontal .remember .control-label {
+  padding-top: 0;
+}
+
+#sw_pinterest_display {
+  max-width: 280px;
+  > div {
+    display: none;
+  }
+}
+
+#outer {
+  padding: 0 !important;
+  div#cookieMessageContainer {
+    margin-top: 0;
+  }
+}
+
+.mod_tm_ajax_contact_form .controls,
+.mod_tm_ajax_contact_form_input {
+  width: 100%;
+}
+
+form.mod_tm_ajax_contact_form {
+  margin-top: @baseLineHeight;
+  .chzn-container {
+    width: 100% !important;
+  }
+  .control-group-button .btn {
+    margin-right: 10px;
+  }
+}
+
+.navbar-form input, .navbar-form select, .navbar-form .radio, .navbar-form .checkbox,
+.navbar-form .btn, .navbar-form .btn-group {
+  margin-top: 0;
+}
+
+.acymailing_module_success {
+  font-weight: bold;
+  &:before {
+    content: '\f058';
+    display: inline-block;
+    font-family: FontAwesome;
+    font-size: 22px;
+    padding-right: 10px;
+    vertical-align: middle;
+  }
+  & + form {
+    display: none;
+  }
+}
+
+.items-more {
+  ul {
+    margin: 0 0 30px -@gridGutterWidth1200;
+    li {
+      .box-sizing(border-box);
+      float: left;
+      font-weight: bold;
+      padding: 0 0 10px @gridGutterWidth1200;
+      width: 50%;
+    }
+    &:after {
+      clear: both;
+      content: '';
+      display: block;
+    }
+  }
+}
+
+// =======================
+// Olark Live Chat
+// =======================
+#habla_window_div {
+  -webkit-transform: translateZ(0);
+
+  .habla_offline_submit_input {
+    background: @btnBackground !important;
+    color: @btnColor !important;
+    &:hover,
+    &:active,
+    &:focus,
+    &.active,
+    &.selected {
+      color: @btnColorHighlight !important;
+      background: @btnHighlightBackground !important;
+    }
+  }
+}
+
+#habla_window_div #habla_topbar_div {
+  background: @globalColor !important;
+}
+
+.moduletable.olark {
+  display: none;
+}
+
+#habla_window_div.habla_window_div_base {
+  z-index: 8000 !important;
+}
+
+// =======================
+// Style Switcher
+// =======================
+#style_switcher div.color_scheme {
+  position: relative;
+  overflow: hidden;
+  &:before,&:after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 50%;
+    height: 50%;
+  }
+  &.color_scheme_1 {
+    background: extract(@global-1,1);
+    &:before{
+      top: 0;
+      background: extract(@global-1,2);
+    }
+    &:after{
+      bottom: 0;
+      background: extract(@global-1,3);
+    }
+    
+  }
+
+  &.color_scheme_2 {
+    background: extract(@global-2,1);
+    &:before{
+      top: 0;
+      background:extract(@global-2,2);
+    }
+    &:after{
+      bottom: 0;
+      background:extract(@global-2,3);
+    }
+
+  }  &.color_scheme_3 {
+    background: extract(@global-3,1);
+    &:before{
+      top: 0;
+      background:extract(@global-3,2);
+    }
+    &:after{
+      bottom: 0;
+      background:extract(@global-3,3);
+    }
+
+  }
+
+  &.color_scheme_4 {
+    background: extract(@global-4, 1);
+    &:before {
+      top: 0;
+      background: extract(@global-4, 2);
+    }
+    &:after {
+      bottom: 0;
+      background: extract(@global-4, 3);
+    }
+  }
+}
+
+// =======================
+// Text Selection
+// =======================
+*::selection {
+  background: @globalColor;
+  color: @white;
+}
+
+*::-moz-selection {
+  background: @globalColor;
+  color: @white;
+}

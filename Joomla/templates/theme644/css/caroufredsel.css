@@ -1,0 +1,175 @@
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.hide-text {
+  font-size: 0;
+  line-height: 0;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 1px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@-webkit-keyframes h-progress {
+  0% {
+    width: 0;
+  }
+}
+@-moz-keyframes h-progress {
+  0% {
+    width: 0;
+  }
+}
+@-ms-keyframes h-progress {
+  0% {
+    width: 0;
+  }
+}
+@-o-keyframes h-progress {
+  0% {
+    width: 0;
+  }
+}
+@keyframes h-progress {
+  0% {
+    width: 0;
+  }
+}
+@-webkit-keyframes v-progress {
+  0% {
+    height: 0;
+  }
+}
+@-moz-keyframes v-progress {
+  0% {
+    height: 0;
+  }
+}
+@-ms-keyframes v-progress {
+  0% {
+    height: 0;
+  }
+}
+@-o-keyframes v-progress {
+  0% {
+    height: 0;
+  }
+}
+@keyframes v-progress {
+  0% {
+    height: 0;
+  }
+}
+.mod_caroufredsel {
+  overflow: hidden;
+}
+.caroufredsel_wrapper {
+  cursor: auto !important;
+}
+.list_carousel {
+  margin: 0 0 0 -30px;
+  padding: 0;
+  position: relative;
+  width: auto;
+}
+.list_carousel ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.list_carousel ul li {
+  display: block;
+  float: left;
+  padding: 0;
+}
+.list_carousel ul li .item_content {
+  margin: 0;
+  padding: 0 0 0 30px;
+}
+.list_carousel ul li:before {
+  display: none;
+}
+.clearfix {
+  clear: both;
+  float: none;
+}
+/*Navigation*/
+.caroufredsel_prev,
+.caroufredsel_next {
+  color: #fff;
+  display: block;
+  height: 20px;
+  line-height: 20px;
+  margin: -10px 0 0 0;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  width: 20px;
+  background: #d4b79b;
+}
+.caroufredsel_prev:hover,
+.caroufredsel_next:hover {
+  background: #000;
+}
+.caroufredsel_prev span,
+.caroufredsel_next span {
+  cursor: pointer;
+  display: block;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.caroufredsel_prev {
+  left: 30px;
+}
+.caroufredsel_next {
+  right: 0;
+}
+/*Pagination*/
+.caroufredsel_pagination {
+  text-align: center;
+}
+.caroufredsel_pagination a {
+  display: inline-block;
+  padding: 0 0.5em;
+}
+@media (max-width: 1200px) {
+  .list_carousel {
+    margin: 0 0 0 -20px;
+  }
+  .list_carousel ul li .item_content {
+    padding: 0 0 0 20px;
+  }
+  .caroufredsel_prev {
+    left: 20px;
+  }
+}
+@media (max-width: 979px) {
+  .list_carousel {
+    margin: 0 0 0 -12px;
+  }
+  .list_carousel ul li .item_content {
+    padding: 0 0 0 12px;
+  }
+  .caroufredsel_prev {
+    left: 12px;
+  }
+}

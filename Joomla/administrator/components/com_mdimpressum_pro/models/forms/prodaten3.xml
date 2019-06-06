@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+
+              <field name="id" type="text" default="0" label="COM_MDIMPRESSUM_PRO_FORM_LBL_PRODATEN3_ID"
+            readonly="true" class="readonly"
+            description="JGLOBAL_FIELD_ID_DESC" /> 
+
+       <field name="created_by" type="createdby" default="" 
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_PRODATEN3_CREATED_BY"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_PRODATEN3_CREATED_BY"  /> 
+
+       <field name="modified_by" type="modifiedby" default="" 
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_PRODATEN3_MODIFIED_BY"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_PRODATEN3_MODIFIED_BY"  /> 
+
+       <field name="uberschrift3" type="text"
+             required="true"     
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_PRODATEN3_UBERSCHRIFT3"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_PRODATEN3_UBERSCHRIFT3" 
+                
+                
+                
+            filter="raw" /> 
+
+       <field name="cookies" type="textarea"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_PRODATEN3_COOKIES"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_PRODATEN3_COOKIES" 
+            cols="30"
+            rows="10"    
+            default="Die Internetseiten verwenden teilweise so genannte Cookies. Cookies richten auf Ihrem Rechner keinen Schaden an und enthalten keine Viren. Cookies dienen dazu, unser Angebot nutzerfreundlicher, effektiver und sicherer zu machen. Cookies sind kleine Textdateien, die auf Ihrem Rechner abgelegt werden und die Ihr Browser speichert.
+
+Die meisten der von uns verwendeten Cookies sind so genannte „Session-Cookies“. Sie werden nach Ende Ihres Besuchs automatisch gelöscht. Andere Cookies bleiben auf Ihrem Endgerät gespeichert, bis Sie diese löschen. Diese Cookies ermöglichen es uns, Ihren Browser beim nächsten Besuch wiederzuerkennen.
+
+Sie können Ihren Browser so einstellen, dass Sie über das Setzen von Cookies informiert werden und Cookies nur im Einzelfall erlauben, die Annahme von Cookies für bestimmte Fälle oder generell ausschließen sowie das automatische Löschen der Cookies beim Schließen des Browser aktivieren. Bei der Deaktivierung von Cookies kann die Funktionalität dieser Website eingeschränkt sein."    
+                
+            filter="raw"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="serverlog" type="textarea"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_PRODATEN3_SERVERLOG"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_PRODATEN3_SERVERLOG" 
+             cols="30"
+            rows="10"   
+            default="
+Der Provider der Seiten erhebt und speichert automatisch Informationen in so genannten Server-Log Files, die Ihr Browser automatisch an uns übermittelt. Dies sind: &lt;br /&gt;&lt;br /&gt;&lt;ul&gt; &lt;li&gt;Browsertyp/ Browserversion&lt;/li&gt; &lt;li&gt;verwendetes Betriebssystem&lt;/li&gt; &lt;li&gt;Referrer URL&lt;/li&gt; &lt;li&gt;Hostname des zugreifenden Rechners&lt;/li&gt; &lt;li&gt;Uhrzeit der Serveranfrage&lt;/li&gt; &lt;/ul&gt; &lt;br /&gt;Diese Daten sind nicht bestimmten Personen zuordenbar. Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht vorgenommen. Wir behalten uns vor, diese Daten nachträglich zu prüfen, wenn uns konkrete Anhaltspunkte für eine rechtswidrige Nutzung bekannt werden.
+"    
+                
+            filter="raw"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="kontform" type="textarea"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_PRODATEN3_KONTFORM"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_PRODATEN3_KONTFORM" 
+             cols="30"
+            rows="10"
+            default="Only in Pro Version! - Nur in der Pro Version enthalten!"
+
+            filter="raw"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="werbemails" type="textarea"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_PRODATEN3_WERBEMAILS"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_PRODATEN3_WERBEMAILS" 
+            cols="30"
+            rows="10"    
+            default="Only in Pro Version! - Nur in der Pro Version enthalten!"
+                
+            filter="raw"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="newsletterdaten" type="textarea"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_PRODATEN3_NEWSLETTERDATEN"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_PRODATEN3_NEWSLETTERDATEN" 
+            cols="30"
+            rows="10"
+            default="Only in Pro Version! - Nur in der Pro Version enthalten!"
+                
+            filter="raw"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="reg" type="textarea"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_PRODATEN3_REG"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_PRODATEN3_REG" 
+            cols="30"
+            rows="10"    
+            default="Only in Pro Version! - Nur in der Pro Version enthalten!"
+                
+            filter="raw"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="verarbdaten" type="textarea"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_PRODATEN3_VERARBDATEN"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_PRODATEN3_VERARBDATEN" 
+             cols="30"
+            rows="10"   
+            default="Only in Pro Version! - Nur in der Pro Version enthalten!"    
+                
+            filter="raw"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="zusatz1" type="textarea"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_PRODATEN3_ZUSATZ1"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_PRODATEN3_ZUSATZ1" 
+             cols="30"
+            rows="10"   
+                
+                
+            filter="raw"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="zusatz2" type="textarea"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_PRODATEN3_ZUSATZ2"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_PRODATEN3_ZUSATZ2" 
+            cols="30"
+            rows="10"    
+                
+                
+            filter="raw"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+ 
+		<field name="version_note"
+			type="text"
+			label="JGLOBAL_FIELD_VERSION_NOTE_LABEL"
+			description="JGLOBAL_FIELD_VERSION_NOTE_DESC"
+			class="inputbox" size="45"
+			labelclass="control-label"
+		/> 
+
+ 
+		<field
+			name="state"
+			type="list"
+			label="JSTATUS"
+			description="JFIELD_PUBLISHED_DESC"
+			class="inputbox"
+			size="1"
+			default="1">
+			<option value="1">JPUBLISHED</option>
+			<option value="0">JUNPUBLISHED</option>
+			<option value="2">JARCHIVED</option>
+			<option value="-2">JTRASHED</option>
+		</field> 
+
+                        <field name="checked_out" type="hidden" filter="unset" />
+        <field name="checked_out_time" type="hidden" filter="unset" />
+
+	</fieldset>
+
+</form>

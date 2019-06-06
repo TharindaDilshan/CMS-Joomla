@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.5" type="plugin" group="content" method="upgrade">
+    <name>plg_content_osyoutube</name>
+    <author>Joomlashack</author>
+    <creationDate>March 25 2019</creationDate>
+    <copyright>Copyright (C) 2016-2019 Joomlashack.com</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <authorEmail>help@joomlashack.com</authorEmail>
+    <authorUrl>http://www.joomlashack.com</authorUrl>
+    <version>3.3.14</version>
+    <variant>FREE</variant>
+    <description>PLG_CONTENT_OSYOUTUBE_DESCRIPTION</description>
+
+    <scriptfile>script.installer.php</scriptfile>
+
+    <files>
+        <folder>language</folder>
+        <folder>library</folder>
+        <folder>views</folder>
+        <folder>form</folder>
+        <filename plugin="osyoutube">osyoutube.php</filename>
+        <filename>style.css</filename>
+    </files>
+
+    <media destination="plg_content_osyoutube" folder="media">
+        <folder>css</folder>
+        <folder>js</folder>
+        <folder>images</folder>
+        <folder>fonts</folder>
+    </media>
+
+    <config addfieldpath="/plugins/content/osyoutube/form/fields">
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="width"
+                       type="text"
+                       default="425"
+                       label="PLG_CONTENT_OSYOUTUBE_FIELD_WIDTH_LABEL"
+                       description="PLG_CONTENT_OSYOUTUBE_FIELD_WIDTH_DESC"/>
+
+                <field name="height"
+                       type="text"
+                       default="344"
+                       label="PLG_CONTENT_OSYOUTUBE_FIELD_HEIGHT_LABEL"
+                       description="PLG_CONTENT_OSYOUTUBE_FIELD_HEIGHT_DESC"/>
+
+                <field name="responsive"
+                       type="radio"
+                       class="btn-group btn-group-yesno"
+                       default="1"
+                       label="PLG_CONTENT_OSYOUTUBE_FIELD_RESPONSIVE_LABEL"
+                       description="PLG_CONTENT_OSYOUTUBE_FIELD_RESPONSIVE_DESC">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+
+                <field name="ignore_html_links"
+                       type="radio"
+                       class="btn-group btn-group-yesno"
+                       default="0"
+                       label="PLG_CONTENT_OSYOUTUBE_FIELD_IGNORE_HTML_LINKS_LABEL"
+                       description="PLG_CONTENT_OSYOUTUBE_FIELD_IGNORE_HTML_LINKS_DESC">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+
+                <field type="customfooter"
+                       name="customfooter"
+                       media="plg_content_osyoutube"
+                       showgoproad="https://www.joomlashack.com/joomla-extensions/osyoutube/"
+                       jedurl="https://extensions.joomla.org/extension/osyoutube/"/>
+            </fieldset>
+
+            <fieldset name="advanced">
+                <field name="debug"
+                       type="radio"
+                       class="btn-group btn-group-yesno"
+                       label="PLG_CONTENT_OSYOUTUBE_FIELD_DEBUG_LABEL"
+                       default="0">
+                    <option value="0">JOFF</option>
+                    <option value="1">JON</option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+
+    <updateservers>
+        <server type="extension" priority="1" name="OSYouTube"><![CDATA[https://deploy.ostraining.com/client/update/free/stable/plg_content_osyoutube]]></server>
+    </updateservers>
+
+    <alledia>
+        <element publish="true">osyoutube</element>
+        <namespace>OSYouTube</namespace>
+        <license>free</license>
+        <targetplatform>3.7</targetplatform>
+        <phpminimum>5.6</phpminimum>
+
+        <relatedExtensions>
+            <extension type="library"
+                       element="allediaframework">AllediaFramework</extension>
+
+            <extension type="plugin"
+                       group="system"
+                       element="ossystem"
+                       publish="true"
+                       ordering="first">OSSystem</extension>
+        </relatedExtensions>
+
+        <include>AllediaFreeDefaultFiles</include>
+
+        <obsolete>
+            <file>/plugins/content/osyoutube/include.php</file>
+            <file>/plugins/content/osyoutube/library/Free/Embed.php</file>
+        </obsolete>
+    </alledia>
+</extension>

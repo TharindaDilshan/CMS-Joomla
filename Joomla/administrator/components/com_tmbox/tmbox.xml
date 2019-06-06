@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<extension type="component" version="3.4.8" method="upgrade">
+    <name>com_tmbox</name>
+    <author>olejenya</author>
+    <authorEmail>olejenya@olejenya.com</authorEmail>
+    <authorUrl>olejenya@olejenya.com</authorUrl>
+    <copyright>olejenya@olejenya.com</copyright>
+    <license>GPLv2 or later</license>
+    <version>1.0</version>
+    <description>COM_TMBOX_DESC</description>
+    <creationDate>09 March 2016</creationDate>
+    <files folder="site">
+        <filename>index.html</filename>
+        <filename>tmbox.php</filename>
+        <filename>controller.php</filename>
+        <filename>router.php</filename>
+        <folder>models</folder>
+        <folder>views</folder>
+        <folder>controllers</folder>
+        <folder>assets</folder>
+        <folder>helpers</folder>
+        <folder>template</folder>
+    </files>
+    <install>
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install.mysql.sql</file>
+        </sql>
+    </install>
+    <uninstall>
+        <sql>
+            <file driver="mysql" charset="utf8">sql/uninstall.mysql.sql</file>
+        </sql>
+    </uninstall>
+    <languages folder="site">
+        <language tag="en-GB">language/en-GB/en-GB.com_tmbox.ini</language>
+        <language tag="ru-RU">language/ru-RU/ru-RU.com_tmbox.ini</language>
+    </languages>
+    <administration>
+        <menu>COM_TMBOX</menu>
+        <submenu>
+
+        </submenu>
+        <files folder="admin">
+            <filename>index.html</filename>
+            <filename>tmbox.php</filename>
+            <filename>controller.php</filename>
+            <folder>sql</folder>
+            <folder>tables</folder>
+            <folder>models</folder>
+            <folder>views</folder>
+            <folder>controllers</folder>
+        </files>
+        <languages folder="admin">
+            <language tag="en-GB">language/en-GB/en-GB.com_tmbox.ini</language>
+            <language tag="ru-RU">language/ru-RU/ru-RU.com_tmbox.ini</language>
+            <language tag="en-GB">language/en-GB/en-GB.com_tmbox.sys.ini</language>
+            <language tag="ru-RU">language/ru-RU/ru-RU.com_tmbox.sys.ini</language>
+        </languages>
+    </administration>
+</extension>

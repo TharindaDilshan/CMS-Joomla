@@ -1,0 +1,236 @@
+//
+// Lists
+// --------------------------------------------------
+
+//===========================================
+//   Ordered and Unordered List Styles
+//===========================================
+ul, ol {
+  padding: 0;
+  list-style: none;
+  li {
+    line-height: @baseLineHeight;
+  }
+}
+
+//===========================================
+//   Ordered List Styles
+//===========================================
+ol {
+  list-style: none;
+  counter-reset: list;
+  li {
+    padding-left: 45px;
+    position: relative;
+    &:before {
+      color: @headingsColor;
+      content: counter(list, decimal-leading-zero)'.';
+      counter-increment: list;
+      left: 0;
+      position: absolute;
+      top: 0;
+    }
+    a {
+      text-transform: uppercase;
+      font-size: 16px;
+      text-decoration: none;
+      color: @globalColor;
+      &:hover{
+        color: @globalColor;
+      }
+    }
+    + li {
+      margin-top: 10px;
+    }
+  }
+}
+
+//===========================================
+// Unordered List Styles
+//===========================================
+.item_introtext,
+.item_fulltext,
+.category_desc,
+.site_map{
+  ul {
+    li {
+      position: relative;
+      padding-left: 25px;
+      &:before {
+        position: absolute;
+        left: 0;
+        top: 0;
+        content: '\f105';
+        color: @globalColor;
+        font-family: @fa;
+        font-size: 18px;
+      }
+      + li {
+        margin-top: 10px;
+      }
+    }
+    &.nav-tabs {
+      li {
+        padding: 0;
+        &:before {
+          display: none;
+        }
+      }
+    }
+    a,
+    span {
+      text-transform: uppercase;
+      font-size: 16px;
+      text-decoration: none;
+      color: @globalColor;
+      &:hover {
+        color: @globalColor;
+      }
+    }
+  }
+}
+
+ul.tags,
+ul.nav,
+ul.btn-toolbar,
+ul.dropdown-menu,
+ul.chzn-results,
+ul.chzn-choices {
+  li {
+    &:before {
+      display: none;
+    }
+  }
+}
+
+//===========================================
+// Icon List Styles
+//===========================================
+ul.icons {
+  li {
+    list-style: none;
+    position: relative;
+    padding-left: 30px;
+    + li {
+      margin-top: 10px;
+    }
+    &:before {
+      font-family: 'FontAwesome';
+      font-size: 20px;
+      background: @headingsColor;
+      color: @white;
+      line-height: 20px;
+      width: auto;
+      height: auto;
+      top: 0;
+    }
+    &:nth-child(5n-4):before {
+      content: '\f188';
+    }
+    &:nth-child(5n-3):before {
+      content: '\f140';
+    }
+    &:nth-child(5n-2):before {
+      content: '\f0c1';
+    }
+    &:nth-child(5n-1):before {
+      content: '\f0ed';
+    }
+    &:nth-child(5n):before {
+      content: '\f1f0';
+    }
+
+  }
+}
+
+//===========================================
+// Bootstrap Styles
+//===========================================
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  &.nav-child {
+    margin: 5px 0 0;
+  }
+}
+
+// Remove default list styles
+ul.unstyled,
+ol.unstyled {
+  margin-left: 0;
+  list-style: none;
+}
+
+// Single-line list items
+ul.inline,
+ol.inline {
+  margin-left: 0;
+  > li {
+    display: inline-block;
+    .ie7-inline-block();
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+// Description Lists
+dl + * {
+  margin-top: @baseLineHeight;
+}
+
+dt,
+dd {
+  line-height: @baseLineHeight;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: @baseLineHeight / 2;
+}
+
+// Horizontal layout (like forms)
+.dl-horizontal {
+  .clearfix(); // Ensure dl clears floats if empty dd elements present
+  dt {
+    float: left;
+    width: @horizontalComponentOffset - 20;
+    clear: left;
+    text-align: right;
+    .text-overflow();
+  }
+  dd {
+    margin-left: @horizontalComponentOffset;
+  }
+}
+
+.portfolio-meta-list {
+  display: table;
+  margin-left: 0;
+  overflow: hidden;
+  li {
+    color: @linkHoverColor;
+    display: table-row;
+    strong {
+      color: @globalColor;
+    }
+    > strong,
+    > span {
+      display: table-cell;
+    }
+    > span {
+      padding-left: 5px;
+      color: @textColor;
+    }
+    &:before {
+      display: none;
+    }
+  }
+}
+
+.item_fulltext .portfolio-meta-list li span:hover {
+  color: inherit;
+}

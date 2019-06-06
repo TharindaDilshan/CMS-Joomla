@@ -1,0 +1,268 @@
+//
+// Typography
+// --------------------------------------------------
+
+p{
+  padding-bottom: @baseLineHeight;
+}
+
+.lead {
+  margin-bottom: @baseLineHeight;
+  font-size: @baseFontSize * 1.5;
+  line-height: @baseLineHeight * 1.5;
+}
+
+a {
+  .transition(.5s all ease);
+  color: @linkColor;
+  &:focus {
+    outline: none;
+  }
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: @linkHoverColor;
+  }
+}
+
+b {
+  font-size: @fontSizeLarge;
+  color: @globalColor;
+}
+
+// Headings
+// -------------------------
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.nav-tab li {
+  color: #000;
+  font-family: @serifFontFamily2;
+  font-weight: 400;
+  position: relative;
+  margin-top: 0;
+  text-rendering: optimizelegibility; // Fix the character spacing for headings
+  a {
+    color: #000;
+    &:hover {
+      color: @globalColor;
+    }
+  }
+  &.heading-style-1 {
+    font-size: @baseFontSize * 2.75;
+    line-height: @baseLineHeight * 2.75;
+    margin-bottom: 20px;
+  }
+  &.heading-style-2 {
+    font-size: @baseFontSize * 2.25;
+    line-height: @baseLineHeight * 2.25;
+    margin-bottom: 20px;
+  }
+  &.heading-style-3 {
+    font-size: 36px;
+    line-height: 38px;
+    margin-bottom: 30px;
+    padding: 0;
+    letter-spacing: 4px;
+    font-weight: 900;
+    text-transform: uppercase; 
+    text-align: center;
+    @media (min-width: 980px) and (max-width: 1199px) {
+      font-size: 30px;
+      line-height: 32px;
+    }
+    @media (min-width: 768px) and (max-width: 979px) {
+        font-size: 24px;
+        line-height: 26px;
+    }
+    @media (min-width: 320px) and (max-width: 767px) {
+        font-size: 20px;
+        line-height: 24px;
+    }
+  }
+  &.heading-style-4 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+  &.heading-style-5 {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 10px;
+    font-weight: 300;
+  }
+  &.heading-style-6 {
+    font-size: 14px;
+    line-height: @baseLineHeight;
+    margin-bottom: 20px;
+  }
+  &.heading-style-7 {
+    font-size: @baseFontSize * 0.75;
+    line-height: @baseLineHeight * 0.75;
+    margin-bottom: 20px;
+  }
+  &.heading-style-8 {
+    font-size: @baseFontSize * 0.7;
+    line-height: @baseLineHeight * 0.7;
+    margin-bottom: 20px;
+  }
+  small {
+    font-weight: normal;
+    line-height: 1;
+    color: @grayLight;
+  }
+  .print_link {
+    margin-left: 6px;
+  }
+  i {
+    margin-right: 6px;
+  }
+}
+
+// MISC
+// ----
+
+// Horizontal rules
+hr {
+  margin: @baseLineHeight 0;
+  border: none;
+  border-top: 1px solid @hrBorder;
+}
+
+// Blockquotes
+blockquote {
+  padding: 0 0 0 100px;
+  margin: 0 0 @baseLineHeight;
+  position: relative;
+  font-style: italic;
+  color: @globalColor;
+  font-size: 28px;
+  line-height: 40px;
+  &:before {
+    content: '"';
+    font: 80px/80px Fontawesome;
+    left: 25px;
+    position: absolute;
+    top: -10px;
+    color: @globalColor;
+  }
+  &:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: @tableBorderColor;
+  }
+  small {
+    display: block;
+    line-height: @baseLineHeight;
+    color: @grayLight;
+    text-align: right;
+  }
+  cite {
+    color: @headingsColor;
+    display: inline-block;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+}
+
+.item_introtext,
+.item_fulltext,
+.category_desc {
+  p a {
+    text-decoration: underline;
+  }
+  strong {
+    color: @linkColor;
+  }
+  mark {
+    color: @white;
+    padding: 2px 6px;
+    background: @globalColor;
+  }
+}
+
+// Emphasis & misc
+// -------------------------
+
+// Ex: 14px base font * 85% = about 12px
+small { font-size: 85%; }
+
+strong { font-weight: bold; }
+
+em { font-style: italic; }
+
+cite { font-style: normal; }
+
+// Utility classes
+.muted { color: @grayLight; }
+
+a.muted:hover,
+a.muted:focus { color: darken(@grayLight, 10%); }
+
+.text-warning { color: @warningText; }
+
+a.text-warning:hover,
+a.text-warning:focus { color: darken(@warningText, 10%); }
+
+.text-error { color: @errorText; }
+
+a.text-error:hover,
+a.text-error:focus { color: darken(@errorText, 10%); }
+
+.text-info { color: @infoText; }
+
+a.text-info:hover,
+a.text-info:focus { color: darken(@infoText, 10%); }
+
+.text-success { color: @successText; }
+
+a.text-success:hover,
+a.text-success:focus { color: darken(@successText, 10%); }
+
+.text-left { text-align: left; }
+
+.text-right { text-align: right; }
+
+.text-center { text-align: center; }
+
+// Quotes
+q:before,
+q:after {
+  content: "";
+}
+
+// Addresses
+address {
+  display: block;
+  margin-bottom: @baseLineHeight;
+  font-style: normal;
+  line-height: @baseLineHeight;
+}
+
+// Abbreviations and acronyms
+abbr[title],
+  // Added data-* attribute to help out our tooltip plugin, per https://github.com/twitter/bootstrap/issues/5257
+abbr[data-original-title] {
+  cursor: help;
+  border-bottom: 1px dotted @grayLight;
+}
+
+abbr.initialism {
+  font-size: 90%;
+  text-transform: uppercase;
+}
+
+// Page header
+// -------------------------
+
+.page-header { }
+
+

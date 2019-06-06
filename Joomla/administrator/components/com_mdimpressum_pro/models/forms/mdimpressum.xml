@@ -1,0 +1,816 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+
+              <field name="id" type="text" default="0" label="COM_MDIMPRESSUM_PRO_FORM_LBL_MDIMPRESSUM_ID"
+            readonly="true" class="readonly"
+            description="JGLOBAL_FIELD_ID_DESC" /> 
+
+       <field name="created_by" type="createdby" default="" 
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_MDIMPRESSUM_CREATED_BY"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_MDIMPRESSUM_CREATED_BY"  /> 
+
+       <field name="firma" type="text"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_MDIMPRESSUM_FIRMA"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_MDIMPRESSUM_FIRMA" 
+                
+                
+                 required="true" 
+            menu_published="0"
+            filter="raw"
+            size="30"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="vrnummer" type="text"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_MDIMPRESSUM_VRNUMMER"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_MDIMPRESSUM_VRNUMMER" 
+                
+                
+                
+            size="30" /> 
+
+       <field name="name" type="text"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_MDIMPRESSUM_NAME"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_MDIMPRESSUM_NAME" 
+                
+                
+                 required="true" 
+            menu_published="0"
+            filter="raw"
+            size="30"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="vorname" type="text"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_MDIMPRESSUM_VORNAME"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_MDIMPRESSUM_VORNAME" 
+                
+                
+                 required="true" 
+            menu_published="0"
+            filter="raw"
+            size="30"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="str1" type="text"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_MDIMPRESSUM_STR1"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_MDIMPRESSUM_STR1" 
+                
+                
+                
+            menu_published="0"
+            filter="raw"
+            size="30"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="plz1" type="text"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_MDIMPRESSUM_PLZ1"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_MDIMPRESSUM_PLZ1" 
+                
+                
+                
+            menu_published="0"
+            filter="raw"
+            size="30"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="ort1" type="text"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_MDIMPRESSUM_ORT1"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_MDIMPRESSUM_ORT1" 
+                
+                
+                
+            menu_published="0"
+            filter="raw"
+            size="30"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="tel1" type="text"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_MDIMPRESSUM_TEL1"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_MDIMPRESSUM_TEL1" 
+                
+                
+                
+            menu_published="0"
+            filter="raw"
+            size="30"
+            option_on="Yes"
+            option_off="Yes" />
+
+       <field name="tel2" type="text"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_MDIMPRESSUM_TEL2"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_MDIMPRESSUM_TEL2" 
+                
+                
+                
+            menu_published="0"
+            filter="raw"
+            size="30"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="land1" type="text"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_MDIMPRESSUM_LAND1"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_MDIMPRESSUM_LAND1" 
+                
+                
+                
+            menu_published="0"
+            filter="raw"
+            size="30"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+ 
+		<field name="email1" type="email" label="Email Adresse I" description="Ihre 1. E-Mail Adresse" validate="email"   /> 
+
+ 
+		<field name="email2" type="email" label="Email Adresse II" description="Ihre 2. E-Mail Adresse" validate="email"   /> 
+
+       <field name="fax1" type="text"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_MDIMPRESSUM_FAX1"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_MDIMPRESSUM_FAX1" 
+                
+                
+                
+            menu_published="0"
+            filter="raw"
+            size="30"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="mobil1" type="text"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_MDIMPRESSUM_MOBIL1"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_MDIMPRESSUM_MOBIL1" 
+                
+                
+                
+            menu_published="0"
+            filter="raw"
+            size="30"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="website1" type="text"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_MDIMPRESSUM_WEBSITE1"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_MDIMPRESSUM_WEBSITE1" 
+                
+                
+                
+            menu_published="0"
+            filter="raw"
+            size="30"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="vnamen" type="textarea"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_MDIMPRESSUM_VNAMEN"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_MDIMPRESSUM_VNAMEN" 
+                
+                
+                
+            menu_published="0"
+            cols="30"
+            rows="10"
+            filter="raw"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="vnamen2" type="textarea"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_MDIMPRESSUM_VNAMEN2"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_MDIMPRESSUM_VNAMEN2" 
+                
+                
+                
+            menu_published="0"
+            cols="30"
+            rows="10"
+            filter="raw"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="vsitz" type="text"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_MDIMPRESSUM_VSITZ"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_MDIMPRESSUM_VSITZ" 
+                
+                
+                
+            menu_published="0"
+            filter="raw"
+            size="30"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="vearnr" type="text"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_MDIMPRESSUM_VEARNR"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_MDIMPRESSUM_VEARNR" 
+                
+                
+                
+            size="30" /> 
+
+       <field name="vlizbeh" type="text"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_MDIMPRESSUM_VLIZBEH"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_MDIMPRESSUM_VLIZBEH" 
+                
+                
+                
+            menu_published="0"
+            filter="raw"
+            size="30"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="vfinanz" type="text"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_MDIMPRESSUM_VFINANZ"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_MDIMPRESSUM_VFINANZ" 
+                
+                
+                
+            menu_published="0"
+            filter="raw"
+            size="30"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="vstr" type="text"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_MDIMPRESSUM_VSTR"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_MDIMPRESSUM_VSTR" 
+                
+                
+                
+            size="30" /> 
+
+       <field name="vplz" type="text"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_MDIMPRESSUM_VPLZ"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_MDIMPRESSUM_VPLZ" 
+                
+                
+                
+            size="30" /> 
+
+       <field name="vort" type="text"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_MDIMPRESSUM_VORT"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_MDIMPRESSUM_VORT" 
+                
+                
+                
+            size="30" /> 
+
+ 
+		<field name="vemail" type="email" label="Vemail" description="" validate="email"   /> 
+
+       <field name="vtel" type="text"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_MDIMPRESSUM_VTEL"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_MDIMPRESSUM_VTEL" 
+                
+                
+                
+            size="30" /> 
+
+       <field name="vberuf" type="text"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_MDIMPRESSUM_VBERUF"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_MDIMPRESSUM_VBERUF" 
+                
+                
+                
+            menu_published="0"
+            filter="raw"
+            size="30"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="vkammer" type="text"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_MDIMPRESSUM_VKAMMER"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_MDIMPRESSUM_VKAMMER" 
+                
+                
+                
+            menu_published="0"
+            filter="raw"
+            size="30"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="vgesetzlbest" type="text"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_MDIMPRESSUM_VGESETZLBEST"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_MDIMPRESSUM_VGESETZLBEST" 
+                
+                
+                
+            menu_published="0"
+            filter="raw"
+            size="30"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="vland" type="text"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_MDIMPRESSUM_VLAND"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_MDIMPRESSUM_VLAND" 
+                
+                
+                
+            menu_published="0"
+            filter="raw"
+            size="30"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="vaufsicht" type="text"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_MDIMPRESSUM_VAUFSICHT"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_MDIMPRESSUM_VAUFSICHT" 
+                
+                
+                
+            menu_published="0"
+            filter="raw"
+            size="30"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="vhaft" type="text"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_MDIMPRESSUM_VHAFT"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_MDIMPRESSUM_VHAFT" 
+                
+                
+                
+            size="30" /> 
+
+       <field name="vversich" type="text"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_MDIMPRESSUM_VVERSICH"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_MDIMPRESSUM_VVERSICH" 
+                
+                
+                
+            menu_published="0"
+            filter="raw"
+            size="30"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="vversichnr" type="text"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_MDIMPRESSUM_VVERSICHNR"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_MDIMPRESSUM_VVERSICHNR" 
+                
+                
+                
+            menu_published="0"
+            filter="raw"
+            size="30"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="vpersons" type="text"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_MDIMPRESSUM_VPERSONS"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_MDIMPRESSUM_VPERSONS" 
+                
+                
+                
+            menu_published="0"
+            filter="raw"
+            size="30"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="vsachs" type="text"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_MDIMPRESSUM_VSACHS"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_MDIMPRESSUM_VSACHS" 
+                
+                
+                
+            menu_published="0"
+            filter="raw"
+            size="30"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="vregg" type="text"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_MDIMPRESSUM_VREGG"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_MDIMPRESSUM_VREGG" 
+                
+                
+                
+            menu_published="0"
+            filter="raw"
+            size="30"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="vreggnr" type="text"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_MDIMPRESSUM_VREGGNR"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_MDIMPRESSUM_VREGGNR" 
+                
+                
+                
+            menu_published="0"
+            filter="raw"
+            size="30"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="ustid" type="text"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_MDIMPRESSUM_USTID"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_MDIMPRESSUM_USTID" 
+                
+                
+                
+            menu_published="0"
+            filter="raw"
+            directory_stripext="true"
+            directory_hidenode="true"
+            directory_hidedefault="true"
+            alias_generator="1828188"
+            heading="h4"
+            close="true"
+            size="30"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="vwirtid" type="text"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_MDIMPRESSUM_VWIRTID"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_MDIMPRESSUM_VWIRTID" 
+                
+                
+                
+            menu_published="0"
+            filter="raw"
+            size="30"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="tname" type="text"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_MDIMPRESSUM_TNAME"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_MDIMPRESSUM_TNAME" 
+                
+                
+                
+            menu_published="0"
+            filter="raw"
+            size="30"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="tvorname" type="text"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_MDIMPRESSUM_TVORNAME"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_MDIMPRESSUM_TVORNAME" 
+                
+                
+                
+            menu_published="0"
+            filter="raw"
+            size="30"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="tstr" type="text"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_MDIMPRESSUM_TSTR"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_MDIMPRESSUM_TSTR" 
+                
+                
+                
+            menu_published="0"
+            filter="raw"
+            size="30"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="tplz" type="text"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_MDIMPRESSUM_TPLZ"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_MDIMPRESSUM_TPLZ" 
+                
+                
+                
+            menu_published="0"
+            filter="raw"
+            size="30"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="tort" type="text"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_MDIMPRESSUM_TORT"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_MDIMPRESSUM_TORT" 
+                
+                
+                
+            menu_published="0"
+            filter="raw"
+            size="30"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+ 
+		<field name="temail" type="email" label="E-Mail Adresse" description="" validate="email"   /> 
+
+       <field name="ttel" type="text"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_MDIMPRESSUM_TTEL"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_MDIMPRESSUM_TTEL" 
+                
+                
+                
+            menu_published="0"
+            filter="raw"
+            size="30"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="inname" type="text"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_MDIMPRESSUM_INNAME"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_MDIMPRESSUM_INNAME" 
+                
+                
+                
+            menu_published="0"
+            filter="raw"
+            size="30"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="invorname" type="text"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_MDIMPRESSUM_INVORNAME"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_MDIMPRESSUM_INVORNAME" 
+                
+                
+                
+            menu_published="0"
+            filter="raw"
+            size="30"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="instr" type="text"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_MDIMPRESSUM_INSTR"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_MDIMPRESSUM_INSTR" 
+                
+                
+                
+            menu_published="0"
+            filter="raw"
+            size="30"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="inplz" type="text"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_MDIMPRESSUM_INPLZ"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_MDIMPRESSUM_INPLZ" 
+                
+                
+                
+            menu_published="0"
+            filter="raw"
+            size="30"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="inort" type="text"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_MDIMPRESSUM_INORT"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_MDIMPRESSUM_INORT" 
+                
+                
+                
+            menu_published="0"
+            filter="raw"
+            size="30"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+ 
+		<field name="inemail" type="email" label="Email Adresse" description="" validate="email"   /> 
+
+       <field name="intel" type="text"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_MDIMPRESSUM_INTEL"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_MDIMPRESSUM_INTEL" 
+                
+                
+                
+            menu_published="0"
+            filter="raw"
+            size="30"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="bankinhaber" type="text"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_MDIMPRESSUM_BANKINHABER"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_MDIMPRESSUM_BANKINHABER" 
+                
+                
+                
+            size="30" /> 
+
+       <field name="bankname" type="text"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_MDIMPRESSUM_BANKNAME"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_MDIMPRESSUM_BANKNAME" 
+                
+                
+                
+            size="30" /> 
+
+       <field name="bankiban" type="text"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_MDIMPRESSUM_BANKIBAN"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_MDIMPRESSUM_BANKIBAN" 
+                
+                
+                
+            menu_published="0"
+            filter="raw"
+            size="30"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="bankswift" type="text"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_MDIMPRESSUM_BANKSWIFT"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_MDIMPRESSUM_BANKSWIFT" 
+                
+                
+                
+            menu_published="0"
+            filter="raw"
+            size="30"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="templname" type="text"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_MDIMPRESSUM_TEMPLNAME"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_MDIMPRESSUM_TEMPLNAME" 
+                
+                
+                
+            menu_published="0"
+            filter="raw"
+            size="30"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="templersteller" type="text"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_MDIMPRESSUM_TEMPLERSTELLER"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_MDIMPRESSUM_TEMPLERSTELLER" 
+                
+                
+                
+            menu_published="0"
+            filter="raw"
+            size="30"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="templwebsite" type="text"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_MDIMPRESSUM_TEMPLWEBSITE"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_MDIMPRESSUM_TEMPLWEBSITE" 
+                
+                
+                
+            menu_published="0"
+            filter="raw"
+            size="30"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="linkdatenschutz" type="text"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_MDIMPRESSUM_LINKDATENSCHUTZ"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_MDIMPRESSUM_LINKDATENSCHUTZ" 
+                
+                
+                
+            menu_published="0"
+            filter="raw"
+            size="30"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="copyfooter" type="text"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_MDIMPRESSUM_COPYFOOTER"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_MDIMPRESSUM_COPYFOOTER" 
+                
+                
+                
+            filter="raw"
+            size="30" />
+
+       <field name="werbungfooter" type="hidden"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_MDIMPRESSUM_WERBUNGFOOTER"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_MDIMPRESSUM_WERBUNGFOOTER"
+                default=""
+
+
+            filter="raw" /> 
+
+       <field name="frei1" type="text"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_MDIMPRESSUM_FREI1"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_MDIMPRESSUM_FREI1" 
+                
+                
+                
+            filter="raw" /> 
+
+       <field name="frei2" type="text"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_MDIMPRESSUM_FREI2"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_MDIMPRESSUM_FREI2" 
+                
+                
+                
+            filter="raw" /> 
+
+       <field name="frei3" type="text"
+                
+            label="COM_MDIMPRESSUM_PRO_FORM_LBL_MDIMPRESSUM_FREI3"
+            description="COM_MDIMPRESSUM_PRO_FORM_DESC_MDIMPRESSUM_FREI3" 
+                
+                
+                
+            filter="raw" /> 
+
+ 
+		<field name="version_note"
+			type="text"
+			label="JGLOBAL_FIELD_VERSION_NOTE_LABEL"
+			description="JGLOBAL_FIELD_VERSION_NOTE_DESC"
+			class="inputbox" size="45"
+			labelclass="control-label"
+		/> 
+
+ 
+		<field
+			name="state"
+			type="list"
+			label="JSTATUS"
+			description="JFIELD_PUBLISHED_DESC"
+			class="inputbox"
+			size="1"
+			default="1">
+			<option value="1">JPUBLISHED</option>
+			<option value="0">JUNPUBLISHED</option>
+			<option value="2">JARCHIVED</option>
+			<option value="-2">JTRASHED</option>
+		</field> 
+
+                        <field name="checked_out" type="hidden" filter="unset" />
+        <field name="checked_out_time" type="hidden" filter="unset" />
+
+	</fieldset>
+
+</form>

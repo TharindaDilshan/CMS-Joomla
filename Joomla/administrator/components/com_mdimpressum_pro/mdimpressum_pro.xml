@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0" method="upgrade">
+    <name>com_mdimpressum_pro</name>
+    <creationDate>2016-03-30</creationDate>
+    <copyright>Copyright (C) 2016. Alle Rechte vorbehalten.</copyright>
+    <license>GNU General Public License Version 2 oder später; siehe LICENSE.txt</license>
+    <author>Axel Metz</author>
+    <authorEmail>office@megrodesign.com</authorEmail>
+    <authorUrl>http://megrodesign.com</authorUrl>
+    <version>4.2.3</version>
+    <description>Impressum für Joomla ab Version 3.5 PHP 7</description>
+    <updateservers>
+        <server type="extension" priority="1" name="Megrodesign Updates"><![CDATA[http://www.megrodesign.com/updates/impressum-pro/pro/extension.xml]]></server>
+    </updateservers>
+    <scriptfile>script.php</scriptfile>
+    
+    <install> <!-- Runs on install -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+        </sql>
+    </install>
+    <update> <!-- Runs on update -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/update.mysql.utf8.sql</file>
+        </sql>
+    </update>
+    <uninstall> <!-- Runs on uninstall -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+        </sql>
+    </uninstall>
+
+    <files folder="site">
+        <filename>index.html</filename>
+        <filename>mdimpressum_pro.php</filename>
+        <filename>controller.php</filename>
+        <filename>router.php</filename>
+        <folder>views</folder>
+        <folder>models</folder>
+        <folder>controllers</folder>
+        <folder>helpers</folder>
+        <folder>assets</folder>
+    </files>
+    <media destination="com_mdimpressum_pro" folder="media">
+        <folder>js</folder>
+        <folder>css</folder>
+    </media>
+    <languages folder="languages/site">
+        
+			<language tag="en-GB">en-GB/en-GB.com_mdimpressum_pro.ini</language>
+			<language tag="de-DE">de-DE/de-DE.com_mdimpressum_pro.ini</language>
+    </languages>
+    <administration>
+        <menu img="media/com_mdimpressum_pro/images/s_com_mdimpressum_pro.png" >COM_MDIMPRESSUM_PRO</menu>
+        <submenu>
+            
+			
+
+			<menu link="option=com_mdimpressum_pro&amp;view=dashboards" view="dashboards" img="media/com_mdimpressum_pro/images/s_dashboards.png" alt="Mdimpressum_pro/Dashboards">COM_MDIMPRESSUM_PRO_TITLE_DASHBOARDS</menu>
+<menu link="option=com_mdimpressum_pro&amp;view=mdimpressums" view="mdimpressums" img="media/com_mdimpressum_pro/images/s_mdimpressums.png" alt="Mdimpressum_pro/Mdimpressums">COM_MDIMPRESSUM_PRO_TITLE_MDIMPRESSUMS</menu>
+			<menu link="option=com_mdimpressum_pro&amp;view=laws" view="laws" img="media/com_mdimpressum_pro/images/s_laws.png" alt="Mdimpressum_pro/Laws">COM_MDIMPRESSUM_PRO_TITLE_LAWS</menu>
+
+			<menu link="option=com_mdimpressum_pro&amp;view=prodatenschutzm" view="prodatenschutzm" img="media/com_mdimpressum_pro/images/s_prodatenschutzm.png" alt="Mdimpressum_pro/Prodatenschutzm">COM_MDIMPRESSUM_PRO_TITLE_PRODATENSCHUTZM</menu>
+
+			<menu link="option=com_mdimpressum_pro&amp;view=prodaten2s" view="prodaten2s" img="media/com_mdimpressum_pro/images/s_prodaten2s.png" alt="Mdimpressum_pro/Prodaten2s">COM_MDIMPRESSUM_PRO_TITLE_PRODATEN2S</menu>
+
+			<menu link="option=com_mdimpressum_pro&amp;view=prodaten3s" view="prodaten3s" img="media/com_mdimpressum_pro/images/s_prodaten3s.png" alt="Mdimpressum_pro/Prodaten3s">COM_MDIMPRESSUM_PRO_TITLE_PRODATEN3S</menu>
+
+        </submenu>
+        <files folder="administrator">
+            <filename>access.xml</filename>
+            <filename>config.xml</filename>
+            <filename>controller.php</filename>
+            <filename>index.html</filename>
+            <filename>mdimpressum_pro.php</filename>
+            <folder>controllers</folder>
+            <folder>assets</folder>
+            <folder>helpers</folder>
+            <folder>models</folder>
+            <folder>sql</folder>
+            <folder>tables</folder>
+            <folder>views</folder>
+        </files>
+        <languages folder="languages/administrator">
+            
+			<language tag="en-GB">en-GB/en-GB.com_mdimpressum_pro.ini</language>
+			<language tag="en-GB">en-GB/en-GB.com_mdimpressum_pro.sys.ini</language>
+			<language tag="de-DE">de-DE/de-DE.com_mdimpressum_pro.ini</language>
+			<language tag="de-DE">de-DE/de-DE.com_mdimpressum_pro.sys.ini</language>
+        </languages>
+    </administration>
+    <config>
+        <fields name="params">
+            <fieldset name="component">
+                <field name="save_history" default="0" />
+            </fieldset>
+        </fields>
+    </config>
+    <plugins>
+        <plugin group="search" plugin="mdimpressum_pro"/>
+    </plugins>
+    
+</extension>

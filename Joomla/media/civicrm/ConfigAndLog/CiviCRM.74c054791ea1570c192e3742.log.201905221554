@@ -1,0 +1,218 @@
+Apr 14 16:04:54  [info] Creating canary table
+
+Apr 14 14:05:46  [info] $Fatal Error Details = Array
+(
+    [callback] => Array
+        (
+            [0] => CRM_Core_Error
+            [1] => exceptionHandler
+        )
+
+    [code] => -1
+    [message] => DB Error: unknown error
+    [mode] => 16
+    [debug_info] => CREATE TEMPORARY TABLE civicrm_utf8mb4_test (id VARCHAR(255), PRIMARY KEY(id(255))) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci ROW_FORMAT=DYNAMIC ENGINE=INNODB [nativecode=1071 ** Specified key was too long; max key length is 767 bytes]
+    [type] => DB_Error
+    [user_info] => CREATE TEMPORARY TABLE civicrm_utf8mb4_test (id VARCHAR(255), PRIMARY KEY(id(255))) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci ROW_FORMAT=DYNAMIC ENGINE=INNODB [nativecode=1071 ** Specified key was too long; max key length is 767 bytes]
+    [to_string] => [db_error: message="DB Error: unknown error" code=-1 mode=callback callback=CRM_Core_Error::exceptionHandler prefix="" info="CREATE TEMPORARY TABLE civicrm_utf8mb4_test (id VARCHAR(255), PRIMARY KEY(id(255))) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci ROW_FORMAT=DYNAMIC ENGINE=INNODB [nativecode=1071 ** Specified key was too long; max key length is 767 bytes]"]
+)
+
+
+Apr 14 14:05:46  [info] $backTrace = #0 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\CRM\Core\Error.php(948): CRM_Core_Error::backtrace("backTrace", TRUE)
+#1 [internal function](): CRM_Core_Error::exceptionHandler(Object(DB_Error))
+#2 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\vendor\pear\pear-core-minimal\src\PEAR.php(922): call_user_func((Array:2), Object(DB_Error))
+#3 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\packages\DB.php(985): PEAR_Error->__construct("DB Error: unknown error", -1, 16, (Array:2), "CREATE TEMPORARY TABLE civicrm_utf8mb4_test (id VARCHAR(255), PRIMARY KEY(id(...")
+#4 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\vendor\pear\pear-core-minimal\src\PEAR.php(575): DB_Error->__construct(-1, 16, (Array:2), "CREATE TEMPORARY TABLE civicrm_utf8mb4_test (id VARCHAR(255), PRIMARY KEY(id(...")
+#5 [internal function](): PEAR->_raiseError(Object(DB_mysqli), NULL, -1, NULL, NULL, "CREATE TEMPORARY TABLE civicrm_utf8mb4_test (id VARCHAR(255), PRIMARY KEY(id(...", "DB_Error", TRUE)
+#6 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\vendor\pear\pear-core-minimal\src\PEAR.php(224): call_user_func_array((Array:2), (Array:8))
+#7 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\packages\DB\common.php(1907): PEAR->__call("raiseError", (Array:7))
+#8 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\packages\DB\common.php(1907): PEAR->raiseError(NULL, -1, NULL, NULL, "CREATE TEMPORARY TABLE civicrm_utf8mb4_test (id VARCHAR(255), PRIMARY KEY(id(...", "DB_Error", TRUE)
+#9 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\packages\DB\mysqli.php(933): DB_common->raiseError(-1, NULL, NULL, NULL, "1071 ** Specified key was too long; max key length is 767 bytes")
+#10 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\packages\DB\mysqli.php(403): DB_mysqli->mysqliRaiseError()
+#11 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\packages\DB\common.php(1216): DB_mysqli->simpleQuery("CREATE TEMPORARY TABLE civicrm_utf8mb4_test (id VARCHAR(255), PRIMARY KEY(id(...")
+#12 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\packages\DB\DataObject.php(2415): DB_common->query("CREATE TEMPORARY TABLE civicrm_utf8mb4_test (id VARCHAR(255), PRIMARY KEY(id(...")
+#13 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\packages\DB\DataObject.php(1607): DB_DataObject->_query("CREATE TEMPORARY TABLE civicrm_utf8mb4_test (id VARCHAR(255), PRIMARY KEY(id(...")
+#14 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\CRM\Core\DAO.php(438): DB_DataObject->query("CREATE TEMPORARY TABLE civicrm_utf8mb4_test (id VARCHAR(255), PRIMARY KEY(id(...")
+#15 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\CRM\Core\DAO.php(1413): CRM_Core_DAO->query("CREATE TEMPORARY TABLE civicrm_utf8mb4_test (id VARCHAR(255), PRIMARY KEY(id(...", TRUE)
+#16 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\CRM\Utils\Check\Component\Env.php(917): CRM_Core_DAO::executeQuery("CREATE TEMPORARY TABLE civicrm_utf8mb4_test (id VARCHAR(255), PRIMARY KEY(id(...")
+#17 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\CRM\Utils\Check\Component.php(54): CRM_Utils_Check_Component_Env->checkMysqlUtf8mb4()
+#18 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\CRM\Utils\Check.php(209): CRM_Utils_Check_Component->checkAll()
+#19 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\CRM\Utils\Check.php(93): CRM_Utils_Check::checkAll()
+#20 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\CRM\Core\Page.php(218): CRM_Utils_Check->showPeriodicAlerts()
+#21 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\CRM\Contact\Page\DashBoard.php(69): CRM_Core_Page->run()
+#22 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\CRM\Core\Invoke.php(309): CRM_Contact_Page_DashBoard->run((Array:2), NULL)
+#23 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\CRM\Core\Invoke.php(84): CRM_Core_Invoke::runItem((Array:13))
+#24 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\CRM\Core\Invoke.php(52): CRM_Core_Invoke::_invoke((Array:2))
+#25 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm.php(121): CRM_Core_Invoke::invoke((Array:2))
+#26 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm.php(40): civicrm_invoke()
+#27 C:\xampp\htdocs\Joomla\libraries\src\Component\ComponentHelper.php(402): require_once("C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm.php")
+#28 C:\xampp\htdocs\Joomla\libraries\src\Component\ComponentHelper.php(377): Joomla\CMS\Component\ComponentHelper::executeComponent("C:\xampp\htdocs\Joomla\administrator/components/com_civicrm/civicrm.php")
+#29 C:\xampp\htdocs\Joomla\libraries\src\Application\AdministratorApplication.php(101): Joomla\CMS\Component\ComponentHelper::renderComponent("com_civicrm")
+#30 C:\xampp\htdocs\Joomla\libraries\src\Application\AdministratorApplication.php(159): Joomla\CMS\Application\AdministratorApplication->dispatch()
+#31 C:\xampp\htdocs\Joomla\libraries\src\Application\CMSApplication.php(196): Joomla\CMS\Application\AdministratorApplication->doExecute()
+#32 C:\xampp\htdocs\Joomla\administrator\index.php(51): Joomla\CMS\Application\CMSApplication->execute()
+#33 {main}
+
+
+Apr 14 14:41:37  [info] $Fatal Error Details = Array
+(
+    [callback] => Array
+        (
+            [0] => CRM_Core_Error
+            [1] => exceptionHandler
+        )
+
+    [code] => -1
+    [message] => DB Error: unknown error
+    [mode] => 16
+    [debug_info] => CREATE TEMPORARY TABLE civicrm_utf8mb4_test (id VARCHAR(255), PRIMARY KEY(id(255))) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci ROW_FORMAT=DYNAMIC ENGINE=INNODB [nativecode=1071 ** Specified key was too long; max key length is 767 bytes]
+    [type] => DB_Error
+    [user_info] => CREATE TEMPORARY TABLE civicrm_utf8mb4_test (id VARCHAR(255), PRIMARY KEY(id(255))) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci ROW_FORMAT=DYNAMIC ENGINE=INNODB [nativecode=1071 ** Specified key was too long; max key length is 767 bytes]
+    [to_string] => [db_error: message="DB Error: unknown error" code=-1 mode=callback callback=CRM_Core_Error::exceptionHandler prefix="" info="CREATE TEMPORARY TABLE civicrm_utf8mb4_test (id VARCHAR(255), PRIMARY KEY(id(255))) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci ROW_FORMAT=DYNAMIC ENGINE=INNODB [nativecode=1071 ** Specified key was too long; max key length is 767 bytes]"]
+)
+
+
+Apr 14 14:41:37  [info] $backTrace = #0 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\CRM\Core\Error.php(948): CRM_Core_Error::backtrace("backTrace", TRUE)
+#1 [internal function](): CRM_Core_Error::exceptionHandler(Object(DB_Error))
+#2 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\vendor\pear\pear-core-minimal\src\PEAR.php(922): call_user_func((Array:2), Object(DB_Error))
+#3 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\packages\DB.php(985): PEAR_Error->__construct("DB Error: unknown error", -1, 16, (Array:2), "CREATE TEMPORARY TABLE civicrm_utf8mb4_test (id VARCHAR(255), PRIMARY KEY(id(...")
+#4 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\vendor\pear\pear-core-minimal\src\PEAR.php(575): DB_Error->__construct(-1, 16, (Array:2), "CREATE TEMPORARY TABLE civicrm_utf8mb4_test (id VARCHAR(255), PRIMARY KEY(id(...")
+#5 [internal function](): PEAR->_raiseError(Object(DB_mysqli), NULL, -1, NULL, NULL, "CREATE TEMPORARY TABLE civicrm_utf8mb4_test (id VARCHAR(255), PRIMARY KEY(id(...", "DB_Error", TRUE)
+#6 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\vendor\pear\pear-core-minimal\src\PEAR.php(224): call_user_func_array((Array:2), (Array:8))
+#7 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\packages\DB\common.php(1907): PEAR->__call("raiseError", (Array:7))
+#8 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\packages\DB\common.php(1907): PEAR->raiseError(NULL, -1, NULL, NULL, "CREATE TEMPORARY TABLE civicrm_utf8mb4_test (id VARCHAR(255), PRIMARY KEY(id(...", "DB_Error", TRUE)
+#9 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\packages\DB\mysqli.php(933): DB_common->raiseError(-1, NULL, NULL, NULL, "1071 ** Specified key was too long; max key length is 767 bytes")
+#10 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\packages\DB\mysqli.php(403): DB_mysqli->mysqliRaiseError()
+#11 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\packages\DB\common.php(1216): DB_mysqli->simpleQuery("CREATE TEMPORARY TABLE civicrm_utf8mb4_test (id VARCHAR(255), PRIMARY KEY(id(...")
+#12 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\packages\DB\DataObject.php(2415): DB_common->query("CREATE TEMPORARY TABLE civicrm_utf8mb4_test (id VARCHAR(255), PRIMARY KEY(id(...")
+#13 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\packages\DB\DataObject.php(1607): DB_DataObject->_query("CREATE TEMPORARY TABLE civicrm_utf8mb4_test (id VARCHAR(255), PRIMARY KEY(id(...")
+#14 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\CRM\Core\DAO.php(438): DB_DataObject->query("CREATE TEMPORARY TABLE civicrm_utf8mb4_test (id VARCHAR(255), PRIMARY KEY(id(...")
+#15 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\CRM\Core\DAO.php(1413): CRM_Core_DAO->query("CREATE TEMPORARY TABLE civicrm_utf8mb4_test (id VARCHAR(255), PRIMARY KEY(id(...", TRUE)
+#16 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\CRM\Utils\Check\Component\Env.php(917): CRM_Core_DAO::executeQuery("CREATE TEMPORARY TABLE civicrm_utf8mb4_test (id VARCHAR(255), PRIMARY KEY(id(...")
+#17 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\CRM\Utils\Check\Component.php(54): CRM_Utils_Check_Component_Env->checkMysqlUtf8mb4()
+#18 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\CRM\Utils\Check.php(209): CRM_Utils_Check_Component->checkAll()
+#19 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\CRM\Utils\Check.php(93): CRM_Utils_Check::checkAll()
+#20 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\CRM\Core\Page.php(218): CRM_Utils_Check->showPeriodicAlerts()
+#21 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\CRM\Contact\Page\View\Summary.php(96): CRM_Core_Page->run()
+#22 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\CRM\Core\Invoke.php(309): CRM_Contact_Page_View_Summary->run((Array:3), NULL)
+#23 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\CRM\Core\Invoke.php(84): CRM_Core_Invoke::runItem((Array:14))
+#24 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\CRM\Core\Invoke.php(52): CRM_Core_Invoke::_invoke((Array:3))
+#25 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm.php(121): CRM_Core_Invoke::invoke((Array:3))
+#26 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm.php(40): civicrm_invoke()
+#27 C:\xampp\htdocs\Joomla\libraries\src\Component\ComponentHelper.php(402): require_once("C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm.php")
+#28 C:\xampp\htdocs\Joomla\libraries\src\Component\ComponentHelper.php(377): Joomla\CMS\Component\ComponentHelper::executeComponent("C:\xampp\htdocs\Joomla\administrator/components/com_civicrm/civicrm.php")
+#29 C:\xampp\htdocs\Joomla\libraries\src\Application\AdministratorApplication.php(101): Joomla\CMS\Component\ComponentHelper::renderComponent("com_civicrm")
+#30 C:\xampp\htdocs\Joomla\libraries\src\Application\AdministratorApplication.php(159): Joomla\CMS\Application\AdministratorApplication->dispatch()
+#31 C:\xampp\htdocs\Joomla\libraries\src\Application\CMSApplication.php(196): Joomla\CMS\Application\AdministratorApplication->doExecute()
+#32 C:\xampp\htdocs\Joomla\administrator\index.php(51): Joomla\CMS\Application\CMSApplication->execute()
+#33 {main}
+
+
+Apr 19 11:20:43  [info] $Fatal Error Details = Array
+(
+    [callback] => Array
+        (
+            [0] => CRM_Core_Error
+            [1] => exceptionHandler
+        )
+
+    [code] => -1
+    [message] => DB Error: unknown error
+    [mode] => 16
+    [debug_info] => CREATE TEMPORARY TABLE civicrm_utf8mb4_test (id VARCHAR(255), PRIMARY KEY(id(255))) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci ROW_FORMAT=DYNAMIC ENGINE=INNODB [nativecode=1071 ** Specified key was too long; max key length is 767 bytes]
+    [type] => DB_Error
+    [user_info] => CREATE TEMPORARY TABLE civicrm_utf8mb4_test (id VARCHAR(255), PRIMARY KEY(id(255))) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci ROW_FORMAT=DYNAMIC ENGINE=INNODB [nativecode=1071 ** Specified key was too long; max key length is 767 bytes]
+    [to_string] => [db_error: message="DB Error: unknown error" code=-1 mode=callback callback=CRM_Core_Error::exceptionHandler prefix="" info="CREATE TEMPORARY TABLE civicrm_utf8mb4_test (id VARCHAR(255), PRIMARY KEY(id(255))) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci ROW_FORMAT=DYNAMIC ENGINE=INNODB [nativecode=1071 ** Specified key was too long; max key length is 767 bytes]"]
+)
+
+
+Apr 19 11:20:43  [info] $backTrace = #0 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\CRM\Core\Error.php(948): CRM_Core_Error::backtrace("backTrace", TRUE)
+#1 [internal function](): CRM_Core_Error::exceptionHandler(Object(DB_Error))
+#2 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\vendor\pear\pear-core-minimal\src\PEAR.php(922): call_user_func((Array:2), Object(DB_Error))
+#3 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\packages\DB.php(985): PEAR_Error->__construct("DB Error: unknown error", -1, 16, (Array:2), "CREATE TEMPORARY TABLE civicrm_utf8mb4_test (id VARCHAR(255), PRIMARY KEY(id(...")
+#4 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\vendor\pear\pear-core-minimal\src\PEAR.php(575): DB_Error->__construct(-1, 16, (Array:2), "CREATE TEMPORARY TABLE civicrm_utf8mb4_test (id VARCHAR(255), PRIMARY KEY(id(...")
+#5 [internal function](): PEAR->_raiseError(Object(DB_mysqli), NULL, -1, NULL, NULL, "CREATE TEMPORARY TABLE civicrm_utf8mb4_test (id VARCHAR(255), PRIMARY KEY(id(...", "DB_Error", TRUE)
+#6 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\vendor\pear\pear-core-minimal\src\PEAR.php(224): call_user_func_array((Array:2), (Array:8))
+#7 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\packages\DB\common.php(1907): PEAR->__call("raiseError", (Array:7))
+#8 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\packages\DB\common.php(1907): PEAR->raiseError(NULL, -1, NULL, NULL, "CREATE TEMPORARY TABLE civicrm_utf8mb4_test (id VARCHAR(255), PRIMARY KEY(id(...", "DB_Error", TRUE)
+#9 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\packages\DB\mysqli.php(933): DB_common->raiseError(-1, NULL, NULL, NULL, "1071 ** Specified key was too long; max key length is 767 bytes")
+#10 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\packages\DB\mysqli.php(403): DB_mysqli->mysqliRaiseError()
+#11 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\packages\DB\common.php(1216): DB_mysqli->simpleQuery("CREATE TEMPORARY TABLE civicrm_utf8mb4_test (id VARCHAR(255), PRIMARY KEY(id(...")
+#12 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\packages\DB\DataObject.php(2415): DB_common->query("CREATE TEMPORARY TABLE civicrm_utf8mb4_test (id VARCHAR(255), PRIMARY KEY(id(...")
+#13 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\packages\DB\DataObject.php(1607): DB_DataObject->_query("CREATE TEMPORARY TABLE civicrm_utf8mb4_test (id VARCHAR(255), PRIMARY KEY(id(...")
+#14 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\CRM\Core\DAO.php(438): DB_DataObject->query("CREATE TEMPORARY TABLE civicrm_utf8mb4_test (id VARCHAR(255), PRIMARY KEY(id(...")
+#15 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\CRM\Core\DAO.php(1413): CRM_Core_DAO->query("CREATE TEMPORARY TABLE civicrm_utf8mb4_test (id VARCHAR(255), PRIMARY KEY(id(...", TRUE)
+#16 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\CRM\Utils\Check\Component\Env.php(917): CRM_Core_DAO::executeQuery("CREATE TEMPORARY TABLE civicrm_utf8mb4_test (id VARCHAR(255), PRIMARY KEY(id(...")
+#17 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\CRM\Utils\Check\Component.php(54): CRM_Utils_Check_Component_Env->checkMysqlUtf8mb4()
+#18 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\CRM\Utils\Check.php(209): CRM_Utils_Check_Component->checkAll()
+#19 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\CRM\Utils\Check.php(93): CRM_Utils_Check::checkAll()
+#20 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\CRM\Core\Page.php(218): CRM_Utils_Check->showPeriodicAlerts()
+#21 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\CRM\Contact\Page\DashBoard.php(69): CRM_Core_Page->run()
+#22 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\CRM\Core\Invoke.php(309): CRM_Contact_Page_DashBoard->run((Array:2), NULL)
+#23 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\CRM\Core\Invoke.php(84): CRM_Core_Invoke::runItem((Array:13))
+#24 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\CRM\Core\Invoke.php(52): CRM_Core_Invoke::_invoke((Array:2))
+#25 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm.php(121): CRM_Core_Invoke::invoke((Array:2))
+#26 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm.php(40): civicrm_invoke()
+#27 C:\xampp\htdocs\Joomla\libraries\src\Component\ComponentHelper.php(402): require_once("C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm.php")
+#28 C:\xampp\htdocs\Joomla\libraries\src\Component\ComponentHelper.php(377): Joomla\CMS\Component\ComponentHelper::executeComponent("C:\xampp\htdocs\Joomla\administrator/components/com_civicrm/civicrm.php")
+#29 C:\xampp\htdocs\Joomla\libraries\src\Application\AdministratorApplication.php(101): Joomla\CMS\Component\ComponentHelper::renderComponent("com_civicrm")
+#30 C:\xampp\htdocs\Joomla\libraries\src\Application\AdministratorApplication.php(159): Joomla\CMS\Application\AdministratorApplication->dispatch()
+#31 C:\xampp\htdocs\Joomla\libraries\src\Application\CMSApplication.php(196): Joomla\CMS\Application\AdministratorApplication->doExecute()
+#32 C:\xampp\htdocs\Joomla\administrator\index.php(51): Joomla\CMS\Application\CMSApplication->execute()
+#33 {main}
+
+
+Apr 20 08:23:06  [info] $Fatal Error Details = Array
+(
+    [callback] => Array
+        (
+            [0] => CRM_Core_Error
+            [1] => exceptionHandler
+        )
+
+    [code] => -1
+    [message] => DB Error: unknown error
+    [mode] => 16
+    [debug_info] => CREATE TEMPORARY TABLE civicrm_utf8mb4_test (id VARCHAR(255), PRIMARY KEY(id(255))) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci ROW_FORMAT=DYNAMIC ENGINE=INNODB [nativecode=1071 ** Specified key was too long; max key length is 767 bytes]
+    [type] => DB_Error
+    [user_info] => CREATE TEMPORARY TABLE civicrm_utf8mb4_test (id VARCHAR(255), PRIMARY KEY(id(255))) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci ROW_FORMAT=DYNAMIC ENGINE=INNODB [nativecode=1071 ** Specified key was too long; max key length is 767 bytes]
+    [to_string] => [db_error: message="DB Error: unknown error" code=-1 mode=callback callback=CRM_Core_Error::exceptionHandler prefix="" info="CREATE TEMPORARY TABLE civicrm_utf8mb4_test (id VARCHAR(255), PRIMARY KEY(id(255))) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci ROW_FORMAT=DYNAMIC ENGINE=INNODB [nativecode=1071 ** Specified key was too long; max key length is 767 bytes]"]
+)
+
+
+Apr 20 08:23:06  [info] $backTrace = #0 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\CRM\Core\Error.php(948): CRM_Core_Error::backtrace("backTrace", TRUE)
+#1 [internal function](): CRM_Core_Error::exceptionHandler(Object(DB_Error))
+#2 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\vendor\pear\pear-core-minimal\src\PEAR.php(922): call_user_func((Array:2), Object(DB_Error))
+#3 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\packages\DB.php(985): PEAR_Error->__construct("DB Error: unknown error", -1, 16, (Array:2), "CREATE TEMPORARY TABLE civicrm_utf8mb4_test (id VARCHAR(255), PRIMARY KEY(id(...")
+#4 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\vendor\pear\pear-core-minimal\src\PEAR.php(575): DB_Error->__construct(-1, 16, (Array:2), "CREATE TEMPORARY TABLE civicrm_utf8mb4_test (id VARCHAR(255), PRIMARY KEY(id(...")
+#5 [internal function](): PEAR->_raiseError(Object(DB_mysqli), NULL, -1, NULL, NULL, "CREATE TEMPORARY TABLE civicrm_utf8mb4_test (id VARCHAR(255), PRIMARY KEY(id(...", "DB_Error", TRUE)
+#6 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\vendor\pear\pear-core-minimal\src\PEAR.php(224): call_user_func_array((Array:2), (Array:8))
+#7 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\packages\DB\common.php(1907): PEAR->__call("raiseError", (Array:7))
+#8 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\packages\DB\common.php(1907): PEAR->raiseError(NULL, -1, NULL, NULL, "CREATE TEMPORARY TABLE civicrm_utf8mb4_test (id VARCHAR(255), PRIMARY KEY(id(...", "DB_Error", TRUE)
+#9 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\packages\DB\mysqli.php(933): DB_common->raiseError(-1, NULL, NULL, NULL, "1071 ** Specified key was too long; max key length is 767 bytes")
+#10 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\packages\DB\mysqli.php(403): DB_mysqli->mysqliRaiseError()
+#11 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\packages\DB\common.php(1216): DB_mysqli->simpleQuery("CREATE TEMPORARY TABLE civicrm_utf8mb4_test (id VARCHAR(255), PRIMARY KEY(id(...")
+#12 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\packages\DB\DataObject.php(2415): DB_common->query("CREATE TEMPORARY TABLE civicrm_utf8mb4_test (id VARCHAR(255), PRIMARY KEY(id(...")
+#13 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\packages\DB\DataObject.php(1607): DB_DataObject->_query("CREATE TEMPORARY TABLE civicrm_utf8mb4_test (id VARCHAR(255), PRIMARY KEY(id(...")
+#14 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\CRM\Core\DAO.php(438): DB_DataObject->query("CREATE TEMPORARY TABLE civicrm_utf8mb4_test (id VARCHAR(255), PRIMARY KEY(id(...")
+#15 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\CRM\Core\DAO.php(1413): CRM_Core_DAO->query("CREATE TEMPORARY TABLE civicrm_utf8mb4_test (id VARCHAR(255), PRIMARY KEY(id(...", TRUE)
+#16 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\CRM\Utils\Check\Component\Env.php(917): CRM_Core_DAO::executeQuery("CREATE TEMPORARY TABLE civicrm_utf8mb4_test (id VARCHAR(255), PRIMARY KEY(id(...")
+#17 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\CRM\Utils\Check\Component.php(54): CRM_Utils_Check_Component_Env->checkMysqlUtf8mb4()
+#18 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\CRM\Utils\Check.php(209): CRM_Utils_Check_Component->checkAll()
+#19 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\CRM\Utils\Check.php(93): CRM_Utils_Check::checkAll()
+#20 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\CRM\Core\Page.php(218): CRM_Utils_Check->showPeriodicAlerts()
+#21 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\CRM\Contact\Page\DashBoard.php(69): CRM_Core_Page->run()
+#22 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\CRM\Core\Invoke.php(309): CRM_Contact_Page_DashBoard->run((Array:2), NULL)
+#23 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\CRM\Core\Invoke.php(84): CRM_Core_Invoke::runItem((Array:13))
+#24 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm\CRM\Core\Invoke.php(52): CRM_Core_Invoke::_invoke((Array:2))
+#25 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm.php(121): CRM_Core_Invoke::invoke((Array:2))
+#26 C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm.php(40): civicrm_invoke()
+#27 C:\xampp\htdocs\Joomla\libraries\src\Component\ComponentHelper.php(402): require_once("C:\xampp\htdocs\Joomla\administrator\components\com_civicrm\civicrm.php")
+#28 C:\xampp\htdocs\Joomla\libraries\src\Component\ComponentHelper.php(377): Joomla\CMS\Component\ComponentHelper::executeComponent("C:\xampp\htdocs\Joomla\administrator/components/com_civicrm/civicrm.php")
+#29 C:\xampp\htdocs\Joomla\libraries\src\Application\AdministratorApplication.php(101): Joomla\CMS\Component\ComponentHelper::renderComponent("com_civicrm")
+#30 C:\xampp\htdocs\Joomla\libraries\src\Application\AdministratorApplication.php(159): Joomla\CMS\Application\AdministratorApplication->dispatch()
+#31 C:\xampp\htdocs\Joomla\libraries\src\Application\CMSApplication.php(196): Joomla\CMS\Application\AdministratorApplication->doExecute()
+#32 C:\xampp\htdocs\Joomla\administrator\index.php(51): Joomla\CMS\Application\CMSApplication->execute()
+#33 {main}
+
+
